@@ -9,6 +9,14 @@ Este es el link a nuestra carpeta "design" donde se encuentra el logo que hemos 
 
 Link a nuestro Wireframe realizado en miro.com:  https://miro.com/app/board/uXjVOaRtUe0=/?invite_link_id=605900232814
 
+Sitios Referentes:
+https://mirfitness.com.ar/
+https://www.kadursport.com.ar/
+https://www.acearticulosdeportivos.com.ar/
+https://www.deportesfull.com.ar/
+https://deportesonce.com.ar/
+
+
 Quienes Integran DH Fitness:
 
 Gustavo Mei
