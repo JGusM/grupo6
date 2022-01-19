@@ -4,10 +4,11 @@ Descripción del Negocio:
 DH Fitness nació con el objetivo de promover la actividad física, el cuidado corporal y la salud. Contamos con un amplio catálogo de productos de primera calidad. Entre ellos podemos encontrar mancuernas, colchonetas, barras, discos, y cientos de accesorios para equipar tu sala de entrenamiento en casa o tu red de gimnasios.
 Nuestra misión es seguir superándonos día a día y ofrecer siempre la mejor calidad. DH Fintness ya no es solo un producto, es salud, es calidad de vida. Por eso nuestro público objetivo abarca a todo aquel que quiera tener una vida saludable.
 
-Carpeta "design":
-Este es el link a nuestra carpeta "design" donde se encuentra el logo que hemos realizado, los colores y tipografías del sitio: shorturl.at/uwEN5
+Link a nuestra carpeta DESIGN (logo  realizado, colores y tipografías del sitio): https://drive.google.com/drive/u/0/folders/1KgA0RmVYcsAk3y2ZMl3vgf-_XEg6UlS2
 
-Link a nuestro Wireframe realizado en miro.com:  https://miro.com/app/board/uXjVOaRtUe0=/?invite_link_id=605900232814
+Link a nuestro WIREFRAME realizado en miro.com:  https://miro.com/app/board/uXjVOaRtUe0=/?invite_link_id=605900232814
+
+Link a nuestro TABLERO de trabajo - Trello: https://trello.com/b/rD2BvVIV/grupo-6 
 
 Sitios Referentes:
 https://mirfitness.com.ar/
