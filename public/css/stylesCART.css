@@ -4,3 +4,161 @@
     padding: 0;
     font-family: 'Bebas Neue', cursive;
 }
+
+.main-container-cart {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(230, 220, 216); 
+}
+
+.cart-container {
+    margin-top: 20vh;
+    margin-bottom: 20vh;
+    padding: 20px;
+    background-color: white;
+}
+
+.fa-shopping-cart {
+    color: #2a2828;
+    font-size: 35px;
+    margin-right: 15px;
+}
+
+.cart-h1 {
+    font-size: 35px;
+    letter-spacing: 1px;
+    width: 100%;
+    height: 10%;
+    border-bottom: solid 2px black;
+}
+
+.cart-titulo-cantidad {
+    font-size: 35px;
+    border-bottom: solid 2px black;
+}
+
+.cart-img-titulo-cantidad-container {
+    display:flex;
+    flex-direction: row;
+    justify-content:space-between;
+}
+
+.cart-product-img {
+  width: 200px;
+  height: 200px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.cart-btn-delete {
+    font-size: 30px;
+    position: absolute; 
+    right: 0%;
+    padding: 10px;
+    height: 30%;
+    width: 20%;
+}
+
+.cart-h2 {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+    font-weight: 100;
+    width: 30%;
+}
+
+.cart-precio, 
+.cart-cantidad {
+  font-size: 25px;
+  color: rgb(93, 91, 91); 
+}
+
+.mas-menos-input {
+    width: 10%;
+    text-align: center;
+    border: none;
+    font-size: 22px;
+    color: rgb(93, 91, 91); 
+}
+
+.plus-btn,
+.minus-btn {
+    font-size: 18px;
+    padding: 5px;
+    color: rgb(93, 91, 91);
+    border:none
+}
+
+.plus-btn {
+    margin-left: 20px;
+}
+
+.plus-btn:hover, .minus-btn:hover {
+    background-color: rgb(204, 200, 197);
+}
+
+.cart-image-description-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.cart-description-cantindad-container {
+    display: flex;
+    flex-direction:column;
+    justify-content: space-between;
+    margin-left: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 50%; 
+    position: relative; 
+}
+
+.cart-line2 {
+    width: 100%;
+    border: solid 1px black;
+    margin-top: 30px;
+}
+
+.cart-total {
+    font-size: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.cart-button-pagar {
+    width: 100%;
+    padding: 5px;
+    margin-top: 20px;
+    color: white;
+    height: 50px;
+    font-size: 20px;
+    letter-spacing: 2px;
+    border: none;
+    box-shadow: 3px 3px 3px rgb(73, 72, 72);
+    background-color: rgb(27, 26, 26);
+    transition: background-color 0.5s; 
+}
+
+.cart-button-pagar:hover {
+    background-color: rgb(219, 63, 6);  
+}
+
+.cart-button-agregar {
+    width: 100%;
+    padding: 5px;
+    margin-top: 10px;
+    color: rgb(0, 0, 0);
+    height: 50px;
+    font-size: 20px;
+    letter-spacing: 2px;
+    border: solid 1px black;
+    box-shadow: none;
+    background-color: white;
+  
+}
+
+.cart-button-agregar:hover {
+    border: solid 2px orangered; 
+    color: orangered;
+}
