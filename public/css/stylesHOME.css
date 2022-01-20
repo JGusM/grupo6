@@ -4,3 +4,48 @@
     padding: 0;
     font-family: 'Bebas Neue', cursive;
 }
+/*------------------------------------INICIO DEL HEADER-----------------------------------------*/
+header {
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.hamburger {
+    color: white;
+}
+header div img {
+width: 19vw;
+height: 6vh;
+align-self: stretch;
+}
+.logo {
+    width: 10vw;
+    height: 10vh;
+    margin-top: 20px;
+    padding-top: 20px;
+    padding-right: 70px;
+}
+.cart {
+    color: white;
+}
+/*------------------------------------FIN DEL HEADER----------------------------------------------*/
+/*------------------------------------INICIO DEL MAIN---------------------------------------------*/
+/*------------------------------------FIN DEL MAIN------------------------------------------------*/
+/*------------------------------------INICIO DEL FOOTER-------------------------------------------*/
+footer {
+    background-color: black;
+    padding: 20px 10px;
+}
+footer h3 {
+    color: white;
+    padding: 20px 5px;
+}
+footer div a {
+    text-decoration: none;
+    color: cadetblue;
+}
+footer p {
+    padding: 5px 2px;
+}
+/*------------------------------------FIN DEL FOOTER----------------------------------------------*/
