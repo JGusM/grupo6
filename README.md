@@ -40,3 +40,13 @@ De donde soy: José C. Paz, Buenos Aires
 Profesión: Lic. Adm de Empresas y Contador Público
 Hobby: DJ, Viajar
 Por qué programación?: Me gusta la idea de solucionar problemas, facilitar el trabajo a través de la tecnología.
+
+Marino Mamani Angel
+Soy de la ciudad de Capital Federal floresta
+Estudiando = Lic. Fiananzas en universidad de ULAM
+Hobby: vacacionar
+Me meti a estudiar programacion porque lo vi como un curso corto y con mucha salida laboral, para sustentar mis estudios.
+
+
+
+
