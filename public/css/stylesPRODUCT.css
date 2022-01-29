@@ -4,3 +4,128 @@
     padding: 0;
     font-family: 'Bebas Neue', cursive;
 }
+
+.main-container-cart {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(230, 220, 216); 
+}
+
+.cart-container {
+    margin-top: 20vh;
+    margin-bottom: 20vh;
+    padding: 20px;
+    background-color: white;
+}
+
+.fa-shopping-cart {
+    color: #2a2828;
+    font-size: 35px;
+    margin-right: 15px;
+}
+
+.cart-h1 {
+    font-size: 35px;
+    letter-spacing: 1px;
+    width: 100%;
+    height: 10%;
+    border-bottom: solid 2px black;
+}
+
+.cart-titulo-cantidad {
+    font-size: 35px;
+    border-bottom: solid 2px black;
+}
+
+.cart-img-titulo-cantidad-container {
+    display:flex;
+    flex-direction: row;
+    justify-content:space-between;
+}
+
+.cart-product-img {
+  width: 400px;
+  height: 400px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+
+
+.cart-h2 {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 25px;
+    font-size: 30px;
+    font-weight: 100;
+    width: 90%;
+}
+
+.cart-precio, 
+.cart-cantidad {
+  font-size: 30px;
+  color: rgb(93, 91, 91);
+  margin-bottom: 20px; 
+}
+
+.mas-menos-input {
+    width: 10%;
+    text-align: center;
+    border: none;
+    font-size: 22px;
+    color: rgb(93, 91, 91); 
+}
+
+.plus-btn,
+.minus-btn {
+    font-size: 18px;
+    padding: 5px;
+    color: rgb(93, 91, 91);
+    border:none
+}
+
+.plus-btn {
+    margin-left: 20px;
+}
+
+.plus-btn:hover, .minus-btn:hover {
+    background-color: rgb(204, 200, 197);
+}
+
+.cart-image-description-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.cart-description-cantindad-container {
+    display: flex;
+    flex-direction:column;
+    justify-content: flex-start;
+    margin-left: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 50%; 
+    position: relative; 
+}
+
+
+
+
+.cart-button-agregar {
+    width: 100%;
+    padding: 5px;
+    margin-top: 70px;
+    color: rgb(0, 0, 0);
+    height: 70px;
+    font-size: 20px;
+    letter-spacing: 2px;
+    border: solid 1px black;
+    box-shadow: none;
+    background-color: white;
+  
+}
+
+.cart-button-agregar:hover {
+    border: solid 2px orangered; 
+    color: orangered;
+}
