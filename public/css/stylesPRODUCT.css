@@ -5,63 +5,36 @@
     font-family: 'Bebas Neue', cursive;
 }
 
-.main-container-cart {
+.main-container-product {
     display: flex;
     justify-content: center;
     background-color: rgb(230, 220, 216); 
 }
 
-.cart-container {
+.product-container {
     margin-top: 20vh;
     margin-bottom: 20vh;
     padding: 20px;
     background-color: white;
 }
 
-.fa-shopping-cart {
-    color: #2a2828;
-    font-size: 35px;
-    margin-right: 15px;
-}
-
-.cart-h1 {
-    font-size: 35px;
-    letter-spacing: 1px;
-    width: 100%;
-    height: 10%;
-    border-bottom: solid 2px black;
-}
-
-.cart-titulo-cantidad {
-    font-size: 35px;
-    border-bottom: solid 2px black;
-}
-
-.cart-img-titulo-cantidad-container {
-    display:flex;
-    flex-direction: row;
-    justify-content:space-between;
-}
-
-.cart-product-img {
+.product-img {
   width: 400px;
   height: 400px;
   margin-top: 20px;
   margin-bottom: 10px;
 }
 
-
-
-.cart-h2 {
+.product-h2 {
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     margin-bottom: 25px;
-    font-size: 30px;
+    font-size: 20px;
     font-weight: 100;
     width: 90%;
 }
 
-.cart-precio, 
-.cart-cantidad {
+.product-precio, 
+.product-cantidad {
   font-size: 30px;
   color: rgb(93, 91, 91);
   margin-bottom: 20px; 
@@ -91,27 +64,23 @@
     background-color: rgb(204, 200, 197);
 }
 
-.cart-image-description-container {
+.product-image-description-container {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-around;
 }
 
-.cart-description-cantindad-container {
+.product-description-cantindad-container {
     display: flex;
     flex-direction:column;
     justify-content: flex-start;
-    margin-left: 30px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    width: 50%; 
+    margin: 20px;
+    width: 90%; 
     position: relative; 
 }
 
-
-
-
-.cart-button-agregar {
+.product-button-agregar {
     width: 100%;
     padding: 5px;
     margin-top: 70px;
@@ -125,7 +94,23 @@
   
 }
 
-.cart-button-agregar:hover {
+.product-button-agregar:hover {
     border: solid 2px orangered; 
     color: orangered;
+}
+
+/*-----------media queries-------------------*/
+
+@media (min-width: 768px){
+    /*.product-image-description-container { 
+        flex-direction: column;
+    }*/
+
+    .product-description-cantindad-container {
+        width: 50%;
+    }
+
+    .product-h2 {
+        font-size: 30px;
+    }
 }
