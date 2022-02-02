@@ -1,4 +1,4 @@
-Sprint1: Retro
+Sprint2: Retro
 
 Fortalezas:
 - El clima de trabajo es muy ameno
@@ -10,4 +10,10 @@ Oportunidades de mejora:
 - Podríamos dejar un resumen de los acuerdos realizados en whatsapp por si algún integrante faltó al encuentro. 
 - Cada integrante podría informar, en el grupo de whatsap, sus avances y dificultades para que los otros miembros estén al tanto. 
 
+-------------------------------------------------------------------
+Sprint3: Retro
+- Continuamos con las mismas fortalezas del sprint 2
+- Logramos aumntar los momentos de encuentro sincrónicos y asincrónicos.
+- Tenemos que seguir mejorando la organización para llegar en tiempo y forma con lo pedido. 
 
+-------------------------------------------------------------------

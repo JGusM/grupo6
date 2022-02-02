@@ -2,10 +2,10 @@ const path = require('path');
 
 const controlador = {
     product: (req, res)=>{
-        res.render('productDetail')
+        res.render('productDetail', {tituloPagina: "PRODUCTO"})
     },
     cart: (req, res)=>{
-        res.render('productCart')
+        res.render('productCart', {tituloPagina: "CARRITO"})
     }   
 }
 
