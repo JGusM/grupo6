@@ -10,38 +10,64 @@
 
     
     <!-- -------------- MAIN  --------------------------  -->
-    <main class="main-container-register">
+    <main class="main-container-admin">
      <section>
 
-        <form class="register-container">
+        <form class="admin-container">
 
 
              <!-- ----TÍTULO----  -->
-            <div class="register-title">
-                 <h1 class="register-h1"> <i class="fas fa-user"></i></i></i>&nbsp&nbspEDITAR PRODUCTO </h1>
+            <div class="admin-title">
+                 <h1 class="admin-h1">CARGAR PRODUCTO </h1>
             </div>
         
-
-            <!-- ----EMAIL----  -->
-            <div class="register-cajas-input">
-                 <input type="email" name="email" placeholder="✉ Ingresá tu email" required>
+        <div class=container-left>
+            <!-- ----NOMBRE ----  -->
+            <div class="admin-cajas-input">
+                 <input type="Text" name="name" placeholder="Ingresá nombre del producto" required>
             </div>
 
-            <!-- ----CONTRASEÑA----  -->
+            <!-- ----CATEGORÍA----  -->
 
-            <div class="register-cajas-input">
-                 <input type="password" name="password" placeholder="🔓 Ingresá contraseña" minlength="8" required>
+            <div class="admin-cajas-input">
+                 <input type="text" name="category" placeholder="Catergoría" required>
             </div>
-   
 
-            <!-- ----BOTÓN "REGISTRAR"----  -->
-            <button type="submit" class="register-button">editar</button>
+            <!-- ----foto----  -->
+            <div class="admin-cajas-input" class="create-input-photo">
+                <label class="label-foto-admin">Foto del producto</label>
+                <br>
+                <input type="file" name="imagenPerfil">
+           </div>
 
-            <!-- ----¿YA TENÉS UNA CUENTA?----  -->
-            <div class="go-login-div">
-                <p class="already-an-account">¿nuevo usuario?</p>
-                <a href="https:/http://localhost:3000/login"><p class="go-login"> &nbsp crear cuenta</p></a>
-            </div>
+        </div>
+
+
+        <div class=container-right>
+                <!-- ----DESCRIPCIÓN----  -->
+
+                <div class="admin-textarea">
+                <textarea class="textarea-input" id="description" rows="4" cols="38" placeholder="Descripción"></textarea> 
+                </div>
+
+                <!-- ----COLOR----  -->
+
+                <div class="admin-cajas-input">
+                <input type="text" name="color" placeholder="Color" required>
+                </div>
+          
+                <!-- ----PRECIO----  -->
+
+                <div class="admin-cajas-input">
+                <input type="number" name="number" placeholder="Precio" required>
+                </div>
+         </div>
+
+
+           <!-- ----BOTÓN "EDITAR"----  -->
+           <button type="submit" class="admin-button">EDITAR</button>
+
+            
 
         </form>
 
