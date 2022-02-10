@@ -1,103 +1,144 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: 'Bebas Neue', cursive;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Bebas Neue", cursive;
 }
 
+/* ------------------------Estilos del adminCreate y del adminEdit---------------------------*/
+
 .main-container-admin {
-    display: flex;
-    justify-content: center;
-    background-color: rgb(230, 220, 216); 
+  display: flex;
+  justify-content: center;
+  background-color: rgb(230, 220, 216);
 }
 
 .admin-container {
-    margin-top: 20vh;
-    margin-bottom: 20vh;
-    max-width: 450px;
-    padding: 20px;
-    background-color: white;
+  margin-top: 20vh;
+  margin-bottom: 20vh;
+  max-width: 450px;
+  padding: 20px;
+  background-color: white;
 }
-
 
 .admin-h1 {
-    font-size: 35px;
-    color: #2a2828;
-    letter-spacing: 1px;
-    width: 100%;
-    height: 10%;
-    border-bottom: solid 2px black;
+  font-size: 35px;
+  color: #2a2828;
+  letter-spacing: 1px;
+  width: 100%;
+  height: 10%;
+  border-bottom: solid 2px black;
 }
 
-
-.admin-cajas-input{
-    margin: 10px;
-    text-align: left;
-    width: 45vw;
+.admin-cajas-input {
+  margin: 10px;
+  text-align: left;
+  width: 45vw;
 }
 
 .admin-textarea {
-    margin: 10px;
-    margin-top: 20px;
-    text-align: left;
-    width: 45vw;        
+  margin: 10px;
+  margin-top: 20px;
+  text-align: left;
+  width: 45vw;
 }
-
 
 .textarea-input,
 .admin-cajas-input input {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 14px;
-    padding: 10px;
-    color: grey;
-    width: 100%;
-    border: solid 1px grey;
-    border-radius: 4px;
-    margin-top: 15px; 
-    min-width: 200px;
-    max-width: 400px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 14px;
+  padding: 10px;
+  color: grey;
+  width: 100%;
+  border: solid 1px grey;
+  border-radius: 4px;
+  margin-top: 15px;
+  min-width: 200px;
+  max-width: 400px;
 }
 
-
-
 .label-foto-admin {
-    font-size: 25px;
+  font-size: 25px;
 }
 
 .admin-input-photo input {
-    margin-top: 50px; 
+  margin-top: 50px;
 }
-    
 
 /* @media (min-width: 769px){
  
     .container-left {
         display: flex;
         flex-direction: row;
-    }  */ 
-
+    }  */
 
 /* ------------------------Botón: GUARDAR---------------------------*/
 
 .admin-button {
-    width: 100%;
-    padding: 5px;
-    margin-top: 20px;
-    color: white;
-    height: 50px;
-    font-size: 20px;
-    letter-spacing: 2px;
-    border: none;
-    box-shadow: 3px 3px 3px rgb(73, 72, 72);
-    background-color: rgb(27, 26, 26);
-    transition: background-color 0.5s; 
+  width: 100%;
+  padding: 5px;
+  margin-top: 20px;
+  color: white;
+  height: 50px;
+  font-size: 20px;
+  letter-spacing: 2px;
+  border: none;
+  box-shadow: 3px 3px 3px rgb(73, 72, 72);
+  background-color: rgb(27, 26, 26);
+  transition: background-color 0.5s;
 }
 
 .admin-button:hover {
-    background-color: rgb(219, 63, 6);  
+  background-color: rgb(219, 63, 6);
 }
 
+/* ------------------------Estilos del adminDashboard---------------------------*/
 
+.dashboard-titles-container {
+  display: flex;
+  margin-top: 5vw;
+  margin-bottom: 2vw;
+}
 
+.dashboard-title {
+  width: 15vw;
+  font-size: 20px;
+}
 
+.dashboard-products-container {
+  display: flex;
+}
+/* ------------------------Estilos del BOTONES DEL DASHBOARD---------------------------*/
+.dashboard-btn-container {
+  display: flex;
+}
+.dashboard-btn-detalle,
+.dashboard-btn-borrar,
+.dashboard-btn-edit,
+.dashboard-btn-create {
+  width: 100%;
+  padding: 5px;
+  color: white;
+  height: 30px;
+  font-size: 20px;
+  letter-spacing: 2px;
+  border: none;
+  transition: background-color 0.5s;
+}
 
+.btn-hover:hover {
+  background-color: rgb(126, 123, 123);
+}
+
+.dashboard-btn-detalle {
+  background-color: rgb(216, 146, 16);
+}
+.dashboard-btn-borrar {
+  background-color: rgb(138, 6, 6);
+}
+.dashboard-btn-edit {
+  background-color: rgb(55, 5, 192);
+}
+.dashboard-btn-create {
+  background-color: rgb(5, 133, 27);
+}
