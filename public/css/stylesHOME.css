@@ -5,6 +5,12 @@
     font-family: 'Bebas Neue', cursive;
 }
 /*------------------------------------INICIO DEL HEADER-----------------------------------------*/
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
 .containerHeader {
     background-color: black;
     display: flex;
@@ -174,6 +180,7 @@ align-self: stretch;
 
 .imageProducts {
     width: 100%;
+    margin-top: 15px;
 }
 
 .imageAccessories {
@@ -206,9 +213,9 @@ main section article i {
 
 /*------------------------------------FIN DEL MAIN------------------------------------------------*/
 /*------------------------------------INICIO DEL FOOTER-------------------------------------------*/
-footer {
+.about {
     background-color: black;
-    padding: 20px 25px;
+    padding: 20px 25px 60px;
 }
 footer h3 {
     color: white;
@@ -221,6 +228,23 @@ footer div a {
 footer p {
     padding: 5px 2px;
 }
+footer div i {
+    color: black;
+    text-align: center;
+    font-size: 2em;
+}
+.icons {
+    background-color: white;
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+
 /*------------------------------------FIN DEL FOOTER----------------------------------------------*/
 
 @media (min-width: 481px){
