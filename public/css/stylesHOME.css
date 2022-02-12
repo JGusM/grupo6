@@ -5,7 +5,7 @@
     font-family: 'Bebas Neue', cursive;
 }
 /*------------------------------------INICIO DEL HEADER-----------------------------------------*/
-header {
+.containerHeader {
     background-color: black;
     display: flex;
     justify-content: space-around;
@@ -19,23 +19,196 @@ width: 19vw;
 height: 6vh;
 align-self: stretch;
 }
+/*
 .logo {
-    width: 10vw;
-    height: 10vh;
-    margin-top: 20px;
-    padding-top: 20px;
-    padding-right: 70px;
+    
 }
+*/
 .cart {
     color: white;
 }
 /*------------------------------------FIN DEL HEADER----------------------------------------------*/
 /*------------------------------------INICIO DEL MAIN---------------------------------------------*/
+
+/*--------------TODAS LAS CATEGORIAS------------*/
+.categories {
+    position: relative;
+    display: inline-block;
+}
+
+.divTextCategories {
+    position: absolute;
+    top: 25%;
+    left: 15%;
+    color: white;
+}
+
+.divButtonCategories {
+    position: absolute;
+    top: 70%;
+    left: 15%;
+}
+
+.buttonCategories {
+    font-size: 2vw;
+    background-color: orange;
+    color: white;
+    padding: 10px;
+}
+
+/*--------------TODOS LOS ACCESORIOS------------*/
+.accessories {
+    position: relative;
+    display: inline-block;
+}
+
+.divTextAccessories {
+    position: absolute;
+    top: 25%;
+    left: 15%;
+    color: white;
+}
+
+.divButtonAccessories {
+    position: absolute;
+    top: 70%;
+    left: 10%;
+    
+}
+
+.buttonAccessories {
+    font-size: 2vw;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border: 2px white sokid;
+}
+
+/*----------------GROUP FITNESS--------------*/
+.groupFitness {
+    position: relative;
+    display: inline-block;
+}
+
+.divTextGroupFitness {
+    position: absolute;
+    top: 25%;
+    left: 15%;
+    color: black;
+}
+
+.divButtonGroupFitness {
+    position: absolute;
+    top: 70%;
+    left: 10%;
+    
+}
+
+.buttonGroupFitness {
+    font-size: 2vw;
+    background-color: white;
+    color: black;
+    padding: 10px;
+    border: 2px black sokid;
+}
+
+
+/*----------------FUNCTIONAL TRAINING--------------*/
+.functionalTraining {
+    position: relative;
+    display: inline-block;
+}
+
+.divTextFunctionalTraining {
+    position: absolute;
+    top: 25%;
+    left: 8%;
+    color: black;
+}
+
+.divButtonFunctionalTraining {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    
+}
+
+.buttonFunctionalTraining {
+    font-size: 2vw;
+    background-color: white;
+    color: black;
+    padding: 10px;
+    border: 2px black sokid;
+}
+
+/*----------------YOGA / PILATES--------------*/
+.yogaPilates {
+    position: relative;
+    display: inline-block;
+}
+
+.divTextYogaPilates {
+    position: absolute;
+    top: 15%;
+    left: 8%;
+    color: black;
+}
+
+
+.divButtonYogaPilates {
+    position: absolute;
+    top: 65%;
+    left: 10%;
+    
+}
+
+.buttonYogaPilates {
+    font-size: 2vw;
+    background-color: white;
+    color: black;
+    padding: 10px;
+    border: 2px black sokid;
+}
+
+
+
+.imageProducts {
+    width: 100%;
+}
+
+.imageAccessories {
+    width: 100%;
+}
+
+.imageGroupFitness {
+    width: 100%;
+}
+
+.imageFunctionalTraining {
+    width: 100%;
+}
+
+.imageMat-naranja {
+    width: 100%;
+}
+
+main section article {
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+
+main section article i {
+    color: #1259c3;
+    text-align: center;
+    font-size: 2em;
+}
+
 /*------------------------------------FIN DEL MAIN------------------------------------------------*/
 /*------------------------------------INICIO DEL FOOTER-------------------------------------------*/
 footer {
     background-color: black;
-    padding: 20px 10px;
+    padding: 20px 25px;
 }
 footer h3 {
     color: white;

@@ -2,7 +2,7 @@ const path = require('path');
 
 const controlador = {
     index: (req, res) => {
-        res.render('products', { tituloPagina: "PRODUCTOS"});
+        res.render('products', {tituloPagina: "PRODUCTOS"});
     },
     product: (req, res)=>{
         res.render('productDetail', {tituloPagina: "DETALLE PRODUCTO"})
