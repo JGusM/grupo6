@@ -1,168 +1,99 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: 'Bebas Neue', cursive;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Bebas Neue", cursive;
 }
 
-.main-container-register {
-    display: flex;
-    justify-content: center;
-    background-color: rgb(230, 220, 216); 
+/* ------------------------LOGIN FORM---------------------------*/
+
+.main-container-login {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(230, 220, 216);
 }
 
-.register-container {
-    margin-top: 20vh;
-    margin-bottom: 20vh;
-    max-width: 450px;
-    padding: 20px;
-    background-color: white;
+.login-container {
+  margin-top: 20vh;
+  margin-bottom: 20vh;
+  max-width: 450px;
+  padding: 20px;
+  background-color: white;
 }
 
-
-.register-h1 {
-    font-size: 35px;
-    color: #2a2828;
-    letter-spacing: 1px;
-    width: 100%;
-    height: 10%;
-    border-bottom: solid 2px black;
+.login-h1 {
+  font-size: 35px;
+  color: #2a2828;
+  letter-spacing: 1px;
+  width: 100%;
+  height: 10%;
+  border-bottom: solid 2px black;
 }
 
-.register-title {
-    text-align: center;
+.login-title {
+  text-align: center;
 }
 
-.register-cajas-input {
-    margin: 10px;
-    text-align: left;
-    width: 45vw;
+.login-cajas-input {
+  margin: 10px;
+  text-align: left;
+  width: 45vw;
 }
 
-.register-cajas-input input {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 14px;
-    padding: 10px;
-    color: grey;
-    width: 100%;
-    border: solid 1px grey;
-    border-radius: 4px;
-    margin-top: 15px; 
-    min-width: 200px;
-    max-width: 400px;
+.login-cajas-input input {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 14px;
+  padding: 10px;
+  color: grey;
+  width: 100%;
+  border: solid 1px grey;
+  border-radius: 4px;
+  margin-top: 15px;
+  min-width: 200px;
+  max-width: 400px;
 }
 
+/* ------------------------Botón: INGRESAR---------------------------*/
 
-/* ------------------------Botón: REGISTRATE---------------------------*/
-
-.register-button {
-    width: 100%;
-    padding: 5px;
-    margin-top: 20px;
-    color: white;
-    height: 50px;
-    font-size: 20px;
-    letter-spacing: 2px;
-    border: none;
-    box-shadow: 3px 3px 3px rgb(73, 72, 72);
-    background-color: rgb(27, 26, 26);
-    transition: background-color 0.5s; 
+.login-button {
+  width: 100%;
+  padding: 5px;
+  margin-top: 20px;
+  color: white;
+  height: 50px;
+  font-size: 20px;
+  letter-spacing: 2px;
+  border: none;
+  box-shadow: 3px 3px 3px rgb(73, 72, 72);
+  background-color: rgb(27, 26, 26);
+  transition: background-color 0.5s;
 }
 
-.register-button:hover {
-    background-color: rgb(219, 63, 6);  
+.login-button:hover {
+  background-color: rgb(219, 63, 6);
 }
 
+/* ------------------¿Nuevo usuario? ir a crear cuenta ---------------------------*/
 
-
-
-/* ------------------¿ya tenés una cuenta? ---------------------------*/
-
-
-
-.go-login-div {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px; 
+.go-register-div {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
 }
 
-.go-login,
+.go-register,
 .already-an-account {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 12px;
-    color: grey;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 12px;
+  color: grey;
 }
 
-.go-login-div a {
-    text-decoration: none;
-    color:rgb(219, 63, 6);
+.go-register-div a {
+  text-decoration: none;
+  color: rgb(219, 63, 6);
 }
 
-.go-login:hover {
-    color: rgb(235, 72, 13);
-    font-weight: bolder;
-}
-
-
-/*---------check de política de privacidad con color cambiado----------*/
-
-
-.register-pp-label {
-    font-size: 20px;
-    display: flex;
-    justify-content: center;
-}
-
-.register-pp  {
-    text-align: center;
-    margin-top: 30px;
-    margin-bottom: 8px;
-}
-
-input[type=checkbox] {
-    position: relative;
-    cursor: pointer;
-}
-input[type=checkbox]:before {
-    content: "";
-    display: block;
-    position: absolute;
-    width: 19px;
-    height: 18px;
-    top: 0;
-    left: 0;
-    border: 2px solid #555555;
-    border-radius: 3px;
-    background-color: white;
-}
-input[type=checkbox]:checked:after {
-    content: "";
-    display: block;
-    width: 5px;
-    height: 10px;
-    border: solid black;
-    border-width: 0 2px 2px 0;
-    -webkit-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    transform: rotate(45deg);
-    position: absolute;
-    top: 4px;
-    left: 8px;
-}
-
-.leer-politica {
-    color: rgb(144, 144, 144);
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 14px;
-}
-
-.register-pp a {
-    text-decoration: none;
-    color: rgb(235, 72, 13);
-}
-
-.leer-politica:hover {
-    color: rgb(235, 72, 13);
-    font-weight: bolder;
-   
+.go-register:hover {
+  color: rgb(235, 72, 13);
+  font-weight: bolder;
 }
