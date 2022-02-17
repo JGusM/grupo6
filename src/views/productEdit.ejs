@@ -27,11 +27,16 @@
                  <input type="Text" name="name" placeholder="Ingresá nombre del producto" required>
             </div>
 
-            <!-- ----CATEGORÍA----  -->
-
-            <div class="admin-cajas-input">
-                 <input type="text" name="category" placeholder="Catergoría" required>
-            </div>
+          <!-- ----CATEGORÍA----  -->
+          <div class="admin-cajas-input">
+               <label class="admin-category" for="">Categoría:</label>
+               <select name="category" required>
+                    <option value="accesorios">Accesorios</option>
+                    <option value="funcional">Funcional</option>
+                    <option value="yoga">Yoga</option>
+                    <option value="fitness">Fitness grupal</option>
+               </select>
+          </div>
 
             <!-- ----foto----  -->
             <div class="admin-cajas-input" class="create-input-photo">
@@ -50,11 +55,11 @@
                 <textarea class="textarea-input" id="description" rows="4" cols="38" placeholder="Descripción"></textarea> 
                 </div>
 
-                <!-- ----COLOR----  -->
-
-                <div class="admin-cajas-input">
-                <input type="text" name="color" placeholder="Color" required>
-                </div>
+               <!-- ----DESCUENTO----  -->
+               
+               <div class="admin-cajas-input">
+                    <input type="number" name="discount" placeholder="discount" required>
+               </div>
           
                 <!-- ----PRECIO----  -->
 

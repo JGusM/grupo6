@@ -6,7 +6,7 @@
 }
 /*------------------------------------INICIO DEL HEADER-----------------------------------------*/
 header {
-    position: fixed;
+    position: sticky;
     top: 0;
     width: 100%;
     z-index: 1;
@@ -180,7 +180,6 @@ align-self: stretch;
 
 .imageProducts {
     width: 100%;
-    margin-top: 15px;
 }
 
 .imageAccessories {

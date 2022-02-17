@@ -6,8 +6,8 @@ const router = express.Router();
 const controller = require("../controllers/adminController");
 
 // Acá definimos las rutas
-router.get("/cargar", controller.create);
-router.get("/editar", controller.edit);
+
+//ruta pra obtener todos los productos para borrar, editar y crear
 router.get("/dashboard", controller.dashboard);
 
 // Acá exportamos el resultado
