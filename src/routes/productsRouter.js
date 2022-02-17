@@ -1,21 +1,38 @@
 // Acá nos falta express y el router
-const express = require('express');
-const router = express.Router(); 
+const express = require("express");
+const router = express.Router();
 
 // Aća nos falta traer el controller
-const controller = require('../controllers/productsController');
-
+const controller = require("../controllers/productsController");
 
 // Acá definimos las rutas
 
-router.get('/', controller.index); 
-router.get('/detail', controller.product); 
-router.get('/cart', controller.cart); 
+//ruta del carrito
+router.get("/cart", controller.cart);
 
+// Lista todos los productos:
+router.get("/", controller.allProducts);
 
+//Ruta para obtener 1 único producto
+// /detail/:id (GET)
+router.get("/detail/:id", controller.product); //LE FATA :ID
 
+// Ruta obtener la vista del formulario donde se crea el producto
+// /create (GET)
+router.get("/create", controller.getformCreate);
 
+// Ruta donde se envía el formulario del producto a cargar
+// /  (POST)
 
+// Ruta para obtener vista del formulario con datos del producto
+// /:id/edit (GET)
+router.get("/:id/edit", controller.getformEdit);
+
+// Ruta para EDITAR producto
+// /:id (PUT)
+
+// Ruta para ELIMINAR producto
+// /:id (DELETE)
 
 // Acá exportamos el resultado
 module.exports = router; //Exportamos todo el contenido de la ruta para hacerlo visible

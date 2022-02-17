@@ -6,9 +6,12 @@ const router = express.Router();
 const controller = require("../controllers/adminController");
 
 // Acá definimos las rutas
-router.get("/cargar", controller.create);
-router.get("/editar", controller.edit);
+
+//ruta pra obtener todos los productos para borrar, editar y crear
 router.get("/dashboard", controller.dashboard);
+
+//router.get("/cargar", controller.create);   HABRÍA QUE BORRARLO
+//router.get("/editar", controller.edit);      HABRÍA QUE BORRARLO
 
 // Acá exportamos el resultado
 module.exports = router; //Exportamos todo el contenido de la ruta para hacerlo visible

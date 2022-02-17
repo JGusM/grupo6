@@ -28,9 +28,14 @@
             </div>
 
             <!-- ----CATEGORÍA----  -->
-
             <div class="admin-cajas-input">
-                 <input type="text" name="category" placeholder="Catergoría" required>
+                 <label for="">Categoría:</label>
+                 <select name="category" required>
+                      <option value="accesorios">Accesorios</option>
+                      <option value="funcional">Funcional</option>
+                      <option value="yoga">Yoga</option>
+                      <option value="fitness">Fitness grupal</option>
+                 </select>
             </div>
 
             <!-- ----foto----  -->
@@ -50,14 +55,13 @@
                 <textarea class="textarea-input" id="description" rows="4" cols="38" placeholder="Descripción"></textarea> 
                 </div>
 
-                <!-- ----COLOR----  -->
+                <!-- ----DESCUENTO----  -->
 
                 <div class="admin-cajas-input">
-                <input type="text" name="color" placeholder="Color" required>
+                <input type="number" name="discount" placeholder="discount" required>
                 </div>
           
                 <!-- ----PRECIO----  -->
-
                 <div class="admin-cajas-input">
                 <input type="number" name="number" placeholder="Precio" required>
                 </div>

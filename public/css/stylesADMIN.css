@@ -5,7 +5,7 @@
   font-family: "Bebas Neue", cursive;
 }
 
-/* ------------------------Estilos del adminCreate y del adminEdit---------------------------*/
+/* ------------------------Estilos del productCreate y del productEdit---------------------------*/
 
 .main-container-admin {
   display: flex;
@@ -55,6 +55,13 @@
   margin-top: 15px;
   min-width: 200px;
   max-width: 400px;
+}
+.admin-category {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 14px;
+  padding: 2px;
+  color: grey;
+  width: 100%;
 }
 
 .label-foto-admin {
