@@ -25,13 +25,13 @@
           
           <!-- ----PRODUCTOS----  -->
 <div class="dashboard-products-container">
-   
-         <div> <p class="dashboard-title">XX</p></div>
-         <div> <p class="dashboard-title">xxxxx</p></div>
-         <div> <p class="dashboard-title">xxxx</p></div>
-         <div>  <p class="dashboard-title">xxxxx</p></div>
-         <div>  <p class="dashboard-title">xxxx</p></div>
-       
+<%products.forEach(function(product){%>
+         <div> <p class="dashboard-title"><%=product.id%></p></div>
+         <div> <p class="dashboard-title"><%=product.name%></p></div>
+         <div> <p class="dashboard-title"><%=product.price%></p></div>
+         <div>  <p class="dashboard-title"><%=product.category%></p></div>
+         <div>  <p class="dashboard-title"><%=product.discount%></p></div>
+<%})%>
 
      <div class="dashboard-btn-container">
            <!-- ----BOTÓN "DETALLE"----  -->
