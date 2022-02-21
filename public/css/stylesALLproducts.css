@@ -10,3 +10,43 @@
   margin-top: 200px;
   margin-bottom: 200px;
 }
+.titleAllCategories {
+  text-align: center;
+  letter-spacing: 10px;
+  margin: 30px;
+}
+.container-all-categories {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.categories {
+  display: inline-block;
+}
+.image-group-fitness-cuadrado {
+  width: 30%;
+  border-radius: 50%;
+}
+.image-functional-training-cuadrado {
+  width: 30%;
+  border-radius: 50%;
+  border: 1px solid gray;
+}
+.image-mat-naranja-cuadrada {
+  width: 30%;
+  border-radius: 50%;
+  border: 1px solid gray;
+}
+.title-categories-fitness {
+  margin-top: 75px;
+}
+/*
+.title-categories-functional {
+  margin-top: 40px;
+
+}
+.title-categories-yoga {
+
+}
+*/
