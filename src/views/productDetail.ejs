@@ -17,11 +17,11 @@
 
                    
             <div class="product-image-description-container">
-                <img src="/images/mat-naranja.jpg" alt="" class="product-img">
+                <img src="/images/<%= product.image %>" alt="" class="product-img">
                
                 <div class="product-description-cantindad-container">
                     
-                    <h2 class="product-h2">Colchoneta De Yoga DH De 6 Mm – Naranja Con Diseños</h2>
+                    <h2 class="product-h2"><%=product.description%></h2>
                   
                     <div>
                         <p class="product-cantidad">Cantidad:
@@ -31,7 +31,7 @@
                         </p>
                    </div>
 
-                    <p class="product-precio">$3.000 </p> 
+                    <p class="product-precio">$<%=product.price%> </p> 
                         
                     <button class="product-button-agregar">Agregar al carrito 🛒</button>
                 </div>
