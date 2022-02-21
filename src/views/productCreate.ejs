@@ -13,8 +13,7 @@
     <main class="main-container-admin">
      <section>
 
-        <form class="admin-container" method="POST" action="/products/create">
-
+        <form class="admin-container" method="POST" action="/products/create" >
 
              <!-- ----TÍTULO----  -->
             <div class="admin-title">
@@ -24,7 +23,7 @@
         <div class=container-left>
             <!-- ----NOMBRE ----  -->
             <div class="admin-cajas-input">
-                 <input type="Text" name="name" placeholder="Ingresá nombre del producto" required>
+                 <input type="text" name="name" placeholder="Ingresá nombre del producto" required>
             </div>
 
             <!-- ----CATEGORÍA----  -->
@@ -52,7 +51,7 @@
                 <!-- ----DESCRIPCIÓN----  -->
 
                 <div class="admin-textarea">
-                <textarea class="textarea-input" id="description" rows="4" cols="38" placeholder="Descripción"></textarea> 
+                <textarea name="description"  class="textarea-input" id="description" rows="4" cols="38" placeholder="Descripción"></textarea> 
                 </div>
 
                 <!-- ----DESCUENTO----  -->
@@ -66,13 +65,8 @@
                 <input type="number" name="number" placeholder="Precio" required>
                 </div>
          </div>
-
-
            <!-- ----BOTÓN "GUARDAR"----  -->
            <button type="submit" class="admin-button">guardar</button>
-
-            
-
         </form>
 
      </section>   
