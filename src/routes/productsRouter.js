@@ -15,14 +15,14 @@ router.get("/", controller.allProducts);
 
 //Ruta para obtener 1 único producto
 // /detail/:id (GET)
-router.get("/detail/:id", controller.product); //LE FATA :ID
+router.get("/detail/:id", controller.detail); 
 
 // Ruta obtener la vista del formulario donde se crea el producto
 // /create (GET)
 router.get("/create", controller.getformCreate);
 
 // Ruta donde se envía el formulario del producto a cargar
-// /  (POST)
+router.post("/create", controller.create);
 
 // Ruta para obtener vista del formulario con datos del producto
 // /:id/edit (GET)
