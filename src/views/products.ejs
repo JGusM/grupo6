@@ -26,7 +26,25 @@
           <h2 class="title-categories-yoga">YOGA / PILATES</h2>
       </div>
      </div>
-
+   
+     <% products.forEach(function(product){ 
+     <!-- let finalPrice = (product.price * ((100 - product.discount) / 100)).toFixed(0)--> %>
+      <section >
+        <a href="products/detail/<%= product.id %>">
+          <figure>
+            <img src="../images/<%= product.image %>" alt="imagen de producto">
+          </figure>
+          <article >
+          
+            <h2>$ <%= product.price %> </h2>
+            <span> <%= product.discount %> % OFF </span>
+            <p> <%= product.name %> </p>
+          </article>
+        </a>
+      </section>
+    <% }) %>
+    
+   
 
   </main>
 
