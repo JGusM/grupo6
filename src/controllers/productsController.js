@@ -51,9 +51,9 @@ const controlador = {
     res.render("productEdit", { tituloPagina: "EDITAR PRODUCTO" });
   },
 
-  // edit: (req, res) => {
-  // let id = req.params.id;
-  /* 		let productToEdit = products.find(product => product.id == id)
+  edit: (req, res) => {
+   let id = req.params.id;
+   		let productToEdit = products.find(product => product.id == id)
 		let image
 
 		productToEdit = {
@@ -70,15 +70,15 @@ const controlador = {
 		})
 
 		fs.writeFileSync(productsFilePath, JSON.stringify(newProducts, null, ' '));
-		res.redirect('/'); */
-  //},
+		res.redirect('/'); 
+  },
 
-  // delete: (req, res) => {
-  // let id = req.params.id;
-  //	let finalProducts = products.filter(product => product.id != id);
-  //	fs.writeFileSync(productsFilePath, JSON.stringify(finalProducts, null, ' '));
-  //		res.redirect('/');
-  // },
+  delete: (req, res) => {
+  let id = req.params.id;
+  let finalProducts = products.filter(product => product.id != id);
+  fs.writeFileSync(productsFilePath, JSON.stringify(finalProducts, null, ' '));
+  		res.redirect('/');
+   },
 };
 
 module.exports = controlador;

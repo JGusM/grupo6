@@ -1,8 +1,21 @@
-// Acá nos falta express y el router
+// express,  router y multer
 const express = require("express");
 const router = express.Router();
+const multer = require('multer')
+const path = require('path')
 
-// Aća nos falta traer el controller
+// Almacenamiento de Multer
+var storage = multer.diskStorage({
+    destination:function(req,file,cb){
+        cb(null, 'public/images/products')
+    },
+    filename: function(req,file,cb){
+        cb(null, file.fieldname + '-' + Date.now() + path.extname(file.originalname))
+    }
+})
+var upload = multer({storage: storage})
+
+// Requerir controller
 const controller = require("../controllers/productsController");
 
 // Acá definimos las rutas
@@ -22,7 +35,7 @@ router.get("/detail/:id", controller.detail);
 router.get("/create", controller.getformCreate);
 
 // Ruta donde se envía el formulario del producto a cargar
-router.post("/create", controller.create);
+router.post("/create", upload.single('imgProfile') , controller.create);
 
 // Ruta para obtener vista del formulario con datos del producto
 // /:id/edit (GET)
@@ -30,28 +43,13 @@ router.get("/:id/edit", controller.getformEdit);
 
 // Ruta para EDITAR producto
 // /:id (PUT)
+router.put("/:id", controller.edit);
 
 // Ruta para ELIMINAR producto
 // /:id (DELETE)
+router.delete("/:id", controller.delete);
+
 
 // Acá exportamos el resultado
 module.exports = router; //Exportamos todo el contenido de la ruta para hacerlo visible
 
-/*
-
-1. /products (GET)
-Listado de productos
-2. /products/create (GET)
-Formulario de creación de productos
-3. /products/:id (GET)
-Detalle de un producto particular
-4. /products (POST)
-Acción de creación (a donde se envía el formulario)
-5. /products/:id/edit (GET)
-Formulario de edición de productos
-6. /products/:id (PUT)
-Acción de edición (a donde se envía el formulario):
-7. /products/:id (DELETE)
-Acción de borrado
-
-*/

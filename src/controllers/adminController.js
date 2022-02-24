@@ -1,16 +1,15 @@
 const path = require("path");
+const fs = require("fs");
+
+const productsFilePath = path.join(__dirname, "../data/products.json");
+const products = JSON.parse(fs.readFileSync(productsFilePath, "utf-8"));
+const toThousand = (n) => n.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+
 
 const controlador = {
   dashboard: (req, res) => {
-    res.render("adminDashboard", { tituloPagina: "DASHBOARD" });
-  },
-  // ESTOS HABRÍA QUE BORRARLOS PORQUE LOS PUSE EN PRODUCTS COMO DICE EL SPRINT 4
-  //create: (req, res) => {
-  // res.render("productCreate", { tituloPagina: "CARGAR PRODUCTO" });
-  // },
-  //edit: (req, res) => {
-  //res.render("productEdit", { tituloPagina: "EDITAR PRODUCTO" });
-  // },
-};
+    res.render("adminDashboard", { tituloPagina: "DASHBOARD", products });
+  }
+ };
 
 module.exports = controlador;
