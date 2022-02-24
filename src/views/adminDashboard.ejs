@@ -34,14 +34,14 @@
 
          <div class="dashboard-btn-container">
             <!-- ----BOTÓN "DETALLE"----  -->
-          <a href="products/detail/<%= product.id %>"><button type="submit" class="dashboard-btn-detalle btn-hover">DETALLE</button></a>
+          <a href="http://localhost:3000/products/detail/<%= product.id %>"><button type="submit" class="dashboard-btn-detalle btn-hover">DETALLE</button></a>
     
             <!-- ----BOTÓN "BORRAR"----  -->
-              <form action="/products/<%= product.id %>?_method=DELETE" method="POST">
+              <form action="http://localhost:3000/products/<%= product.id %>?_method=DELETE" method="POST">
                 <button type="submit" class="dashboard-btn-borrar btn-hover">BORRAR</button>
             </form>  
             <!-- ----BOTÓN "EDITAR"----  -->
-            <a href="products/<%= product.id %>/edit"><button type="submit" class="dashboard-btn-edit btn-hover">EDITAR</button></a>
+            <a href="http://localhost:3000/products/<%= product.id %>/edit"><button type="submit" class="dashboard-btn-edit btn-hover">EDITAR</button></a>
       </div>
 <%})%>
 
