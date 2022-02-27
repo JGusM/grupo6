@@ -12,36 +12,63 @@
     <!-- -------------- MAIN  --------------------------  -->
     <main class="main-container-admin">
      <section>
-
-             <!-- ----TÍTULOS----  -->
+            <h4 class="dashboard-title">Panel de administración de productos</h4>
+            <!-- ----BOTÓN "CREAR"----  -->
+            <button type="submit" class="dashboard-btn-create btn-hover">CARGAR NUEVO PRODUCTO</button>
+             
+            <!-- ----TÍTULOS----  -->
             <div class="dashboard-titles-container">
-               <p class="dashboard-title">id</p>
-               <p class="dashboard-title">Nombre</p>
-               <p class="dashboard-title">Precio</p>
-               <p class="dashboard-title">Categoría</p>
-               <p class="dashboard-title">Descuento</p>
-               <p class="dashboard-title">Acciones</p>
+               <p class="dashboard-titles  dashboard-small-column">id</p>
+               <p class="dashboard-titles  dashboard-large-column">Nombre</p>
+               <p class="dashboard-titles  dashboard-small-column">Precio</p>
+               <p class="dashboard-titles  dashboard-medium-column">Categoría</p>
+               <p class="dashboard-titles  dashboard-small-column">Descuento</p>
+               <p class="dashboard-titles  dashboard-medium-column">Acciones</p>
             </div>
           
           <!-- ----PRODUCTOS----  -->
 <div class="dashboard-products-container">
 <%products.forEach(function(product){%>
-         <div> <p class="dashboard-title"><%=product.id%></p></div>
-         <div> <p class="dashboard-title"><%=product.name%></p></div>
-         <div> <p class="dashboard-title"><%=product.price%></p></div>
-         <div>  <p class="dashboard-title"><%=product.category%></p></div>
-         <div>  <p class="dashboard-title"><%=product.discount%></p></div>
-
-         <div class="dashboard-btn-container">
+         <div class="dashboar-product-box">
+          <div>
+            <p class="dashboard-titles dashboard-small-column">
+              <%=product.id%>
+            </p>
+          </div>
+          <div>
+            <p class="dashboard-titles  dashboard-large-column">
+              <%=product.name%>
+            </p>
+          </div>
+          <div>
+            <p class="dashboard-titles  dashboard-small-column">
+              $ <%=product.price%>
+            </p>
+          </div>
+          <div>
+            <p class="dashboard-titles  dashboard-medium-column">
+              <%=product.category%>
+            </p>
+          </div>
+          <div>
+            <p class="dashboard-titles  dashboard-small-column">
+              <%=product.discount%> %
+            </p>
+          </div>
+          
+          <div class="dashboard-btn-container">
             <!-- ----BOTÓN "DETALLE"----  -->
-          <a href="http://localhost:3000/products/detail/<%= product.id %>"><button type="submit" class="dashboard-btn-detalle btn-hover">DETALLE</button></a>
-    
+            <a href="http://localhost:3000/products/detail/<%= product.id %>"><button type="submit"
+                class="dashboard-btn-detalle btn-hover">DETALLE</button></a>
+          
             <!-- ----BOTÓN "BORRAR"----  -->
-              <form action="http://localhost:3000/products/<%= product.id %>?_method=DELETE" method="POST">
-                <button type="submit" class="dashboard-btn-borrar btn-hover">BORRAR</button>
-            </form>  
+            <form action="http://localhost:3000/products/<%= product.id %>?_method=DELETE" method="POST">
+              <button type="submit" class="dashboard-btn-borrar btn-hover">BORRAR</button>
+            </form>
             <!-- ----BOTÓN "EDITAR"----  -->
-            <a href="http://localhost:3000/products/<%= product.id %>/edit"><button type="submit" class="dashboard-btn-edit btn-hover">EDITAR</button></a>
+            <a href="http://localhost:3000/products/<%= product.id %>/edit"><button type="submit"
+                class="dashboard-btn-edit btn-hover">EDITAR</button></a>
+         </div>
       </div>
 <%})%>
 
@@ -50,9 +77,7 @@
 		
   </div>
            
-          <!-- ----BOTÓN "CREAR"----  -->
-          <button type="submit" class="dashboard-btn-create btn-hover">CREAR</button>
-         
+          
 
      
      </section>   

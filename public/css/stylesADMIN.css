@@ -11,6 +11,8 @@
   display: flex;
   justify-content: center;
   background-color: rgb(230, 220, 216);
+  margin-bottom: 40px;
+  margin-top: 40px;
 }
 
 .admin-container {
@@ -100,21 +102,45 @@
 }
 
 /* ------------------------Estilos del adminDashboard---------------------------*/
-
+.dashboard-title {
+  font-size: 50px;
+  letter-spacing: 2px;
+  color: rgb(145, 146, 145);
+}
 .dashboard-titles-container {
   display: flex;
-  margin-top: 5vw;
+  margin-top: 3vw;
   margin-bottom: 2vw;
 }
 
-.dashboard-title {
-  width: 15vw;
+.dashboard-titles {
   font-size: 20px;
+  text-align: center;
 }
 
 .dashboard-products-container {
   display: flex;
+  flex-direction: column;
 }
+
+.dashboar-product-box {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 10px;
+}
+
+.dashboard-small-column {
+  width: 6vw;
+}
+
+.dashboard-large-column {
+  width: 25vw;
+}
+
+.dashboard-medium-column {
+  width: 15vw;
+}
+
 /* ------------------------Estilos del BOTONES DEL DASHBOARD---------------------------*/
 .dashboard-btn-container {
   display: flex;
@@ -132,9 +158,11 @@
   border: none;
   transition: background-color 0.5s;
 }
-
+.dashboard-btn-create {
+  font-size: 30px;
+}
 .btn-hover:hover {
-  background-color: rgb(126, 123, 123);
+  background-color: rgb(78, 78, 78);
 }
 
 .dashboard-btn-detalle {
@@ -147,5 +175,7 @@
   background-color: rgb(55, 5, 192);
 }
 .dashboard-btn-create {
-  background-color: rgb(5, 133, 27);
+  background-color: rgb(251, 122, 1);
+  margin-top: 10px;
+  height: 50px;
 }
