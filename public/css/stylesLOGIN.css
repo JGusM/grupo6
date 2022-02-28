@@ -97,3 +97,19 @@
   color: rgb(235, 72, 13);
   font-weight: bolder;
 }
+
+/*-----------------------recordarme-----------------------*/
+
+.login-recordarme-div {
+  margin-top: 15px;
+  margin-bottom: 10px;
+  margin-left: 20px;
+}
+
+.login-recordarme-div label {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 15px;
+  color: #505050;
+}
+
+/* los estilos del check box están en stylesRegister */
