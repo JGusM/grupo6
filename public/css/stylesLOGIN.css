@@ -84,7 +84,7 @@
 .go-register,
 .already-an-account {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 12px;
+  font-size: 14px;
   color: grey;
 }
 
@@ -112,4 +112,13 @@
   color: #505050;
 }
 
-/* los estilos del check box están en stylesRegister */
+input {
+  accent-color: white;
+}
+
+.login-checkbox {
+  width: 18px;
+  height: 18px;
+  position: relative;
+  top: 4px;
+}

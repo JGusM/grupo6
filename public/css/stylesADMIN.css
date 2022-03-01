@@ -11,8 +11,8 @@
   display: flex;
   justify-content: center;
   background-color: rgb(230, 220, 216);
-  margin-bottom: 40px;
-  margin-top: 40px;
+  padding-bottom: 40px;
+  padding-top: 40px;
 }
 
 .admin-container {
@@ -151,7 +151,7 @@
 .dashboard-btn-create {
   width: 100%;
   padding: 5px;
-  color: white;
+  color: rgb(214, 206, 206);
   height: 30px;
   font-size: 20px;
   letter-spacing: 2px;
@@ -175,7 +175,7 @@
   background-color: rgb(55, 5, 192);
 }
 .dashboard-btn-create {
-  background-color: rgb(251, 122, 1);
+  background-color: rgb(200, 62, 12);
   margin-top: 10px;
   height: 50px;
 }
