@@ -7,15 +7,10 @@
     <!-- -------------- HEADER -------------------  -->
         <%- include('./partials/header')%>
 
-
-    
     <!-- -------------- MAIN  --------------------------  -->
     <main class="main-container-admin">
      <section>
-
-        <form class="admin-container" enctype="multipart/form-data">
-
-
+        <form action="?_method=PATCH" method="POST" enctype="multipart/form-data"  class="admin-container">
              <!-- ----TÍTULO----  -->
             <div class="admin-title">
                  <h1 class="admin-h1">EDITAR PRODUCTO</h1>
@@ -24,14 +19,14 @@
         <div class=container-left>
             <!-- ----NOMBRE ----  -->
             <div class="admin-cajas-input">
-                 <input type="Text" name="name" placeholder="Ingresá nombre del producto" required>
+                 <input value="<%= product.name %>" type="Text" name="name" placeholder="Ingresá nombre del producto" required>
             </div>
 
           <!-- ----CATEGORÍA----  -->
           <div class="admin-cajas-input">
                <label class="admin-category" for="">Categoría:</label>
-               <select name="category" required>
-                    <option value="accesorios">Accesorios</option>
+               <select  name="category" required>
+                    <option value="" selected disabled hidden>Elegir aquí</option>
                     <option value="funcional">Funcional</option>
                     <option value="yoga">Yoga</option>
                     <option value="fitness">Fitness grupal</option>
@@ -42,7 +37,7 @@
             <div class="admin-cajas-input" class="create-input-photo">
                 <label class="label-foto-admin">Foto del producto</label>
                 <br>
-                <input type="file" name="imgProfile">
+                <input type="file" name="image">
            </div>
 
         </div>
@@ -52,27 +47,23 @@
                 <!-- ----DESCRIPCIÓN----  -->
 
                 <div class="admin-textarea">
-                <textarea class="textarea-input" id="description" rows="4" cols="38" placeholder="Descripción"></textarea> 
+                <textarea class="textarea-input" id="description" rows="4" cols="38"><%= product.description %></textarea> 
                 </div>
 
                <!-- ----DESCUENTO----  -->
                
                <div class="admin-cajas-input">
-                    <input type="number" name="discount" placeholder="discount" required>
+                    <input  value="<%= product.discount %>"  type="number" name="discount" placeholder="discount" required>
                </div>
           
                 <!-- ----PRECIO----  -->
 
                 <div class="admin-cajas-input">
-                <input type="number" name="number" placeholder="Precio" required>
+                <input  value="<%= product.price %>" type="number" name="price" placeholder="Precio" required>
                 </div>
          </div>
-
-
            <!-- ----BOTÓN "EDITAR"----  -->
            <button type="submit" class="admin-button">EDITAR</button>
-
-            
 
         </form>
 

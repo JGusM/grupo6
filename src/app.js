@@ -17,11 +17,11 @@ app.set("view engine", "ejs");
 app.set("views", path.join(__dirname, "./views"));
 app.use(methodOverride("_method"));
 
-app.listen(3000, () => {
-  console.log("servidor corriendo en puerto 3000");
-});
-
+//Borre al listenen para instalar nodemon en el proyecto para poder los cambios que se hacen en tiempo real
+//Si esto no se instalaba cuando eliminabas o actualizabas un producto tenias que bajar y subir el backedn todo el
 app.use("/", rutasMain);
 app.use("/products", rutasProducts);
 app.use("/users", rutasUsers);
 app.use("/admin", rutasAdmin);
+
+module.exports = app;

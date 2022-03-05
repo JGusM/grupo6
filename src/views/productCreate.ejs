@@ -1,19 +1,13 @@
 <!-- -------------- HEAD -----------------------  -->
 <%- include('./partials/head')%>
- 
- 
- 
 <body>
     <!-- -------------- HEADER -------------------  -->
         <%- include('./partials/header')%>
-
-
-    
     <!-- -------------- MAIN  --------------------------  -->
     <main class="main-container-admin">
      <section>
-
-        <form class="admin-container" method="POST" action="/products/create" >
+     <!-- ----Agregue multipart ----  -->
+        <form class="admin-container" enctype="multipart/form-data"  method="POST" action="/products/create" >
 
              <!-- ----TÍTULO----  -->
             <div class="admin-title">
@@ -30,7 +24,7 @@
             <div class="admin-cajas-input">
                  <label for="">Categoría:</label>
                  <select name="category" required>
-                      <option value="accesorios">Accesorios</option>
+                    <option value="" selected disabled hidden>Choose here</option>
                       <option value="funcional">Funcional</option>
                       <option value="yoga">Yoga</option>
                       <option value="fitness">Fitness grupal</option>
@@ -41,7 +35,8 @@
             <div class="admin-cajas-input" class="create-input-photo">
                 <label class="label-foto-admin">Foto del producto</label>
                 <br>
-                <input type="file" name="imagenPerfil">
+               <!-- ----Cambie nombre del name del input a IMAGE----  -->
+                <input type="file" name="image">
            </div>
 
         </div>
@@ -62,7 +57,8 @@
           
                 <!-- ----PRECIO----  -->
                 <div class="admin-cajas-input">
-                <input type="number" name="number" placeholder="Precio" required>
+               <!-- ----Cambie el nombre porque esta en number por  price----  -->
+                <input type="number" name="price" placeholder="Precio" required>
                 </div>
          </div>
            <!-- ----BOTÓN "GUARDAR"----  -->

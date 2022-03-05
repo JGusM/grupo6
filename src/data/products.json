@@ -138,13 +138,5 @@
     "image": "mini-tramp-funda.jpeg",
     "category": "Fitness Grupal",
     "color": "negro"
-  },
-  {
-    "id": 15,
-    "name": "prueba",
-    "discount": "0",
-    "category": "funcional",
-    "description": "prueba",
-    "image": ""
   }
 ]

@@ -23,7 +23,9 @@ const controlador = {
   },
   // controlador para mostar formulario de creación:
   getformCreate: (req, res) => {
-    res.render("productCreate", { tituloPagina: "CARGAR PRODUCTO" });
+    res.render("productCreate", {
+      tituloPagina: "CARGAR PRODUCTO",
+    });
   },
 
   create: (req, res) => {
@@ -37,7 +39,8 @@ const controlador = {
       discount: discount,
       category: category,
       description: description,
-      image: "", //req.file.fieldname,
+      //Descomente la img y puse el req.file.filename
+      image: req.file.filename,
     };
     products.push(nuevoProducto);
     let productJSON = JSON.stringify(products);
@@ -48,37 +51,48 @@ const controlador = {
 
   //controlador para mostrar formulario de edición:
   getformEdit: (req, res) => {
-    res.render("productEdit", { tituloPagina: "EDITAR PRODUCTO" });
+    //Traer el id que viene por params
+    //Con ese id se hace un filter o find para buscarlo en el json
+    //Ese producto que te devuelve el JSON, se lo enviamos a la vista
+
+    //Aca se agrega el producto encontrado para enviarlo
+    let id = req.params.id;
+    let productFound = products.find((product) => product.id == id);
+    res.render("productEdit", {
+      tituloPagina: "EDITAR PRODUCTO",
+      product: productFound,
+    });
   },
 
   edit: (req, res) => {
-   let id = req.params.id;
-   		let productToEdit = products.find(product => product.id == id)
-		let image
+    let id = req.params.id;
+    let productToEdit = products.find((product) => product.id == id);
+    productToEdit = {
+      id: productToEdit.id,
+      ...req.body,
+      image: req.file ? req.file.filename : productToEdit.image,
+    };
 
-		productToEdit = {
-			id: productToEdit.id,
-			...req.body,
-			image: req.file ? req.file.filename : productToEdit.image
-		};
-		
-		let newProducts = products.map(product => {
-			if (product.id == productToEdit.id) {
-				return product = {...productToEdit};
-			}
-			return product;
-		})
+    let newProducts = products.map((product) => {
+      if (product.id == productToEdit.id) {
+        return (product = { ...productToEdit });
+      }
+      return product;
+    });
 
-		fs.writeFileSync(productsFilePath, JSON.stringify(newProducts, null, ' '));
-		res.redirect('/'); 
+    fs.writeFileSync(productsFilePath, JSON.stringify(newProducts, null, " "));
+    res.redirect("/");
   },
 
   delete: (req, res) => {
-  let id = req.params.id;
-  let finalProducts = products.filter(product => product.id != id);
-  fs.writeFileSync(productsFilePath, JSON.stringify(finalProducts, null, ' '));
-  		res.redirect('/');
-   },
+    let id = req.params.id;
+    let finalProducts = products.filter((product) => product.id != id);
+    fs.writeFileSync(
+      productsFilePath,
+      JSON.stringify(finalProducts, null, " ")
+    );
+    res.redirect("/");
+  },
 };
 
 module.exports = controlador;
