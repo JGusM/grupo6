@@ -18,26 +18,21 @@ var storage = multer.diskStorage({
 });
 var upload = multer({ storage: storage });
 
-
-
 // controller
-const controller = require('../controllers/usersController');
-/*const guestRoute = require('../middlewares/guestRoute');
-const userRoute = require('../middlewares/userRoute');*/
+const controller = require("../controllers/usersController");
+const guestRoute = require("../middlewares/guestRoute");
+const userRoute = require("../middlewares/userRoute");
 
 // Acá definimos las rutas
-router.get('/login', controller.getLoginForm); 
-router.get('/register', controller.getRegisterForm); 
+router.get("/login", controller.getLoginForm);
+router.get("/register", controller.getRegisterForm);
 
-router.post('/login', guestRoute,  controller.authenticate); 
-router.post('/', guestRoute,upload.single('image'),  controller.storeUser); 
-
+router.post("/login", guestRoute, controller.authenticate);
+router.post("/", guestRoute, upload.single("image"), controller.storeUser);
 
 //logout
-router.post('/logout',userRoute,controller.logout)
-router.get('/profile', userRoute, controller.profile);
-
-
+router.post("/logout", userRoute, controller.logout);
+router.get("/profile", /* userRoute,*/ controller.profile);
 
 // Acá exportamos el resultado
 module.exports = router; //Exportamos todo el contenido de la ruta para hacerlo visible
