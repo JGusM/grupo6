@@ -28,7 +28,7 @@ router.get("/login", controller.getLoginForm);
 router.get("/register", controller.getRegisterForm);
 
 router.post("/login", guestRoute, controller.authenticate);
-router.post("/", guestRoute, upload.single("image"), controller.storeUser);
+router.post("/", upload.single("image"), controller.storeUser);
 
 //logout
 router.post("/logout", userRoute, controller.logout);

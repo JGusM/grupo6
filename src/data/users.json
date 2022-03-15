@@ -1,57 +1,86 @@
 [
-  {
-    "id": 1,
-    "firstName": "Sabrina",
-    "lastName": "Sastre",
-    "email": "sabrisastre@gmail.com",
-    "password": "DH1234",
-    "category": "administrador",
-    "image": "SS.jpg"
-  },
-  {
-    "id": 2,
-    "firstName": "Gustavo",
-    "lastName": "Mei",
-    "email": "gmei@gmail.com",
-    "password": "programacion1234",
-    "category": "administrador",
-    "image": "GM.jpg"
-  },
-  {
-    "id": 3,
-    "firstName": "Lenin",
-    "lastName": "Samaan",
-    "email": "le.samaan@hotmail.com",
-    "password": "desarrollador456",
-    "category": "usuario",
-    "image": "LS.jpg"
-  },
-  {
-    "id": 4,
-    "firstName": "Charlie",
-    "lastName": "Garcia",
-    "email": "charly_garcia@hotmail.com",
-    "password": "fullstack10",
-    "category": "usuario",
-    "image": "C.jpg"
-  },
-  {
-    "id": 5,
-    "firstName": "Mariano",
-    "lastName": "Molina",
-    "email": "marianm@gmail.com",
-    "password": "javascript20",
-    "category": "usuario",
-    "image": "MM.jpg"
-  },
-  {
-    "id": 6,
-    "firstName": "Natalia",
-    "lastName": "Pareti",
-    "email": "npareti@gmail.com",
-    "password": "express123",
-    "category": "usuario",
-    "image": "NP.jpg"
-  }
-  
+ {
+  "id": 1,
+  "firstName": "Sabrina",
+  "lastName": "Sastre",
+  "email": "sabrisastre@gmail.com",
+  "password": "DH1234",
+  "category": "administrador",
+  "image": "SS.jpg"
+ },
+ {
+  "id": 2,
+  "firstName": "Gustavo",
+  "lastName": "Mei",
+  "email": "gmei@gmail.com",
+  "password": "programacion1234",
+  "category": "administrador",
+  "image": "GM.jpg"
+ },
+ {
+  "id": 3,
+  "firstName": "Lenin",
+  "lastName": "Samaan",
+  "email": "le.samaan@hotmail.com",
+  "password": "desarrollador456",
+  "category": "usuario",
+  "image": "LS.jpg"
+ },
+ {
+  "id": 4,
+  "firstName": "Charlie",
+  "lastName": "Garcia",
+  "email": "charly_garcia@hotmail.com",
+  "password": "fullstack10",
+  "category": "usuario",
+  "image": "C.jpg"
+ },
+ {
+  "id": 5,
+  "firstName": "Mariano",
+  "lastName": "Molina",
+  "email": "marianm@gmail.com",
+  "password": "javascript20",
+  "category": "usuario",
+  "image": "MM.jpg"
+ },
+ {
+  "id": 6,
+  "firstName": "Natalia",
+  "lastName": "Pareti",
+  "email": "npareti@gmail.com",
+  "password": "express123",
+  "category": "usuario",
+  "image": "NP.jpg"
+ },
+ {
+  "id": 7,
+  "firstName": "sdfsdffdf",
+  "lastName": "fsdf",
+  "email": "agustinchinchillagarcia@gmail.com",
+  "password": "$2a$10$wmpbELhxgNEMgWEj1CTGaOK1Z1QFpDg/GpLHmsJ9.AtQT0J2rW5GG",
+  "privacypolicy": "privacypolicy",
+  "image": "default-image.png",
+  "category": "user"
+ },
+ {
+  "id": 8,
+  "firstName": "prueba2",
+  "lastName": "PRUEBA2",
+  "email": "agustinchinchillagarcia@gmail.com",
+  "password": "$2a$10$MpvluigQkBqC37pTiakyjOpHrnO3ilbT9yMcWLrVeB.X8AwY3/uAe",
+  "privacypolicy": "privacypolicy",
+  "image": "default-image.png",
+  "category": "user"
+ },
+ {
+  "id": 9,
+  "firstName": "agustin",
+  "lastName": "agustin",
+  "email": "agustin@gmail.com",
+  "password": "$2a$10$D/g5EyC.BPGQURb6NrbVN.XS3oRtolSoYRyJXK.g2FMWZUYRjSjo2",
+  "privacypolicy": "privacypolicy",
+  "image": "default-image.png",
+  "category": "user"
+ }
 ]

@@ -21,6 +21,7 @@ const controlador = {
     res.render("register", { tituloPagina: "REGISTER" });
   },
   authenticate: (req, res) => {
+    console.log(req.body);
     //PRIMERO Q TODO HACEMOS LOGICA PARA GUARDAR LOS DATOS DEL LOGIN EN UN JSON
     const { email, password } = req.body;
 
@@ -84,9 +85,10 @@ const controlador = {
       category: "user",
     };
 
+    console.log(req.body);
     //encriptamos la contrasenia y borramos el password para q noo se guarde en nuestro json
-    newUser.password = bcrypt.hashSync(req.body.password, 10);
-    delete newUser.repassword;
+    newUser.password = bcrypt.hashSync(req.body.password[0], 10);
+    newUser.repassword;
 
     //escribimos en nuestro archivo json
     let usersNews = [...users, newUser];

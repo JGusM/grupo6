@@ -1,14 +1,24 @@
 const express = require("express");
 const path = require("path");
 const methodOverride = require("method-override");
-const cookieParser = require('cookie-parser')
-const session = require('express-session')
+const cookieParser = require("cookie-parser");
+const session = require("express-session");
 const app = express();
 
 const rutasMain = require("./routes/mainRouter");
 const rutasProducts = require("./routes/productsRouter");
 const rutasUsers = require("./routes/usersRouter");
 const rutasAdmin = require("./routes/adminRouter");
+
+//Agregue configuracion del session
+app.use(
+  session({
+    secret: "sticker wizzard",
+    resave: false,
+    saveUninitialized: true,
+  })
+);
+app.use(cookieParser());
 
 const publicPath = path.resolve(__dirname, "../public");
 app.use(express.static(publicPath));
