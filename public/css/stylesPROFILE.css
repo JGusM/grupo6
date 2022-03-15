@@ -61,23 +61,3 @@
   margin-left: auto;
   margin-right: auto;
 }
-
-/* ------------------------Botón: REGISTRATE---------------------------*/
-
-.profile-button {
-  width: 100%;
-  padding: 5px;
-  margin-top: 20px;
-  color: white;
-  height: 50px;
-  font-size: 20px;
-  letter-spacing: 2px;
-  border: none;
-  box-shadow: 3px 3px 3px rgb(73, 72, 72);
-  background-color: rgb(27, 26, 26);
-  transition: background-color 0.5s;
-}
-
-.profile-button:hover {
-  background-color: rgb(219, 63, 6);
-}
