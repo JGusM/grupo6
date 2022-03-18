@@ -39,3 +39,13 @@ Sprint5: Retro
 - Para el Sprint 5 nos promonemos cumplir con la entrega en tiempo y forma, y mejorar algunas cuestiones de estilo que nos quedan pendientes en algunas vistas.
 
 ---
+
+Sprint6: Retro
+
+- Durante el Sprint5 logramos mantener la frecuencia de encuentro de una vez por semana.
+- Logramos cumplir en tiempo y forma con la entrega del sprint (con algunos detalles mínimos por mejorar)
+- Pudimos mantener una comunicación fluida entre los miembros.
+- La parte mas compleja la hemos realizado todos juntos, colaborativamente, en video-conferencia.
+- Para el Sprint 6 nos promonemos seguir cumpliendo con las fechas de entrega, sostener el nivel de encuentro y comunicación. Si bien trabajar todos juntos en video-conferencia fue útil en el sprint anterior, podríamos dividir un poco más las tareas así los encuentros son más cortos y menos cansadores.
+
+---
