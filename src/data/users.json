@@ -82,5 +82,15 @@
   "privacypolicy": "privacypolicy",
   "image": "default-image.png",
   "category": "user"
+ },
+ {
+  "id": 10,
+  "firstName": "Gustavo",
+  "lastName": "Mei",
+  "email": "jg@mail.com",
+  "password": "$2a$10$cI/aP5noNUQkTuA2G/0gL.doRhAnnSo0A7MD8M9FdWrfKilEhLTl.",
+  "privacypolicy": "privacypolicy",
+  "image": "default-image.png",
+  "category": "user"
  }
 ]

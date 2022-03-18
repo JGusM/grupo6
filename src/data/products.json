@@ -1,142 +1,150 @@
 [
-  {
-    "id": 1,
-    "name": "SOGA BATTLE ROPE 38 MM X 9MTS",
-    "price": 14900,
-    "discount": 10,
-    "category": "Entrenamiento funcional",
-    "description": "Peso: 5Kg; Dimensiones: 20 x 20 x 10 cm; Largo: 12m",
-    "image": "soga_battle_38mm.jpeg",
-    "color": "negro"
-  },
-  {
-    "id": 2,
-    "name": "BOZU CON INFLADOR",
-    "price": 13200,
-    "discount": 5,
-    "category": "Entrenamiento funcional",
-    "description": "Peso: 5 kg; Dimensiones: 65 x 65 x 15 cm",
-    "image": "bozu_65CM-mir_manija.jpeg",
-    "color": "azul"
-  },
-  {
-    "id": 3,
-    "name": "CUADRILATERO DE COORDINACION",
-    "price": 1940,
-    "discount": 10,
-    "category": "Entrenamiento funcional",
-    "description": "Peso: 1Kg; Dimensiones: 10 x 10 x 3 cm",
-    "image": "cuadrilatero_coordinacion.jpeg",
-    "color": "negro"
-  },
-  {
-    "id": 4,
-    "name": "STEP - PLATAFORMA CLASICA CON GOMA 100 x 37 x 10 CM",
-    "description": "Peso: 4Kg; Dimensiones: 100 x 37 x 10 cm",
-    "price": 7300,
-    "discount": 5,
-    "image": "Plataforma-Clasica-con-Goma-Azul.jpeg",
-    "category": "Fitness Grupal",
-    "color": "azul"
-  },
-  {
-    "id": 5,
-    "name": "BODY PUMP - EQUIPO COMPLETO DE 30Kg",
-    "description": "Peso: 28Kg; Dimensiones: 100 x 50 x 20 cm",
-    "price": 12240,
-    "discount": 20,
-    "image": "body-pump-30kg-.jpeg",
-    "category": "Fitness Grupal",
-    "color": "rojo"
-  },
-  {
-    "id": 6,
-    "name": "COLCHONETA MAT DE YOGA NEGRA 6MM",
-    "description": "Peso: 1kg; Dimensiones: 60 x 8 x 8 cm",
-    "price": 2830,
-    "discount": 10,
-    "image": "Mat-yoga-6mm-negra.jpeg",
-    "category": "Yoga-Pilates",
-    "color": "negro"
-  },
-  {
-    "id": 7,
-    "name": "PELOTA DE PILATES VIOLETA DE 25 cm",
-    "description": "Peso: 1Kg; Dimensiones: 13 x 5 x 16 cm",
-    "price": 1200,
-    "discount": 0,
-    "image": "pelota-yoga-25 cm.jpeg",
-    "category": "Yoga-Pilates",
-    "color": "violeta"
-  },
-  {
-    "id": 8,
-    "name": "PELOTA DE ESFERODINAMIA",
-    "description": "Peso: 3Kg; Dimensiones: 17 x 14 x 21 cm",
-    "price": 4300,
-    "discount": 0,
-    "image": "pelotas-esferodinamia.jpeg",
-    "category": "Yoga-Pilates",
-    "color": "negro"
-  },
-  {
-    "id": 9,
-    "name": "ROLO DE PILATES DE 61 CM",
-    "description": "Peso: 3Kg; Dimensiones: 61 x 14 x 5 cm",
-    "price": 5100,
-    "discount": 0,
-    "image": "Rolo-61cm-conjunto-1.jpeg",
-    "category": "Yoga-Pilates",
-    "color": "negro"
-  },
-  {
-    "id": 10,
-    "name": "ROLO FOAM LISO EPP DE 30 CM X 15 CM C/ EJECICIOS",
-    "description": "Peso: 1Kg; Dimensiones: 15 x 30 x 50 cm",
-    "price": 2060,
-    "discount": 5,
-    "image": "rolo-foam-liso-30cm.jpeg",
-    "category": "Yoga-Pilates",
-    "color": "negro"
-  },
-  {
-    "id": 11,
-    "name": "HAND GRIP",
-    "description": "Peso: 500gr; Dimensiones: 20 x 15 x 4 cm",
-    "price": 840,
-    "discount": 5,
-    "image": "hand-grip.jpeg",
-    "category": "Entrenamiento funcional",
-    "color": "negro"
-  },
-  {
-    "id": 12,
-    "name": "RUEDA PARA ABDOMINALES 19 CM DE DIAMETRO",
-    "description": "Peso: 1Kg; Dimensiones: 10 x 10 x 10 cm",
-    "price": 2000,
-    "discount": 0,
-    "image": "rueda-abdominal-19cm.jpeg",
-    "category": "Entrenamiento funcional",
-    "color": "verde"
-  },
-  {
-    "id": 13,
-    "name": "BANDA LARGA DE 1,10 M",
-    "description": "Peso: 500gr; Dimensiones: 10 x 10 x 2 cm",
-    "price": 1200,
-    "discount": 0,
-    "image": "banda-elastica.jpeg",
-    "category": "Entrenamiento funcional",
-    "color": "rojo"
-  },
-  {
-    "id": 14,
-    "name": "MINITRAMP CON FUNDA - 1M DE SUPERFICIE - 8O CM DE SALTO ",
-    "description": "Peso: 5 kg; Dimensiones: 50 x 50 x 20 cm",
-    "price": 16900,
-    "discount": 10,
-    "image": "mini-tramp-funda.jpeg",
-    "category": "Fitness Grupal",
-    "color": "negro"
-  }
+ {
+  "id": 1,
+  "name": "SOGA BATTLE ROPE 38 MM X 9MTS",
+  "price": 14900,
+  "discount": 10,
+  "category": "Entrenamiento funcional",
+  "description": "Peso: 5Kg; Dimensiones: 20 x 20 x 10 cm; Largo: 12m",
+  "image": "soga_battle_38mm.jpeg",
+  "color": "negro"
+ },
+ {
+  "id": 2,
+  "name": "BOZU CON INFLADOR",
+  "price": 13200,
+  "discount": 5,
+  "category": "Entrenamiento funcional",
+  "description": "Peso: 5 kg; Dimensiones: 65 x 65 x 15 cm",
+  "image": "bozu_65CM-mir_manija.jpeg",
+  "color": "azul"
+ },
+ {
+  "id": 3,
+  "name": "CUADRILATERO DE COORDINACION",
+  "price": 1940,
+  "discount": 10,
+  "category": "Entrenamiento funcional",
+  "description": "Peso: 1Kg; Dimensiones: 10 x 10 x 3 cm",
+  "image": "cuadrilatero_coordinacion.jpeg",
+  "color": "negro"
+ },
+ {
+  "id": 4,
+  "name": "STEP - PLATAFORMA CLASICA CON GOMA 100 x 37 x 10 CM",
+  "description": "Peso: 4Kg; Dimensiones: 100 x 37 x 10 cm",
+  "price": 7300,
+  "discount": 5,
+  "image": "Plataforma-Clasica-con-Goma-Azul.jpeg",
+  "category": "Fitness Grupal",
+  "color": "azul"
+ },
+ {
+  "id": 5,
+  "name": "BODY PUMP - EQUIPO COMPLETO DE 30Kg",
+  "description": "Peso: 28Kg; Dimensiones: 100 x 50 x 20 cm",
+  "price": 12240,
+  "discount": 20,
+  "image": "body-pump-30kg-.jpeg",
+  "category": "Fitness Grupal",
+  "color": "rojo"
+ },
+ {
+  "id": 6,
+  "name": "COLCHONETA MAT DE YOGA NEGRA 6MM",
+  "description": "Peso: 1kg; Dimensiones: 60 x 8 x 8 cm",
+  "price": 2830,
+  "discount": 10,
+  "image": "Mat-yoga-6mm-negra.jpeg",
+  "category": "Yoga-Pilates",
+  "color": "negro"
+ },
+ {
+  "id": 7,
+  "name": "PELOTA DE PILATES VIOLETA DE 25 cm",
+  "description": "Peso: 1Kg; Dimensiones: 13 x 5 x 16 cm",
+  "price": 1200,
+  "discount": 0,
+  "image": "pelota-yoga-25 cm.jpeg",
+  "category": "Yoga-Pilates",
+  "color": "violeta"
+ },
+ {
+  "id": 8,
+  "name": "PELOTA DE ESFERODINAMIA",
+  "description": "Peso: 3Kg; Dimensiones: 17 x 14 x 21 cm",
+  "price": 4300,
+  "discount": 0,
+  "image": "pelotas-esferodinamia.jpeg",
+  "category": "Yoga-Pilates",
+  "color": "negro"
+ },
+ {
+  "id": 9,
+  "name": "ROLO DE PILATES DE 61 CM",
+  "description": "Peso: 3Kg; Dimensiones: 61 x 14 x 5 cm",
+  "price": 5100,
+  "discount": 0,
+  "image": "Rolo-61cm-conjunto-1.jpeg",
+  "category": "Yoga-Pilates",
+  "color": "negro"
+ },
+ {
+  "id": 10,
+  "name": "ROLO FOAM LISO EPP DE 30 CM X 15 CM C/ EJECICIOS",
+  "description": "Peso: 1Kg; Dimensiones: 15 x 30 x 50 cm",
+  "price": 2060,
+  "discount": 5,
+  "image": "rolo-foam-liso-30cm.jpeg",
+  "category": "Yoga-Pilates",
+  "color": "negro"
+ },
+ {
+  "id": 11,
+  "name": "HAND GRIP",
+  "description": "Peso: 500gr; Dimensiones: 20 x 15 x 4 cm",
+  "price": 840,
+  "discount": 5,
+  "image": "hand-grip.jpeg",
+  "category": "Entrenamiento funcional",
+  "color": "negro"
+ },
+ {
+  "id": 12,
+  "name": "RUEDA PARA ABDOMINALES 19 CM DE DIAMETRO",
+  "description": "Peso: 1Kg; Dimensiones: 10 x 10 x 10 cm",
+  "price": 2000,
+  "discount": 0,
+  "image": "rueda-abdominal-19cm.jpeg",
+  "category": "Entrenamiento funcional",
+  "color": "verde"
+ },
+ {
+  "id": 13,
+  "name": "BANDA LARGA DE 1,10 M",
+  "description": "Peso: 500gr; Dimensiones: 10 x 10 x 2 cm",
+  "price": 1200,
+  "discount": 0,
+  "image": "banda-elastica.jpeg",
+  "category": "Entrenamiento funcional",
+  "color": "rojo"
+ },
+ {
+  "id": 14,
+  "name": "MINITRAMP CON FUNDA - 1M DE SUPERFICIE - 8O CM DE SALTO ",
+  "description": "Peso: 5 kg; Dimensiones: 50 x 50 x 20 cm",
+  "price": 16900,
+  "discount": 10,
+  "image": "mini-tramp-funda.jpeg",
+  "category": "Fitness Grupal",
+  "color": "negro"
+ },
+ {
+  "id": 15,
+  "name": "Pelota goma",
+  "category": "funcional",
+  "discount": "15",
+  "price": "2900",
+  "image": "image-1647566981153.jpg"
+ }
 ]
