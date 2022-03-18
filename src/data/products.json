@@ -6,7 +6,7 @@
     "discount": 10,
     "category": "Entrenamiento funcional",
     "description": "Peso: 5Kg; Dimensiones: 20 x 20 x 10 cm; Largo: 12m",
-    "image": "soga_battle_38mm.jpeg",
+    "image": "soga_battle.jpeg",
     "color": "negro"
   },
   {
@@ -16,7 +16,7 @@
     "discount": 5,
     "category": "Entrenamiento funcional",
     "description": "Peso: 5 kg; Dimensiones: 65 x 65 x 15 cm",
-    "image": "bozu_65CM-mir_manija.jpeg",
+    "image": "bozu.jpeg",
     "color": "azul"
   },
   {
@@ -35,7 +35,7 @@
     "description": "Peso: 4Kg; Dimensiones: 100 x 37 x 10 cm",
     "price": 7300,
     "discount": 5,
-    "image": "Plataforma-Clasica-con-Goma-Azul.jpeg",
+    "image": "plataforma-clasica.jpeg",
     "category": "Fitness Grupal",
     "color": "azul"
   },
@@ -55,7 +55,7 @@
     "description": "Peso: 1kg; Dimensiones: 60 x 8 x 8 cm",
     "price": 2830,
     "discount": 10,
-    "image": "Mat-yoga-6mm-negra.jpeg",
+    "image": "mat-yoga.jpeg",
     "category": "Yoga-Pilates",
     "color": "negro"
   },
@@ -85,7 +85,7 @@
     "description": "Peso: 3Kg; Dimensiones: 61 x 14 x 5 cm",
     "price": 5100,
     "discount": 0,
-    "image": "Rolo-61cm-conjunto-1.jpeg",
+    "image": "rolo-pilates.jpeg",
     "category": "Yoga-Pilates",
     "color": "negro"
   },
@@ -95,7 +95,7 @@
     "description": "Peso: 1Kg; Dimensiones: 15 x 30 x 50 cm",
     "price": 2060,
     "discount": 5,
-    "image": "rolo-foam-liso-30cm.jpeg",
+    "image": "rolo-foam.jpeg",
     "category": "Yoga-Pilates",
     "color": "negro"
   },
@@ -115,7 +115,7 @@
     "description": "Peso: 1Kg; Dimensiones: 10 x 10 x 10 cm",
     "price": 2000,
     "discount": 0,
-    "image": "rueda-abdominal-19cm.jpeg",
+    "image": "rueda-abdominal.jpeg",
     "category": "Entrenamiento funcional",
     "color": "verde"
   },
