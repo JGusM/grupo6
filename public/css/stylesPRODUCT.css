@@ -1,21 +1,21 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: 'Bebas Neue', cursive;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Bebas Neue", cursive;
 }
 
 .main-container-product {
-    display: flex;
-    justify-content: center;
-    background-color: rgb(230, 220, 216); 
+  display: flex;
+  justify-content: center;
+  background-color: rgb(230, 220, 216);
 }
 
 .product-container {
-    margin-top: 20vh;
-    margin-bottom: 20vh;
-    padding: 20px;
-    background-color: white;
+  margin-top: 20vh;
+  margin-bottom: 20vh;
+  padding: 20px;
+  background-color: white;
 }
 
 .product-img {
@@ -25,92 +25,98 @@
   margin-bottom: 10px;
 }
 
+.product-h1 {
+  margin-bottom: 25px;
+  font-size: 30px;
+  font-weight: 100;
+  width: 90%;
+}
 .product-h2 {
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    margin-bottom: 25px;
-    font-size: 20px;
-    font-weight: 100;
-    width: 90%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-bottom: 25px;
+  font-size: 18px;
+  font-weight: 100;
+  width: 90%;
 }
 
-.product-precio, 
+.product-precio,
 .product-cantidad {
   font-size: 30px;
   color: rgb(93, 91, 91);
-  margin-bottom: 20px; 
+  margin-bottom: 20px;
 }
 
 .mas-menos-input {
-    width: 10%;
-    text-align: center;
-    border: none;
-    font-size: 22px;
-    color: rgb(93, 91, 91); 
+  width: 10%;
+  text-align: center;
+  border: none;
+  font-size: 22px;
+  color: rgb(93, 91, 91);
 }
 
 .plus-btn,
 .minus-btn {
-    font-size: 18px;
-    padding: 5px;
-    color: rgb(93, 91, 91);
-    border:none
+  font-size: 18px;
+  padding: 5px;
+  color: rgb(93, 91, 91);
+  border: none;
 }
 
 .plus-btn {
-    margin-left: 20px;
+  margin-left: 20px;
 }
 
-.plus-btn:hover, .minus-btn:hover {
-    background-color: rgb(204, 200, 197);
+.plus-btn:hover,
+.minus-btn:hover {
+  background-color: rgb(204, 200, 197);
 }
 
 .product-image-description-container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 .product-description-cantindad-container {
-    display: flex;
-    flex-direction:column;
-    justify-content: flex-start;
-    margin: 20px;
-    width: 90%; 
-    position: relative; 
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: 20px;
+  width: 90%;
+  position: relative;
 }
 
 .product-button-agregar {
-    width: 100%;
-    padding: 5px;
-    margin-top: 70px;
-    color: rgb(0, 0, 0);
-    height: 70px;
-    font-size: 20px;
-    letter-spacing: 2px;
-    border: solid 1px black;
-    box-shadow: none;
-    background-color: white;
-  
+  width: 100%;
+  padding: 5px;
+  margin-top: 70px;
+  color: rgb(0, 0, 0);
+  height: 70px;
+  font-size: 20px;
+  letter-spacing: 2px;
+  border: solid 1px black;
+  box-shadow: none;
+  background-color: white;
 }
 
 .product-button-agregar:hover {
-    border: solid 2px orangered; 
-    color: orangered;
+  border: solid 2px orangered;
+  color: orangered;
 }
 
 /*-----------media queries-------------------*/
 
-@media (min-width: 768px){
-    /*.product-image-description-container { 
+@media (min-width: 768px) {
+  /*.product-image-description-container { 
         flex-direction: column;
     }*/
 
-    .product-description-cantindad-container {
-        width: 50%;
-    }
+  .product-description-cantindad-container {
+    width: 50%;
+  }
 
-    .product-h2 {
-        font-size: 30px;
-    }
+  .product-h2 {
+    font-size: 30px;
+  }
 }
