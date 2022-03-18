@@ -144,35 +144,34 @@
 }
 .dashboard-btn-detalle,
 .dashboard-btn-borrar,
-.dashboard-btn-edit,
-.dashboard-btn-create {
+.dashboard-btn-edit {
   width: 100%;
-  padding: 5px;
+  padding: 4px;
   color: rgb(214, 206, 206);
-  height: 30px;
+  height: 32px;
   font-size: 20px;
   letter-spacing: 2px;
-  border: none;
+  border: white solid 1px;
   transition: background-color 0.5s;
 }
 .dashboard-btn-create {
   font-size: 30px;
-}
-.btn-hover:hover {
-  background-color: rgb(78, 78, 78);
-}
-
-.dashboard-btn-detalle {
-  background-color: rgb(216, 146, 16);
-}
-.dashboard-btn-borrar {
-  background-color: rgb(138, 6, 6);
-}
-.dashboard-btn-edit {
-  background-color: rgb(55, 5, 192);
-}
-.dashboard-btn-create {
-  background-color: rgb(200, 62, 12);
+  background-color: rgb(204, 62, 10);
   margin-top: 10px;
   height: 50px;
+  width: 100%;
+  padding: 5px;
+  color: rgb(214, 206, 206);
+  letter-spacing: 2px;
+  border: none;
+  transition: background-color 0.5s;
+}
+.btn-hover:hover {
+  background-color: rgb(223, 66, 9);
+}
+
+.dashboard-btn-detalle,
+.dashboard-btn-borrar,
+.dashboard-btn-edit {
+  background-color: rgb(39, 39, 38);
 }
