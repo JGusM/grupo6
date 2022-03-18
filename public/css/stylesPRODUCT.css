@@ -12,7 +12,7 @@
 }
 
 .product-container {
-  margin-top: 20vh;
+  margin-top: 10vh;
   margin-bottom: 20vh;
   padding: 20px;
   background-color: white;
@@ -90,7 +90,7 @@
 .product-button-agregar {
   width: 100%;
   padding: 5px;
-  margin-top: 70px;
+  margin-top: 40px;
   color: rgb(0, 0, 0);
   height: 70px;
   font-size: 20px;
@@ -117,6 +117,6 @@
   }
 
   .product-h2 {
-    font-size: 30px;
+    font-size: 24px;
   }
 }

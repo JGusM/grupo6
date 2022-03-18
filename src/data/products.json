@@ -45,7 +45,7 @@
     "description": "Peso: 28Kg; Dimensiones: 100 x 50 x 20 cm",
     "price": 12240,
     "discount": 20,
-    "image": "body-pump-30kg-.jpeg",
+    "image": "body-pump.jpg",
     "category": "Fitness Grupal",
     "color": "rojo"
   },
@@ -65,9 +65,9 @@
     "description": "Peso: 1Kg; Dimensiones: 13 x 5 x 16 cm",
     "price": 1200,
     "discount": 0,
-    "image": "pelota-yoga-25 cm.jpeg",
+    "image": "pelota-pilates.jpg",
     "category": "Yoga-Pilates",
-    "color": "violeta"
+    "color": "turquesa"
   },
   {
     "id": 8,
