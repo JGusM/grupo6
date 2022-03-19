@@ -13,38 +13,39 @@
 <main class="main-container-profile">
     <section>
 
-        <form class="profile-container" action="/user/register" method="POST" enctype="multipart/form-data">
+        <form class="profile-container" >
 
 
             <!-- ----TÍTULO----  -->
             <div class="profile-title">
-                <h1 class="profile-h1"> <i class= "fas fa-user"></i></i>&nbsp&nbsp ¡Hola, Felipe! </h1>
+                <h1 class="profile-h1"> <i class= "fas fa-user"></i></i>&nbsp&nbsp ¡Hola, <%= user.firstName %>! </h1>
             </div>
 
             <!-- ----IMAGEN----  -->
             <!--acá hay que cambiar la línea siguiente por una dinámica-->
             <div class="user-img">
-            <img src="/images/users/C.jpg" alt="">
+                <img src="/images/users/<%= user.image || 'default-image.png' %>" alt="">
             </div>
-
+            <br>
             <!-- ----NOMBRE----  -->
             <div class="profile-cajas-input">
                 <label for="">Nombre</label></br>
-                <input type="text" name="firstName" placeholder="Ingresá tu nombre" required>
+                <h3><%= user.firstName %></h3>
+                
             </div>
 
             <!-- ----APELLIDO----  -->
 
             <div class="profile-cajas-input">
                 <label for="">Apellido</label></br>
-                <input type="text" name="lastName" placeholder="Ingresá tu apellido" required>
+                <h3><%= user.lastName %></h3>
             </div>
 
 
             <!-- ----EMAIL----  -->
             <div class="profile-cajas-input">
                 <label for="">E-mail</label></br>
-                <input type="email" name="email" placeholder="✉ Ingresá tu email" required>
+                <h3><%= user.email %></h3>
             </div>
 
         </form>

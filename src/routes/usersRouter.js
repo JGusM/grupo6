@@ -32,7 +32,7 @@ router.post("/", upload.single("image"), controller.storeUser);
 
 //logout
 router.post("/logout", userRoute, controller.logout);
-router.get("/profile", /* userRoute,*/ controller.profile);
+router.get("/profile", userRoute, controller.profile);
 
 // Acá exportamos el resultado
 module.exports = router; //Exportamos todo el contenido de la ruta para hacerlo visible

@@ -92,5 +92,24 @@
   "privacypolicy": "privacypolicy",
   "image": "default-image.png",
   "category": "user"
+ },
+ {
+  "id": 11,
+  "firstName": "rosa",
+  "lastName": "flores",
+  "email": "rf@mail.com",
+  "privacypolicy": "privacypolicy",
+  "image": "default-image.png",
+  "category": "user"
+ },
+ {
+  "id": 12,
+  "firstName": "pepito",
+  "lastName": "flores",
+  "email": "pf@mail.com",
+  "password": "$2a$10$Eoz0twciKtMjQxuFhPKA1.dLikBTuVMJ9v450n1VzAL1clNrBTSWW",
+  "privacypolicy": "privacypolicy",
+  "image": "default-image.png",
+  "category": "user"
  }
 ]
