@@ -16,6 +16,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 5px 0px 5px 0px;
 }
 .hamburger {
     color: white;
@@ -32,7 +33,6 @@ align-self: stretch;
 .navbar ul {
     list-style: none;
     width: 240px;
-    padding: 10px;
     font-size: 25px;
 }
 .menuNav > li {
@@ -58,6 +58,7 @@ align-self: stretch;
     text-decoration: none;
     color: white;
     padding-top: 10px;
+    background-color: black;
 }
 .menuNav li:hover .submenuNav {
     display: block;
