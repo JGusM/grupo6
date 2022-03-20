@@ -350,6 +350,9 @@ align-self: stretch;
         color: white;
         display: inline-block;
     }
+    .iconsFooter {
+        display: none;
+    }
 }
 /* 
 media query 0 / 480
