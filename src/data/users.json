@@ -111,5 +111,15 @@
   "privacypolicy": "privacypolicy",
   "image": "default-image.png",
   "category": "user"
+ },
+ {
+  "id": 13,
+  "firstName": "prueba",
+  "lastName": "prueba",
+  "email": "sabrinasastre@yahoo.com.ar",
+  "password": "$2a$10$lfiJ4eSBjCkyGBunragEz./lL.zXSX70twpasxXXway4cCbG1ydNG",
+  "privacypolicy": "privacypolicy",
+  "image": "image-1647894177901.png",
+  "category": "user"
  }
 ]
