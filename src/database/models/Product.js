@@ -1,5 +1,5 @@
 module.exports = (sequelize, dataTypes) => {
-  let alias = "Producto";
+  let alias = "Product"; //así hay que llamarlo desde el controller
   let cols = {
     id: {
       type: dataTypes.INTEGER,
@@ -7,11 +7,11 @@ module.exports = (sequelize, dataTypes) => {
       autoIncrement: true,
     },
     name: {
-      type: dataTypes.STRING(400),
+      type: dataTypes.STRING,
       allowNull: false,
     },
     description: {
-      type: dataTypes.STRING(400),
+      type: dataTypes.TEXT,
       allowNull: false,
     },
     price: {
@@ -23,27 +23,28 @@ module.exports = (sequelize, dataTypes) => {
       allowNull: false,
     },
     image: {
-      type: dataTypes.BLOB,
+      type: dataTypes.STRING,
       allowNull: false,
     },
-    category_id: {
-      type: dataTypes.INTEGER,
-      allowNull: false,
-    },
+
+    //category_id: {
+    //  type: dataTypes.INTEGER,
+    // allowNull: false,
+    //},
   };
   let config = {
-    timestamps: true, //No sé si va false o true? mmm
+    timestamps: true,
     createdAt: "created_at",
     updatedAt: "updated_at",
     deletedAt: false,
   };
-  const Producto = sequelize.define(alias, cols, config);
+  const Product = sequelize.define(alias, cols, config);
 
   //acá definimos la relación de uno a muchos entre Proudct y Productcategory
   Product.associate = function (models) {
     Product.belongsTo(models.Productcategory, {
       // models.Productcategory -> Productcategory es el valor de alias en Productcategory.js
-      as: "categoría",
+      as: "category",
       foreignKey: "category_id", //comparar con DER, ver cómo se llama ahí
     });
   };
