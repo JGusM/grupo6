@@ -1,5 +1,5 @@
 module.exports = (sequelize, dataTypes) => {
-  let alias = "User"; //así hay que llamarlo desde el controller
+  let alias = "Users"; //en plural, así hay que llamarlo desde el controller
   let cols = {
     id: {
       type: dataTypes.INTEGER,
@@ -34,7 +34,7 @@ module.exports = (sequelize, dataTypes) => {
     updatedAt: "updated_at",
     deletedAt: false,
   };
-  const Product = sequelize.define(alias, cols, config);
+  const User = sequelize.define(alias, cols, config); //"User" es una variable que creo que coincide con el nombre del archivo"
 
-  return Product;
+  return User;
 };

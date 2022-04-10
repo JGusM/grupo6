@@ -1,5 +1,5 @@
 module.exports = (sequelize, dataTypes) => {
-  let alias = "Category";
+  let alias = "Categories";
   let cols = {
     id: {
       type: dataTypes.INTEGER,
@@ -7,23 +7,23 @@ module.exports = (sequelize, dataTypes) => {
       autoIncrement: true,
     },
     name: {
-      type: dataTypes.STRING(400),  //acá estarían las 3 categorías
+      type: dataTypes.STRING(400), //acá estarían las 3 categorías
       allowNull: false,
     },
-    
   };
   let config = {
-    timestamps: false,   
-    
+    timestamps: false,
   };
   const Productcategory = sequelize.define(alias, cols, config);
 
-  //acá definimos la relación de uno a muchos entre Proudct y Productcategory
+  //acá definimos la relación de uno a muchos entre Product y Productcategory
   Productcategory.associate = function (models) {
-        Productcategory.hasmany(models.Product, { // models.Product -> Product es el valor de alias en Product.js
-            as: "Product", //nombre de la tabla
-            foreignKey: "category_id" //comparar con DER, ver cómo se llama ahí
-        })
-     }
+    Productcategory.hasmany(models.Products, {
+      // models.Products -> alias de la tabla
+      as: "products", //alias  de la relación - esto es lo que se llama desde el controlador
+      foreignKey: "category_id", //comparar con DER, ver cómo se llama ahí
+    });
+  };
 
   return Productcategory;
+};
