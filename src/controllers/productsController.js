@@ -84,6 +84,30 @@ const controlador = {
     res.redirect("/");
   },
 
+  /* CRUD de DB: "edit:" quedaría así:
+  edit:  function (req, res){
+    let pedidoProducto = db.Products.findByPk(req.params);
+    let pedidoCategorias = db.Categories.findAll();
+    promise.all ([pedidoProducto, pedidoCategorias])
+    .then (function([Products, Categories]){
+      res.render("productEdit", {products: products, categories:categories})
+    
+   update: function (req, res){
+     db.Product.update({
+       name: req.body.name (name que pusimos en el form)
+       (los otros datos, imagen, precio, etc)
+
+     }, {
+       where: { id: req.params.id}
+     })
+     res.redirect("/"); 
+   }
+    }
+    ])
+  }
+
+  */
+
   delete: (req, res) => {
     let id = req.params.id;
     let finalProducts = products.filter((product) => product.id != id);
@@ -96,3 +120,12 @@ const controlador = {
 };
 
 module.exports = controlador;
+
+//CRUD para DB:el "delete:"  habría que cambiarlo por (video clase 33):
+//       delete: function(req, res){
+//      db.Products.destroy(
+//       where: {
+//       id: req.params.id
+//       })
+//       res.redirect("/");
+//      };
