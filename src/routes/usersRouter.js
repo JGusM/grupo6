@@ -3,6 +3,7 @@ const express = require("express");
 const router = express.Router();
 const multer = require("multer");
 const path = require("path");
+//let db = require("../database/models");
 
 // Almacenamiento de Multer
 var storage = multer.diskStorage({
