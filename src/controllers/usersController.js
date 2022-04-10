@@ -2,6 +2,7 @@ const fs = require("fs");
 const path = require("path");
 const crypto = require("crypto");
 const bcrypt = require("bcryptjs");
+//let db = require("../database/models");
 
 const userFilePath = path.join(__dirname, "../data/users.json");
 const users = JSON.parse(fs.readFileSync(userFilePath, "utf-8"));
