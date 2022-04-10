@@ -85,15 +85,16 @@ const controlador = {
     res.redirect("/");
   },
 
-  /* CRUD de DB: "edit:" quedaría así:
-  edit:  function (req, res){
+  /* CRUD de DB: "getFormEdit:" quedaría así:
+  getFormEdit:  function (req, res){
     let pedidoProducto = db.Products.findByPk(req.params);
     let pedidoCategorias = db.Categories.findAll();
     promise.all ([pedidoProducto, pedidoCategorias])
-    .then (function([Products, Categories]){
-      res.render("productEdit", {products: products, categories:categories})
-    
-   update: function (req, res){
+    .then (function([Product, Categories]){
+      res.render("productEdit", {Product: Product, Categories:Categories})
+      }
+  },
+   edit (update): function (req, res){
      db.Product.update({
        name: req.body.name (name que pusimos en el form)
        (los otros datos, imagen, precio, etc)
@@ -102,10 +103,7 @@ const controlador = {
        where: { id: req.params.id}
      })
      res.redirect("/"); 
-   }
-    }
-    ])
-  }
+   },
 
   */
 
