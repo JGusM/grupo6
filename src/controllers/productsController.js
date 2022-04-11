@@ -1,5 +1,6 @@
 const path = require("path");
 const fs = require("fs");
+//let db = require("../database/models");
 
 const productsFilePath = path.join(__dirname, "../data/products.json");
 const products = JSON.parse(fs.readFileSync(productsFilePath, "utf-8"));
@@ -84,6 +85,28 @@ const controlador = {
     res.redirect("/");
   },
 
+  /* CRUD de DB: "getFormEdit:" quedaría así:
+  getFormEdit:  function (req, res){
+    let pedidoProducto = db.Products.findByPk(req.params);
+    let pedidoCategorias = db.Categories.findAll();
+    promise.all ([pedidoProducto, pedidoCategorias])
+    .then (function([Product, Categories]){
+      res.render("productEdit", {Product: Product, Categories:Categories})
+      }
+  },
+   edit (update): function (req, res){
+     db.Product.update({
+       name: req.body.name (name que pusimos en el form)
+       (los otros datos, imagen, precio, etc)
+
+     }, {
+       where: { id: req.params.id}
+     })
+     res.redirect("/"); 
+   },
+
+  */
+
   delete: (req, res) => {
     let id = req.params.id;
     let finalProducts = products.filter((product) => product.id != id);
@@ -96,3 +119,12 @@ const controlador = {
 };
 
 module.exports = controlador;
+
+//CRUD para DB:el "delete:"  habría que cambiarlo por (video clase 33):
+//       delete: function(req, res){
+//      db.Products.destroy(
+//       where: {
+//       id: req.params.id
+//       })
+//       res.redirect("/");
+//      };
