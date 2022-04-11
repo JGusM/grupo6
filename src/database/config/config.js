@@ -3,7 +3,7 @@ module.exports = {
     username: "root",
     password: "",
     //hay que poner el nombre de nuesta bd la otra era movies_db
-    database: "NOMBRE DE NUESTRA DATABASE",
+    database: "dh_fitness ",
     host: "127.0.0.1",
     dialect: "mysql",
   },
