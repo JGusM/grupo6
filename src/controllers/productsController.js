@@ -87,7 +87,9 @@ const controlador = {
 
   /* CRUD de DB: "getFormEdit:" quedaría así:
   getFormEdit:  function (req, res){
-    let pedidoProducto = db.Products.findByPk(req.params);
+    let pedidoProducto = db.Products.findByPk(req.params.id, {
+      include:[{association: "categories"}]
+    });
     let pedidoCategorias = db.Categories.findAll();
     promise.all ([pedidoProducto, pedidoCategorias])
     .then (function([Product, Categories]){
@@ -104,8 +106,8 @@ const controlador = {
      })
      res.redirect("/"); 
    },
-
-  */
+*/
+  
 
   delete: (req, res) => {
     let id = req.params.id;
@@ -121,10 +123,10 @@ const controlador = {
 module.exports = controlador;
 
 //CRUD para DB:el "delete:"  habría que cambiarlo por (video clase 33):
-//       delete: function(req, res){
-//      db.Products.destroy(
-//       where: {
-//       id: req.params.id
-//       })
-//       res.redirect("/");
-//      };
+    //   delete: function(req, res){
+    //  db.Products.destroy(
+    //   where: {
+    //   id: req.params.id
+    //   })
+    //   res.redirect("/");
+    //  };
