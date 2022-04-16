@@ -108,9 +108,20 @@ const controlador = {
 
   /* CRUD de DB: "getFormEdit:" quedaría así:
   getFormEdit:  function (req, res){
+
     let pedidoProducto = db.Product.findByPk(req.params.id);
     let pedidoCategorias = db.Category.findAll();
     Promise.all ([pedidoProducto, pedidoCategorias])
+
+    let pedidoProducto = db.Products.findByPk(req.params.id, {
+      include:[{association: "categories"}]
+    });
+    let pedidoCategorias = db.Categories.findAll();
+    promise.all ([pedidoProducto, pedidoCategorias])
+
+
+
+
     .then (function([Product, Categories]){
       return res.render("productEdit", {Product: Product, Categories:Categories})
       })
