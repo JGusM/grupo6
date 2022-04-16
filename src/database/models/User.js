@@ -1,5 +1,5 @@
 module.exports = (sequelize, dataTypes) => {
-  let alias = "Users"; //en plural, así hay que llamarlo desde el controller
+  let alias = "User"; //así hay que llamarlo desde el controller
   let cols = {
     id: {
       type: dataTypes.INTEGER,

@@ -29,6 +29,10 @@ const controlador = {
     });
   },
 
+  /* CRUD de DB: "getFormCreate:" quedaría así:
+ Acá solamente se muestra el formulario de creación, puede quedar cómo estaba
+ ya que no se vincula al JSON/ o BD, es sólo una vista estática */
+
   create: (req, res) => {
     //lo siguiente es un destructuring:
     const { name, price, discount, category, description } = req.body;
@@ -49,6 +53,23 @@ const controlador = {
 
     res.redirect("/");
   },
+
+  /* Guarda nuevo producto en la BD: 
+  create: (req, res) => {
+    db.Products.create({   
+      name: req.body.name
+      categoryId: req.body.category
+      image: req.body.image
+      description: req.body.description
+      discount: req.body.discount
+      price: req.body.price
+    })
+    .then (() => {
+      return res.redirect("/"); 
+    })
+    .catch(eror => res.send(error))
+  }, 
+  */
 
   //controlador para mostrar formulario de edición:
   getformEdit: (req, res) => {
@@ -87,25 +108,33 @@ const controlador = {
 
   /* CRUD de DB: "getFormEdit:" quedaría así:
   getFormEdit:  function (req, res){
-    let pedidoProducto = db.Products.findByPk(req.params);
-    let pedidoCategorias = db.Categories.findAll();
-    promise.all ([pedidoProducto, pedidoCategorias])
+    let pedidoProducto = db.Product.findByPk(req.params.id);
+    let pedidoCategorias = db.Category.findAll();
+    Promise.all ([pedidoProducto, pedidoCategorias])
     .then (function([Product, Categories]){
-      res.render("productEdit", {Product: Product, Categories:Categories})
-      }
-  },
-   edit (update): function (req, res){
-     db.Product.update({
-       name: req.body.name (name que pusimos en el form)
-       (los otros datos, imagen, precio, etc)
+      return res.render("productEdit", {Product: Product, Categories:Categories})
+      })
+      .catch(error => res.send(error))
+  }, */
 
-     }, {
+  /*este sería el update: 
+   edit: function (req, res){
+     db.Product.update({
+      name: req.body.name
+      categoryId: req.body.category
+      image: req.body.image
+      description: req.body.description
+      discount: req.body.discount
+      price: req.body.price
+    }, {
        where: { id: req.params.id}
      })
-     res.redirect("/"); 
-   },
-
-  */
+    .then (() => {
+      return res.redirect("/"); 
+    })
+    .catch(eror => res.send(error))
+  }, 
+*/
 
   delete: (req, res) => {
     let id = req.params.id;
@@ -120,11 +149,14 @@ const controlador = {
 
 module.exports = controlador;
 
-//CRUD para DB:el "delete:"  habría que cambiarlo por (video clase 33):
-//       delete: function(req, res){
-//      db.Products.destroy(
-//       where: {
-//       id: req.params.id
-//       })
-//       res.redirect("/");
-//      };
+/*CRUD para DB:el "delete:"  
+       delete: function(req, res){
+      db.Product.destroy({  
+      where: {id: req.params.id}, force: true
+        })
+      .then(() =>{
+        return res.redirect("/")
+      })
+      .catch(error => res.send(error))
+      }; 
+*/
