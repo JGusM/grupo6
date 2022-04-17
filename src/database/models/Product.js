@@ -40,10 +40,10 @@ module.exports = (sequelize, dataTypes) => {
   //acá definimos la relación de uno a muchos entre Product y Productcategory
   Product.associate = function (models) {
     //"Product es el nombre de la variable linea 41"
-    Product.belongsTo(models.Categories, {
+    Product.belongsTo(models.Category, {
       // models.Categories ->  alias
       as: "categories", // alias de la relación - esto se llama desde el controlador
-      foreignKey: "category_id", //comparar con DER, ver cómo se llama ahí
+      foreignKey: "categoryId", //comparar con DER, ver cómo se llama ahí
     });
   };
 

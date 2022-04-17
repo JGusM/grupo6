@@ -18,10 +18,10 @@ module.exports = (sequelize, dataTypes) => {
 
   //acá definimos la relación de uno a muchos entre Product y Productcategory
   Productcategory.associate = function (models) {
-    Productcategory.hasmany(models.Products, {
-      // models.Products -> alias de la tabla
+    Productcategory.hasMany(models.Product, {
+      // models.Product -> alias de la tabla
       as: "products", //alias  de la relación - esto es lo que se llama desde el controlador
-      foreignKey: "category_id", //comparar con DER, ver cómo se llama ahí
+      foreignKey: "categoryId", //comparar con DER, ver cómo se llama ahí
     });
   };
 

@@ -1,6 +1,6 @@
 const path = require("path");
 const fs = require("fs");
-//let db = require("../database/models");
+let db = require("../database/models");
 
 const productsFilePath = path.join(__dirname, "../data/products.json");
 const products = JSON.parse(fs.readFileSync(productsFilePath, "utf-8"));
@@ -33,6 +33,7 @@ const controlador = {
  Acá solamente se muestra el formulario de creación, puede quedar cómo estaba
  ya que no se vincula al JSON/ o BD, es sólo una vista estática */
 
+  /*
   create: (req, res) => {
     //lo siguiente es un destructuring:
     const { name, price, discount, category, description } = req.body;
@@ -51,25 +52,24 @@ const controlador = {
     let productJSON = JSON.stringify(products);
     fs.writeFileSync(productsFilePath, productJSON);
 
-    res.redirect("/");
+    res.redirect("/admin/dashboard");
   },
+*/
 
-  /* Guarda nuevo producto en la BD: 
   create: (req, res) => {
-    db.Products.create({   
-      name: req.body.name
-      categoryId: req.body.category
-      image: req.body.image
-      description: req.body.description
-      discount: req.body.discount
-      price: req.body.price
+    db.Products.create({
+      name: req.body.name,
+      categoryId: req.body.category,
+      image: req.body.image,
+      description: req.body.description,
+      discount: req.body.discount,
+      price: req.body.price,
     })
-    .then (() => {
-      return res.redirect("/"); 
-    })
-    .catch(eror => res.send(error))
-  }, 
-  */
+      .then(() => {
+        return res.redirect("/");
+      })
+      .catch((eror) => res.send(error));
+  },
 
   //controlador para mostrar formulario de edición:
   getformEdit: (req, res) => {
@@ -147,6 +147,7 @@ const controlador = {
   }, 
 */
 
+  /*
   delete: (req, res) => {
     let id = req.params.id;
     let finalProducts = products.filter((product) => product.id != id);
@@ -154,20 +155,20 @@ const controlador = {
       productsFilePath,
       JSON.stringify(finalProducts, null, " ")
     );
-    res.redirect("/");
+    res.redirect("/admin/dashboard");
+  },
+*/
+
+  delete: function (req, res) {
+    db.Product.destroy({
+      where: { id: req.params.id },
+      force: true,
+    })
+      .then(() => {
+        return res.redirect("/");
+      })
+      .catch((error) => res.send(error));
   },
 };
 
 module.exports = controlador;
-
-/*CRUD para DB:el "delete:"  
-       delete: function(req, res){
-      db.Product.destroy({  
-      where: {id: req.params.id}, force: true
-        })
-      .then(() =>{
-        return res.redirect("/")
-      })
-      .catch(error => res.send(error))
-      }; 
-*/
