@@ -57,7 +57,7 @@ const controlador = {
 */
 
   create: (req, res) => {
-    db.Products.create({
+    db.Product.create({
       name: req.body.name,
       categoryId: req.body.category,
       image: req.body.image,
@@ -68,7 +68,7 @@ const controlador = {
       .then(() => {
         return res.redirect("/");
       })
-      .catch((eror) => res.send(error));
+      .catch((error) => res.send(error));
   },
 
   //controlador para mostrar formulario de edición:

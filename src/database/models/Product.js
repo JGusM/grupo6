@@ -22,18 +22,19 @@ module.exports = (sequelize, dataTypes) => {
       type: dataTypes.INTEGER,
       allowNull: false,
     },
-    image: {
-      type: dataTypes.STRING,
-      allowNull: false,
-    },
+    // image: {
+    //   type: dataTypes.STRING,
+    //   allowNull: false,
+    // },
 
-    //category_id: {
-    //  type: dataTypes.INTEGER,
-    // allowNull: false,
-    //},
+    //  categoryId: {
+    //    type: dataTypes.INTEGER,
+    //   allowNull: false,
+    //  },
   };
   let config = {
-    timestamps: false,
+        tableName: "product",
+        timestamps: false,
   };
   const Product = sequelize.define(alias, cols, config);
 
