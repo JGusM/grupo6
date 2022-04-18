@@ -57,10 +57,11 @@ const controlador = {
 */
 
   create: (req, res) => {
-    db.Products.create({
+    console.log(req.body.image);
+    db.Product.create({
       name: req.body.name,
       categoryId: req.body.category,
-      image: req.body.image,
+      image: "" /* req.body.image*/,
       description: req.body.description,
       discount: req.body.discount,
       price: req.body.price,
@@ -68,7 +69,7 @@ const controlador = {
       .then(() => {
         return res.redirect("/");
       })
-      .catch((eror) => res.send(error));
+      .catch((error) => res.send(error));
   },
 
   //controlador para mostrar formulario de edición:
