@@ -57,7 +57,6 @@ const controlador = {
 */
 
   create: (req, res) => {
-    console.log(req.body.image);
     db.Product.create({
       name: req.body.name,
       categoryId: req.body.category,
