@@ -22,19 +22,18 @@ module.exports = (sequelize, dataTypes) => {
       type: dataTypes.INTEGER,
       allowNull: false,
     },
-    // image: {
-    //   type: dataTypes.STRING,
-    //   allowNull: false,
-    // },
-
+    image: {
+      type: dataTypes.STRING,
+      allowNull: false,
+    },
     //  categoryId: {
     //    type: dataTypes.INTEGER,
     //   allowNull: false,
     //  },
   };
   let config = {
-        tableName: "product",
-        timestamps: false,
+    tableName: "product",
+    timestamps: false,
   };
   const Product = sequelize.define(alias, cols, config);
 
@@ -44,7 +43,7 @@ module.exports = (sequelize, dataTypes) => {
     Product.belongsTo(models.Category, {
       // models.Category ->  alias
       as: "categories", // alias de la relación - esto se llama desde el controlador
-      foreignKey: "categoryId", //comparar con DER, ver cómo se llama ahí
+      foreignKey: "categoryld", //comparar con DER, ver cómo se llama ahí
     });
   };
 

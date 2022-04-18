@@ -12,7 +12,7 @@ module.exports = (sequelize, dataTypes) => {
     },
   };
   let config = {
-    tableName: "category",
+    tableName: "productcategory",
     timestamps: false,
   };
   const Productcategory = sequelize.define(alias, cols, config);
@@ -22,7 +22,7 @@ module.exports = (sequelize, dataTypes) => {
     Productcategory.hasMany(models.Product, {
       // models.Product -> alias de la tabla
       as: "products", //alias  de la relación - esto es lo que se llama desde el controlador
-      foreignKey: "categoryId", //comparar con DER, ver cómo se llama ahí
+      foreignKey: "categoryld", //comparar con DER, ver cómo se llama ahí
     });
   };
 

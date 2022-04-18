@@ -165,7 +165,7 @@ const controlador = {
       force: true,
     })
       .then(() => {
-        return res.redirect("/");
+        return res.redirect("/admin/dashboard");
       })
       .catch((error) => res.send(error));
   },
