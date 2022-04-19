@@ -8,15 +8,24 @@ const toThousand = (n) => n.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
 
 const controlador = {
   allProducts: (req, res) => {
-    res.render("products", { tituloPagina: "PRODUCTOS", products, toThousand });
+    db.Product.findAll()
+    .then(products => {
+        res.render("products", { tituloPagina: "PRODUCTOS", products, toThousand })
+    })
+   // res.render("products", { tituloPagina: "PRODUCTOS", products, toThousand });
   },
   detail: (req, res) => {
-    let id = req.params.id;
-    let product = products.find((product) => product.id == id);
-    res.render("productDetail", {
-      tituloPagina: "DETALLE PRODUCTO",
-      product,
-      toThousand,
+    // let id = req.params.id;
+    // let product = products.find((product) => product.id == id);
+    // res.render("productDetail", {
+    //   tituloPagina: "DETALLE PRODUCTO",
+    //   product,
+    //   toThousand,
+    // });
+    db.Product.findByPk(req.params.id)
+    .then(product => {
+        res.render("productDetail", {tituloPagina: "DETALLE PRODUCTO", product, toThousand,
+           });
     });
   },
   cart: (req, res) => {
