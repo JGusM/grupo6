@@ -60,7 +60,7 @@ const controlador = {
     db.Product.create({
       name: req.body.name,
       categoryId: req.body.category,
-      image: "" /* req.body.image*/,
+      image: req.body.image,
       description: req.body.description,
       discount: req.body.discount,
       price: req.body.price,
