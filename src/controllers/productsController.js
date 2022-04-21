@@ -38,11 +38,7 @@ const controlador = {
     });
   },
 
-  /* CRUD de DB: "getFormCreate:" quedaría así:
- Acá solamente se muestra el formulario de creación, puede quedar cómo estaba
- ya que no se vincula al JSON/ o BD, es sólo una vista estática */
-
-  /*
+  /*  CREATE ANTES DE LA BD
   create: (req, res) => {
     //lo siguiente es un destructuring:
     const { name, price, discount, category, description } = req.body;
@@ -66,21 +62,22 @@ const controlador = {
 */
 
   create: (req, res) => {
+    console.log(req.body)
     db.Product.create({
       name: req.body.name,
-      categoryId: req.body.category,
-      image: req.body.image,
+      categoryld: req.body.category,
+      image: req.file.filename,
       description: req.body.description,
       discount: req.body.discount,
       price: req.body.price,
     })
       .then(() => {
-        return res.redirect("/");
+        return res.redirect("/admin/dashboard");
       })
       .catch((error) => res.send(error));
   },
 
-  //controlador para mostrar formulario de edición:
+
   getformEdit: (req, res) => {
     //Traer el id que viene por params
     //Con ese id se hace un filter o find para buscarlo en el json
@@ -94,7 +91,18 @@ const controlador = {
       product: productFound,
     });
   },
+  
+/*
+  getFormEdit:  function (req, res){
+      db.Products.findByPk(req.params.id)
+      .then (function(Product){
+      return res.render("productEdit", {Product: Product})
+      })
+      .catch(error => res.send(error))
+  }, 
+  */
 
+  
   edit: (req, res) => {
     let id = req.params.id;
     let productToEdit = products.find((product) => product.id == id);
@@ -114,37 +122,16 @@ const controlador = {
     fs.writeFileSync(productsFilePath, JSON.stringify(newProducts, null, " "));
     res.redirect("/");
   },
+  
 
-  /* CRUD de DB: "getFormEdit:" quedaría así:
-  getFormEdit:  function (req, res){
-
-    let pedidoProducto = db.Product.findByPk(req.params.id);
-    let pedidoCategorias = db.Category.findAll();
-    Promise.all ([pedidoProducto, pedidoCategorias])
-
-    let pedidoProducto = db.Products.findByPk(req.params.id, {
-      include:[{association: "categories"}]
-    });
-    let pedidoCategorias = db.Categories.findAll();
-    promise.all ([pedidoProducto, pedidoCategorias])
-
-
-
-
-    .then (function([Product, Categories]){
-      return res.render("productEdit", {Product: Product, Categories:Categories})
-      })
-      .catch(error => res.send(error))
-  }, */
-
-  /*este sería el update: 
+/*
    edit: function (req, res){
      db.Product.update({
-      name: req.body.name
-      categoryId: req.body.category
-      image: req.body.image
-      description: req.body.description
-      discount: req.body.discount
+      name: req.body.name,
+      categoryld: req.body.category,
+      image: req.file.filename,
+      description: req.body.description,
+      discount: req.body.discount,
       price: req.body.price
     }, {
        where: { id: req.params.id}
