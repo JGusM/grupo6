@@ -2,69 +2,68 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Bebas Neue', cursive;
-}
-/*------------------------------------INICIO DEL HEADER-----------------------------------------*/
-.header {
+    font-family: "Bebas Neue", cursive;
+  }
+  /*------------------------------------INICIO DEL HEADER-----------------------------------------*/
+  .header {
     position: sticky;
     top: 0;
     width: 100%;
     z-index: 1;
-}
-.containerHeader {
+  }
+  .containerHeader {
     background-color: black;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 5px 0px 5px 0px;
-}
-.hamburger {
+  }
+  .hamburger {
     color: white;
     margin-left: 30px;
-}
-.logo {
-width: 19vw;
-height: 6vh;
-align-self: stretch;
-}
-.navbar {
+  }
+  .logo {
+    width: 19vw;
+    height: 6vh;
+    align-self: stretch;
+  }
+  .navbar {
     display: none;
-}
-.navbar ul {
+  }
+  .navbar ul {
     list-style: none;
     width: 240px;
     font-size: 25px;
-}
-.menuNav > li {
+  }
+  .menuNav > li {
     position: relative;
     display: inline-block;
-}
-.menuNav > li > a {
+  }
+  .menuNav > li > a {
     display: block;
     text-decoration: none;
     color: white;
-}
-.menu li a:hover {
+  }
+  .menu li a:hover {
     color: gray;
-    transition: all .3s;
-}
-.submenuNav {
+    transition: all 0.3s;
+  }
+  .submenuNav {
     position: absolute;
     display: none;
     transition: all 2s;
-}
-.submenuNav li a {
+  }
+  .submenuNav li a {
     display: block;
     text-decoration: none;
     color: white;
     padding-top: 10px;
     background-color: black;
-}
-.menuNav li:hover .submenuNav {
+  }
+  .menuNav li:hover .submenuNav {
     display: block;
-}
-
-.navbarIcons{
+  }
+  .navbarIcons {
     position: relative;
     display: flex;
     justify-content: flex-end;
@@ -72,234 +71,228 @@ align-self: stretch;
     text-align: right;
     margin-right: 30px;
     text-decoration: none;
-}
-.search{
+  }
+  .search {
     color: white;
     display: none;
     margin-right: 10px;
     font-size: small;
-}
-.search a {
+  }
+  .search a {
     text-decoration: none;
-}
-.user{
+  }
+  .user {
     color: white;
     display: none;
     margin-right: 10px;
     font-size: small;
-}
-.register{ 
+  }
+  .register {
     color: white;
     display: none;
     margin-right: 10px;
     font-size: small;
-}
-.cart {
+  }
+  .cart {
     color: white;
     margin-right: 10px;
     font-size: small;
-}
-/*------------------------------------FIN DEL HEADER----------------------------------------------*/
-/*------------------------------------INICIO DEL MAIN---------------------------------------------*/
-
-/*--------------TODAS LAS CATEGORIAS------------*/
-.categories {
+  }
+  /*------------------------------------FIN DEL HEADER----------------------------------------------*/
+  /*------------------------------------INICIO DEL MAIN---------------------------------------------*/
+  /*--------------TODAS LAS CATEGORIAS------------*/
+  .contenedor {
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+  }
+  .contenedor-imagen {
+    width: 70%;
+    position: relative;
+  }
+  .contenedor-imagen img {
+    max-width: 100%;
+  }
+  .nombre-boton {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .entrenamiento-funcional-img {
+    position: relative;
+    bottom: 20px;
+  }
+  .yoga-pilates-img {
+    width: 80%;
+    position: absolute;
+    right: 0;
+  }
+  .text-section {
+    margin-bottom: 10px;
+  }
+  .categories {
     position: relative;
     display: inline-block;
-}
-
-.divTextCategories {
+  }
+  .divTextCategories {
     position: absolute;
     top: 25%;
     left: 15%;
     color: white;
-}
-
-.divButtonCategories {
+  }
+  .divButtonCategories {
     position: absolute;
     top: 70%;
     left: 15%;
-}
-
-.buttonCategories {
+  }
+  .buttonCategories {
     font-size: 2vw;
     background-color: orange;
     color: white;
     padding: 10px;
-}
-
-/*--------------TODOS LOS ACCESORIOS------------*/
-.accessories {
+  }
+  /*--------------TODOS LOS ACCESORIOS------------*/
+  .accessories {
     position: relative;
     display: inline-block;
-}
-
-.divTextAccessories {
+  }
+  .divTextAccessories {
     position: absolute;
     top: 25%;
     left: 15%;
     color: white;
-}
-
-.divButtonAccessories {
+  }
+  .divButtonAccessories {
     position: absolute;
     top: 70%;
     left: 10%;
-    
-}
-
-.buttonAccessories {
+  }
+  .buttonAccessories {
     font-size: 2vw;
     background-color: black;
     color: white;
     padding: 10px;
     border: 2px white sokid;
-}
-
-/*----------------GROUP FITNESS--------------*/
-.groupFitness {
+  }
+  /*----------------GROUP FITNESS--------------*/
+  .groupFitness {
     position: relative;
     display: inline-block;
-}
-
-.divTextGroupFitness {
+  }
+  .divTextGroupFitness {
     position: absolute;
     top: 25%;
     left: 15%;
     color: black;
-}
-
-.divButtonGroupFitness {
+  }
+  .divButtonGroupFitness {
     position: absolute;
     top: 70%;
     left: 10%;
-    
-}
-
-.buttonGroupFitness {
+  }
+  .buttonGroupFitness {
     font-size: 2vw;
     background-color: white;
     color: black;
     padding: 10px;
     border: 2px black sokid;
-}
-
-
-/*----------------FUNCTIONAL TRAINING--------------*/
-.functionalTraining {
+  }
+  /*----------------FUNCTIONAL TRAINING--------------*/
+  .functionalTraining {
     position: relative;
     display: inline-block;
-}
-
-.divTextFunctionalTraining {
+  }
+  .divTextFunctionalTraining {
     position: absolute;
     top: 25%;
     left: 8%;
     color: black;
-}
-
-.divButtonFunctionalTraining {
+  }
+  .divButtonFunctionalTraining {
     position: absolute;
     top: 50%;
     left: 10%;
-    
-}
-
-.buttonFunctionalTraining {
+  }
+  .buttonFunctionalTraining {
     font-size: 2vw;
     background-color: white;
     color: black;
     padding: 10px;
     border: 2px black sokid;
-}
-
-/*----------------YOGA / PILATES--------------*/
-.yogaPilates {
+  }
+  /*----------------YOGA / PILATES--------------*/
+  .yogaPilates {
     position: relative;
     display: inline-block;
-}
-
-.divTextYogaPilates {
+  }
+  .divTextYogaPilates {
     position: absolute;
     top: 15%;
     left: 8%;
     color: black;
-}
-
-
-.divButtonYogaPilates {
+  }
+  .divButtonYogaPilates {
     position: absolute;
     top: 65%;
     left: 10%;
-    
-}
-
-.buttonYogaPilates {
+  }
+  .buttonYogaPilates {
     font-size: 2vw;
     background-color: white;
     color: black;
     padding: 10px;
     border: 2px black sokid;
-}
-
-
-
-.imageProducts {
+  }
+  .imageProducts {
     width: 100%;
-}
-
-.imageAccessories {
+  }
+  .imageAccessories {
     width: 100%;
     margin-top: -6px;
-}
-
-.imageGroupFitness {
+  }
+  .imageGroupFitness {
     width: 100%;
-}
-
-.imageFunctionalTraining {
+  }
+  .imageFunctionalTraining {
     width: 100%;
     margin-bottom: -350px;
-}
-
-.imageMat-naranja {
+  }
+  .imageMat-naranja {
     width: 100%;
-}
-
-.video {
+  }
+  .video {
     text-align: center;
-}
-
-.iconsCommercial {
+  }
+  .iconsCommercial {
     text-align: center;
     padding: 10px;
     margin-bottom: 30px;
-}
-
-.iconsCommercial i {
+  }
+  .iconsCommercial i {
     color: #1259c3;
     text-align: center;
     font-size: 2em;
-}
-
-/*------------------------------------FIN DEL MAIN------------------------------------------------*/
-/*------------------------------------INICIO DEL FOOTER-------------------------------------------*/
-.about {
+  }
+  /*------------------------------------FIN DEL MAIN------------------------------------------------*/
+  /*------------------------------------INICIO DEL FOOTER-------------------------------------------*/
+  .about {
     background-color: black;
     padding: 20px 25px 60px;
-}
-.tituloFooter {
+  }
+  .tituloFooter {
     color: white;
     padding: 20px 5px;
-}
-.about a {
+  }
+  .about a {
     text-decoration: none;
     color: cadetblue;
-}
-.about p {
+  }
+  .about p {
     padding: 5px 2px;
-}
-.iconsFooter {
+  }
+  .iconsFooter {
     background-color: white;
     width: 100vw;
     display: flex;
@@ -311,54 +304,57 @@ align-self: stretch;
     color: black;
     text-align: center;
     font-size: 2em;
-}
-
-
-/*------------------------------------FIN DEL FOOTER----------------------------------------------*/
-
-@media (min-width: 481px){
+  }
+  /*------------------------------------FIN DEL FOOTER----------------------------------------------*/
+  @media (min-width: 481px) {
     /*recuadre el logo solo para ver el alcance*/
-    .logo {
-        width: 10vw;
-        height: 6vh;
-        align-self: stretch;
+    .contenedor,
+    .nombre-boton {
+      height: 300px;
     }
-   
-}
-@media (min-width: 769px){
+    .logo {
+      width: 10vw;
+      height: 6vh;
+      align-self: stretch;
+    }
+  }
+  @media (min-width: 769px) {
     /*recuadre el logo solo para ver el alcance*/
     .logo {
-        width: 6vw;
-        height: 6vh;
-        align-self: stretch;
-        margin-left: 30px;
+      width: 6vw;
+      height: 6vh;
+      align-self: stretch;
+      margin-left: 30px;
     }
     .navbar {
-        display: block;
+      display: block;
     }
     .hamburger {
-        display: none;
+      display: none;
     }
-    .search{
-        color: white;
-        display: inline-block;
+    .search {
+      color: white;
+      display: inline-block;
     }
-    .user{
-        color: white;
-        display: inline-block;
+    .user {
+      color: white;
+      display: inline-block;
     }
-    .register{ 
-        color: white;
-        display: inline-block;
+    .register {
+      color: white;
+      display: inline-block;
     }
     .iconsFooter {
-        display: none;
+      display: none;
     }
-}
-/* 
-media query 0 / 480
-media query 481 / 768
-media query 769 / 1279
-media query +1280
-
-*/
+    .contenedor,
+    .nombre-boton {
+      height: 400px;
+    }
+  }
+  /* 
+  media query 0 / 480
+  media query 481 / 768
+  media query 769 / 1279
+  media query +1280
+  */

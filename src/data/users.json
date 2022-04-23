@@ -121,5 +121,32 @@
   "privacypolicy": "privacypolicy",
   "image": "image-1647894177901.png",
   "category": "user"
+ },
+ {
+  "id": 14,
+  "firstName": "Gus",
+  "lastName": "Mei",
+  "email": "rf@mail.com",
+  "password": "$2a$10$zsBVjvmRSmVoUKGNTuxnFOHorHrYZqwrMprleczbywcmCk54GFF9i",
+  "image": "image-1650412624957.jpg",
+  "category": "user"
+ },
+ {
+  "id": 15,
+  "firstName": "gus",
+  "lastName": "mei",
+  "email": "jg@mail.com",
+  "password": "$2a$10$SBy67jAQ7i63JjmGx7SikedNiAU/HXXBTQXNREDR7fH5Y4g7SAFHK",
+  "image": "image-1650412706816.jpg",
+  "category": "user"
+ },
+ {
+  "id": 16,
+  "firstName": "Fernando",
+  "lastName": "Mendez",
+  "email": "fermen@gmail.com",
+  "password": "$2a$10$f3K4C9j4QaNG2XiVKF60Qu0EbJWSIc0DqTOSLHnaEQ.6gfQa09Uyi",
+  "image": "image-1650412839816.jpg",
+  "category": "user"
  }
 ]
