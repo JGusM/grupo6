@@ -42,7 +42,7 @@ router.post("/create", upload.single("image"), controller.create);
 
 // Ruta para obtener vista del formulario con datos del producto
 // /:id/edit (GET)
-router.get("/:id/edit", controller.getformEdit);
+router.get("/:id/edit", controller.getFormEdit);
 
 // Ruta para EDITAR producto
 // /:id (PUT)

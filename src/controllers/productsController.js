@@ -77,13 +77,8 @@ const controlador = {
       .catch((error) => res.send(error));
   },
 
-
-  getformEdit: (req, res) => {
-    //Traer el id que viene por params
-    //Con ese id se hace un filter o find para buscarlo en el json
-    //Ese producto que te devuelve el JSON, se lo enviamos a la vista
-
-    //Aca se agrega el producto encontrado para enviarlo
+/*
+  getFormEdit: (req, res) => {
     let id = req.params.id;
     let productFound = products.find((product) => product.id == id);
     res.render("productEdit", {
@@ -91,18 +86,18 @@ const controlador = {
       product: productFound,
     });
   },
+  */
   
-/*
   getFormEdit:  function (req, res){
-      db.Products.findByPk(req.params.id)
-      .then (function(Product){
-      return res.render("productEdit", {Product: Product})
+      db.Product.findByPk(req.params.id)
+      .then (function(product){
+      return res.render("productEdit", {tituloPagina:"EDITAR PRODUCTO", product: product})
       })
       .catch(error => res.send(error))
   }, 
-  */
-
   
+
+  /*
   edit: (req, res) => {
     let id = req.params.id;
     let productToEdit = products.find((product) => product.id == id);
@@ -122,26 +117,28 @@ const controlador = {
     fs.writeFileSync(productsFilePath, JSON.stringify(newProducts, null, " "));
     res.redirect("/");
   },
-  
+  */
 
-/*
-   edit: function (req, res){
+
+   edit:  async (req, res) => {
+    const productToEdit = await db.Product.findByPk(req.params.id);
+
      db.Product.update({
       name: req.body.name,
       categoryld: req.body.category,
-      image: req.file.filename,
+      image:  req.file ? req.file.filename : productToEdit.image ,
       description: req.body.description,
       discount: req.body.discount,
-      price: req.body.price
+      price: req.body.price,
     }, {
        where: { id: req.params.id}
      })
     .then (() => {
-      return res.redirect("/"); 
+      return res.redirect("/admin/dashboard"); 
     })
-    .catch(eror => res.send(error))
+    .catch(error => res.send(error))
   }, 
-*/
+
 
   /*
   delete: (req, res) => {
