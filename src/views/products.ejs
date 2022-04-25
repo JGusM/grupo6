@@ -29,12 +29,12 @@
    
      <% products.forEach(function(product){ 
      <!-- let finalPrice = (product.price * ((100 - product.discount) / 100)).toFixed(0)--> %>
-      <section >
-        <a href="products/detail/<%= product.id %>">
+      <section class="section-all-products">
+        <a href="products/detail/<%= product.id %>" class="a-all-products">
           <figure>
-            <img src="../images/products/<%= product.image %>" alt="imagen de producto">
+            <img src="../images/products/<%= product.image %>" class="img-all-products" alt="imagen de producto">
           </figure>
-          <article >
+          <article class="article-all-products">
           
             <h2>$ <%= product.price %> </h2>
             <span> <%= product.discount %> % OFF </span>
