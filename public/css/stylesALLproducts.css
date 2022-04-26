@@ -17,36 +17,85 @@
 }
 .container-all-categories {
   display: flex;
-  justify-content: space-around;
+  /*justify-content: space-around;
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 50px;*/
 }
 .categories {
-  display: inline-block;
+  /*display: inline-block;*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 5px 30px 5px;
 }
 .image-group-fitness-cuadrado {
-  width: 30%;
-  border-radius: 50%;
+  width: 80%;
+  height: auto;
+  /*border-radius: 50%;*/
 }
 .image-functional-training-cuadrado {
-  width: 30%;
+  width: 80%;
+  height: auto;
   border-radius: 50%;
-  border: 1px solid gray;
+  /*border: 1px solid gray;*/
 }
 .image-mat-naranja-cuadrada {
-  width: 30%;
+  width: 80%;
+  height: auto;
   border-radius: 50%;
-  border: 1px solid gray;
+  /*border: 1px solid gray;*/
 }
 .title-categories-fitness {
-  margin-top: 75px;
+  font-size: 1.5rem;
+  text-align: center;
 }
-/*
-.title-categories-functional {
-  margin-top: 40px;
 
+.title-categories-functional {
+  font-size: 1.5rem;
+  text-align: center;
+  
 }
 .title-categories-yoga {
+  font-size: 1.5rem;
+  text-align: center;
 
 }
-*/
+
+
+.all-products-section {
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  background-color: #ebebeb;
+  border: 1px rgb(177, 166, 166) solid;
+  margin-bottom: 10px;
+}
+.all-products-a {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+}
+.all-products-card {
+  margin: 10px;
+  border: 1px red solid;
+  width: 290px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.all-products-img {
+  width: 100%;
+  background-color: #fff;
+  height: auto;
+}
+.all-products-article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: black;
+  font-size: 1rem;
+  padding-bottom: 10px;
+}

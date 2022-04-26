@@ -27,25 +27,23 @@
       </div>
      </div>
    
-     <% products.forEach(function(product){ 
-     <!-- let finalPrice = (product.price * ((100 - product.discount) / 100)).toFixed(0)--> %>
-      <section >
-        <a href="products/detail/<%= product.id %>">
-          <figure>
-            <img src="../images/products/<%= product.image %>" alt="imagen de producto">
-          </figure>
-          <article >
-          
-            <h2>$ <%= product.price %> </h2>
-            <span> <%= product.discount %> % OFF </span>
-            <p> <%= product.name %> </p>
-          </article>
-        </a>
+     <section class="all-products-section">
+        <% products.forEach(function(product){ 
+          <!-- let finalPrice = (product.price * ((100 - product.discount) / 100)).toFixed(0)--> %>
+          <a href="products/detail/<%= product.id %>" class="all-products-a">
+            <div class="all-products-card">
+                <figure>
+                  <img src="../images/products/<%= product.image %>" class="all-products-img" alt="imagen de producto">
+                </figure>
+                <article class="all-products-article">
+                  <h3 class="all-products-p"> <%= product.name %> </h3>
+                  <p>$ <%= product.price %> </p>
+                  <span> <%= product.discount %> % OFF </span>
+                </article>
+              </div>   
+            </a>
+        <% }) %>
       </section>
-    <% }) %>
-    
-   
-
   </main>
 
     
