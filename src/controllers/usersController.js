@@ -2,7 +2,8 @@ const fs = require("fs");
 const path = require("path");
 const crypto = require("crypto");
 const bcrypt = require("bcryptjs");
-//let db = require("../database/models");
+let db = require("../database/models");
+const { validationResult } = require("express-validator");
 
 const userFilePath = path.join(__dirname, "../data/users.json");
 const users = JSON.parse(fs.readFileSync(userFilePath, "utf-8"));
@@ -11,9 +12,9 @@ const userLoginInfoFilePath = path.join(
   __dirname,
   "../data/userLoginInfo.json"
 );
-const usersLoginInfo = JSON.parse(
-  fs.readFileSync(userLoginInfoFilePath, "utf-8")
-);
+// const usersLoginInfo = JSON.parse(
+//   fs.readFileSync(userLoginInfoFilePath, "utf-8")
+// );
 const controlador = {
   getLoginForm: (req, res) => {
     res.render("login", { tituloPagina: "LOGIN" });
@@ -21,13 +22,14 @@ const controlador = {
   getRegisterForm: (req, res) => {
     res.render("register", { tituloPagina: "REGISTER" });
   },
-  authenticate: (req, res) => {
+  authenticate: async (req, res) => {
     console.log(req.body);
     //PRIMERO Q TODO HACEMOS LOGICA PARA GUARDAR LOS DATOS DEL LOGIN EN UN JSON
     const { email, password } = req.body;
 
     //verifico si el mail q puso en el formulario esta en nuestra db
-    let user = users.find((user) => user.email == email);
+    let user = await db.User.findOne({ where: { email: email } });
+   // let user = users.find((user) => user.email == email);
 
     if (user) {
       // y la contraseña es correcta...
@@ -44,11 +46,18 @@ const controlador = {
           user.token = token;
           // Lo guardamos en base, para poder chequearlo luego
 
-          let userLoginInfo = [...userLoginInfo, user];
-          fs.writeFileSync(
-            userLoginInfoFilePath,
-            JSON.stringify(userLoginInfo, null, " ")
-          );
+          let userLoginInfo = {
+          // [...userLoginInfo, user];
+          // fs.writeFileSync(
+          //   userLoginInfoFilePath,
+          //   JSON.stringify(userLoginInfo, null, " ")
+          // );
+
+          token: user.token,
+          userId: user.id,
+        };
+
+        await db.User.create(userLoginInfo);
 
           // Recordamos al usuario por 3 meses         msegs  segs  mins  hs   días
           res.cookie("rememberToken", token, {
@@ -77,13 +86,20 @@ const controlador = {
       });
     }
   },
-  storeUser: (req, res) => {
+  storeUser: async (req, res) => {
+    // let errors = validationResult(req);
+    // if (!errors.isEmpty()) {
+    //   return res.render("./users/register", {
+    //     errors: errors.mapped(),
+    //     old: req.body,
+    //   }) } else { try {
     // Creamos un nuevo usuario tomando los datos del formulario
     let newUser = {
-      id: users[users.length - 1].id + 1,
+      //id: users[users.length - 1].id + 1,
       ...req.body,
-      image: req.file ? req.file.filename : "default-image.png",
-      category: "user",
+      image: req.file 
+      ? req.file.filename : "default-image.png",
+      userRole: "user",
     };
 
     console.log(req.body);
@@ -92,11 +108,17 @@ const controlador = {
     newUser.repassword;
 
     //escribimos en nuestro archivo json
-    let usersNews = [...users, newUser];
-    fs.writeFileSync(userFilePath, JSON.stringify(usersNews, null, " "));
-
-    res.redirect("/");
-  },
+    // let usersNews = [...users, newUser];
+    // fs.writeFileSync(userFilePath, JSON.stringify(usersNews, null, " "));
+    
+    await db.User.create(newUser);
+    
+    res.redirect("/users/login");
+  // } catch (error) {
+  //   console.log(error);
+  // }
+// }
+},
   profile: (req, res) => {
     res.render("profile", { tituloPagina: "PROFILE" });
   },

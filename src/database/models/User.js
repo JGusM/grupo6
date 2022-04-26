@@ -6,30 +6,34 @@ module.exports = (sequelize, dataTypes) => {
       primaryKey: true,
       autoIncrement: true,
     },
-    firstname: {
+    firstName: {
       type: dataTypes.STRING,
-      allowNull: false,
+      
     },
-    lastname: {
+    lastName: {
       type: dataTypes.STRING,
-      allowNull: false,
+      
     },
     email: {
       type: dataTypes.STRING,
-      allowNull: false,
+      
+    },
+    password: {
+      type: dataTypes.STRING
+    },
+    userRole: {
+      type: dataTypes.STRING,
+      
     },
     image: {
       type: dataTypes.STRING,
-      allowNull: false,
-    },
-    role: {
-      type: dataTypes.STRING,
-      allowNull: false,
+      
     },
   };
 
   let config = {
-    timestamps: true,
+    tableName: "user",
+    timestamps: false,
     createdAt: "created_at",
     updatedAt: "updated_at",
     deletedAt: false,
