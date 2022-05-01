@@ -1,4 +1,4 @@
-window.addEventListener("load", function(){
+/*window.addEventListener("load", function(){
 
   let formulario = document.querySelector("form.login-container")
 
@@ -32,4 +32,4 @@ window.addEventListener("load", function(){
   })
 
 
-  });
+  });*/
