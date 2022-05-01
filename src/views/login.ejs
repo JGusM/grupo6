@@ -20,16 +20,19 @@
                  <h1 class="login-h1"> <i class="fas fa-user"></i></i></i>&nbsp&nbspLOGIN </h1>
             </div>
         
+            <div class="errores">
+                <ul></ul>
+            </div>
 
             <!-- ----EMAIL----  -->
             <div class="login-cajas-input">
-                 <input type="email" name="email" placeholder="✉ Ingresá tu email" required>
+                 <input type="email" name="email" class="email" placeholder="✉ Ingresá tu email" >
             </div>
 
             <!-- ----CONTRASEÑA----  -->
 
             <div class="login-cajas-input">
-                 <input type="password" name="password" placeholder="🔓 Ingresá contraseña" minlength="8" required>
+                 <input type="password" name="password" class="password" placeholder="🔓 Ingresá contraseña" >
             </div>
    
              <!-- ----RECORDARME----  -->
@@ -56,6 +59,6 @@
     <%- include('./partials/footer')%>
     <!-- ----------------------------------------- -->
 
-    <script src="/js/loginForm.js"></script>
+    
 </body>
 </html>
