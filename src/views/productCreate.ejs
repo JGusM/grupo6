@@ -14,18 +14,21 @@
                  <h1 class="admin-h1">CARGAR PRODUCTO </h1>
             </div>
 
+           <div class="errores-product-create">
+               <ul></ul>
+           </div>
         
         <div class=container-left>
             <!-- ----NOMBRE ----  -->
             <div class="admin-cajas-input">
                  <label for="">Nombre del producto</label></br>
-                 <input type="text" name="name" placeholder="Ingresá nombre del producto" required>
+                 <input type="text" name="name" placeholder="Ingresá nombre del producto" class="nombre-producto-create">
             </div>
 
             <!-- ----CATEGORÍA----  -->
             <div class="admin-cajas-input">
                  <label for="">Categoría:</label></br>
-                 <select class="textarea-input" name="category" required>
+                 <select class="textarea-input" id="categoria-create" name="category">
                     <option value="" selected disabled hidden>Elegí una opción</option>
                       <option class="textarea-input" value="1">Funcional</option>
                       <option class="textarea-input" value="3">Yoga</option>
@@ -37,8 +40,7 @@
             <div class="admin-cajas-input" class="create-input-photo">
                 <label>Foto del producto</label>
                 <br>
-               <!-- ----Cambie nombre del name del input a IMAGE----  -->
-                <input type="file" name="image">
+                <input type="file" name="image" class="imagen-product-create">
            </div>
 
         </div>
@@ -48,20 +50,19 @@
                 <!-- ----DESCRIPCIÓN----  -->
                 <div class="admin-cajas-input">
                 <label for="">Descripción</label></br>
-                <textarea name="description"  class="textarea-input" id="description" rows="4" cols="38" placeholder="Agregá una descripción"></textarea> 
+                <textarea name="description" class="descripcion-product-create" class="textarea-input" id="description" rows="4" cols="38" placeholder="Agregá una descripción"></textarea> 
                 </div>
 
                 <!-- ----DESCUENTO----  -->
                 <div class="admin-cajas-input">
                 <label for="">Descuento</label></br>
-                <input type="number" name="discount" placeholder="Ingresá el descuento" required>
+                <input type="number" name="discount" placeholder="Ingresá el descuento" class="descuento-product-create">
                 </div>
           
                 <!-- ----PRECIO----  -->
                 <div class="admin-cajas-input">
                <label for="">Precio</label></br>
-               <!-- ----Cambie el nombre porque esta en number por  price----  -->
-                <input type="number" name="price" placeholder="Ingresá un precio" required>
+               <input type="number" name="price" placeholder="Ingresá un precio" class="precio-product-create">
                 </div>
          </div>
            <!-- ----BOTÓN "GUARDAR"----  -->

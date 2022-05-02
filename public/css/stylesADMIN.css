@@ -78,6 +78,24 @@
         flex-direction: row;
     }  */
 
+    /*-----------------------errores-product-create-----------------------*/
+    
+    .errores-product-create {
+      color: red;
+      font-size: 18px;
+      padding-left: 30px;
+      padding-top: 20px;
+    }
+
+    /*-----------------------errores-product-edit-----------------------*/
+    
+    /*.errores-product-edit {
+      color: red;
+      font-size: 18px;
+      padding-left: 30px;
+      padding-bottom: 15px;
+    }*/
+
 /* ------------------------Botón: GUARDAR---------------------------*/
 
 .admin-button {
