@@ -70,6 +70,8 @@
   background-color: #ebebeb;
   border: 1px rgb(177, 166, 166) solid;
   margin-bottom: 10px;
+  justify-content: center;
+  
 }
 .all-products-a {
   text-decoration: none;
