@@ -144,3 +144,12 @@ input {
   color: rgb(235, 72, 13);
   font-weight: bolder;
 }
+
+/*-----------------------errores-register-----------------------*/
+
+.errores-register {
+  color: red;
+  font-size: 18px;
+  padding-left: 30px;
+  padding-top: 15px;
+}

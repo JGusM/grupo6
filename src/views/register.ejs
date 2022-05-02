@@ -21,19 +21,21 @@
                  <h1 class="register-h1"> <i class="fas fa-sign-in-alt"></i></i>Registrate </h1>
             </div>
 
-            
+            <div class="errores-register">
+                <ul></ul>
+            </div>
         
              <!-- ----NOMBRE----  -->
              <div class="register-cajas-input">
             <label for="">Nombre</label></br>
-            <input type="text" name="firstName" placeholder="Ingresá tu nombre" required>
+            <input type="text" name="firstName" placeholder="Ingresá tu nombre" class="firstName">
              </div>
 
             <!-- ----APELLIDO----  -->
             
             <div class="register-cajas-input">
                 <label for="">Apellido</label></br>
-                <input type="text" name="lastName" placeholder="Ingresá tu apellido" required>
+                <input type="text" name="lastName" placeholder="Ingresá tu apellido" class="lastName">
             </div>
          
             <!-- ----foto----  -->
@@ -46,24 +48,24 @@
             <!-- ----EMAIL----  -->
             <div class="register-cajas-input">
                  <label for="">E-mail</label></br>
-                 <input type="email" name="email" placeholder="✉ Ingresá tu email" required>
+                 <input type="email" name="email" placeholder="✉ Ingresá tu email" class="email-register">
             </div>
 
             <!-- ----CONTRASEÑA----  -->
            <div class="register-cajas-input">
                 <label for="">Contraseña</label></br>
-                 <input type="password" name="password" placeholder="🔓 Ingresá contraseña" minlength="8" required>
+                 <input type="password" name="password" placeholder="🔓 Ingresá contraseña" minlength="8" class="contraseña-register">
             </div>
    
             <!-- ----CONFIRMACIÓN CONTRASEÑA----  -->
             <div class="register-cajas-input">
                 <label for="">Confirmación de contraseña</label></br>
-                 <input type="password" name="password" placeholder="🔒 Confirmá contraseña" required>
+                 <input type="password" name="password" placeholder="🔒 Confirmá contraseña" class="confirmar-contraseña-register">
             </div>
    
             <!-- ----POLITICA----  -->
             <div class="register-pp">
-                <label class="register-pp-label"> <input class="register-checkbox" type="checkbox" name="privacypolicy" value="privacypolicy"> &nbsp &nbspAcepto política de privacidad</label>
+                <label class="register-pp-label"> <input class="register-checkbox" id="acepta-politica" type="checkbox" name="privacypolicy" value="privacypolicy"> &nbsp &nbspAcepto política de privacidad</label>
                 <a href="https://mirfitness.com.ar/politica-de-privacidad-2/"><p class="leer-politica">Leer primero</p></a>
             </div>
 

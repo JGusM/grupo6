@@ -1,35 +1,53 @@
-/*window.addEventListener("load", function(){
-
-  let formulario = document.querySelector("form.login-container")
-
-  formulario.addEventListener ("submit", function(e){
+window.addEventListener("load", function(){
  
-    e.preventDefault();
-    
-    let errores = []
+  let formularioRegristro = document.querySelector("form.register-container")
 
-    let campoEmail = document.querySelector("input.email");
-    let campoPassword = document.querySelector("input.password");
-    
-    if (campoEmail.value == "") {
-      errores.push("¡El campo email debe estar completo!")
+
+  formularioRegristro.addEventListener ("submit", function(e){
+  
+    let erroresRegistro = []
+
+    let campoFirstNameRegistro = document.querySelector("input.firstName");
+    let campoLastNameRegistro = document.querySelector("input.lastName");
+    let campoEmailRegistro = document.querySelector("input.email-register");
+    let campoContraseñaRegistro = document.querySelector("input.contraseña-register");
+    let campoConfirmacionContraseñaRegistro = document.querySelector("input.confirmar-contraseña-register");
+    let campoAceptaPolitica= document.getElementById("acepta-politica").checked;
+
+
+    if (campoFirstNameRegistro.value == "") {
+      erroresRegistro.push("¡El campo nombre debe estar completo!")
     }
 
-    if (campoPassword.value == "") {
-      errores.push("¡El campo password debe estar completo!")
+    if (campoLastNameRegistro.value == "") {
+      erroresRegistro.push("¡El campo apellido debe estar completo!")
     }
 
+    if (campoEmailRegistro.value == "") {
+      erroresRegistro.push("¡El campo e-mail debe estar completo!")
+    }
 
-    if (errores.length >0 ){
+    if (campoContraseñaRegistro.value == "") {
+      erroresRegistro.push("¡El campo contraseña debe estar completo!")
+    }
+
+    if (campoConfirmacionContraseñaRegistro.value == "") {
+      erroresRegistro.push("¡Debe confirmar su contraseña!")
+    }
+
+    if(!campoAceptaPolitica){
+        erroresRegistro.push("¡Debe aceptar política de privacidad!")
+    }
+
+    if (erroresRegistro.length >0 ){
       e.preventDefault();
 
-      let ulErrores= document.querySelector("div.errores ul")
-      for (let i=0; i<errores.length; i++){
-        ulErrores.innerHTML += "<li>" + errores[i] + "</li>"
+      let ulErroresRegistro= document.querySelector("div.errores-register ul")
+      for (let i=0; i<erroresRegistro.length; i++){
+        ulErroresRegistro.innerHTML += "<li>" + erroresRegistro[i] + "</li>"
       }
     }
 
   })
 
-
-  });*/
+  });
