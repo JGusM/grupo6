@@ -246,11 +246,11 @@
     border: 2px black sokid;
   }
   .imageProducts {
-    width: 100%;
+    width: 103%;
   }
   .imageAccessories {
     width: 100%;
-    margin-top: -6px;
+    margin-top: -30px;
   }
   .imageGroupFitness {
     width: 100%;
@@ -265,6 +265,10 @@
   .video {
     text-align: center;
   }
+
+  /*----------------INFORMACION COMERCIAL--------------*/
+
+
   .iconsCommercial {
     text-align: center;
     padding: 10px;
@@ -344,12 +348,17 @@
       color: white;
       display: inline-block;
     }
+    .container-iconsCommercial {
+      display: flex;
+      justify-content: space-around;
+      margin: 30px;
+    }
     .iconsFooter {
       display: none;
     }
     .contenedor,
     .nombre-boton {
-      height: 400px;
+      height: 500px;
     }
   }
   /* 
