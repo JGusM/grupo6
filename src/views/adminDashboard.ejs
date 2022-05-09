@@ -47,7 +47,19 @@
           </div>
           <div>
             <p class="dashboard-titles  dashboard-medium-column">
-              <%=product.category%>
+              <% if(product.categoryld == 1 ){
+                 %>
+                  Funcional
+              <% }else if(product.categoryld == 2 ){
+               %>
+                  Fitness
+              <%
+          }else{
+                %>
+                  Yoga
+              <%
+          } %>
+              
             </p>
           </div>
           <div>

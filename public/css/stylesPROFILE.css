@@ -53,10 +53,15 @@
   margin-bottom: 20px;
   min-width: 200px;
 }
+.user-container-img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 .user-img {
-  width: 250px;
-  height: 250px;
+  width: 150px;
+  height: 200px;
   margin-top: 20px;
   margin-bottom: 30px;
   margin-left: auto;
