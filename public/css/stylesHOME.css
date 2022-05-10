@@ -59,6 +59,7 @@
     color: white;
     padding-top: 10px;
     background-color: black;
+    padding-left: 20px;
   }
   .menuNav li:hover .submenuNav {
     display: block;
@@ -71,6 +72,7 @@
     text-align: right;
     margin-right: 30px;
     text-decoration: none;
+    width: 0%;
   }
   .search {
     color: white;
@@ -152,6 +154,7 @@
     background-color: orange;
     color: white;
     padding: 10px;
+    cursor: pointer
   }
   /*--------------TODOS LOS ACCESORIOS------------*/
   .accessories {
@@ -175,6 +178,7 @@
     color: white;
     padding: 10px;
     border: 2px white sokid;
+    cursor: pointer
   }
   /*----------------GROUP FITNESS--------------*/
   .groupFitness {
@@ -198,6 +202,7 @@
     color: black;
     padding: 10px;
     border: 2px black sokid;
+    cursor: pointer;
   }
   /*----------------FUNCTIONAL TRAINING--------------*/
   .functionalTraining {
@@ -221,6 +226,7 @@
     color: black;
     padding: 10px;
     border: 2px black sokid;
+    cursor: pointer;
   }
   /*----------------YOGA / PILATES--------------*/
   .yogaPilates {
@@ -244,6 +250,7 @@
     color: black;
     padding: 10px;
     border: 2px black sokid;
+    cursor: pointer;
   }
   .imageProducts {
     width: 103%;
