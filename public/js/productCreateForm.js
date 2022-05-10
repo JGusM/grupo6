@@ -1,12 +1,11 @@
 window.addEventListener("load", function(){
- 
+
   let formularioCreacionProducto = document.querySelector("form.admin-container")
 
-  formularioCreacionProducto.addEventListener("submit", function(e){
-  
-    e.preventDefault();
 
-    let erroresProductCreate = []
+  formularioCreacionProducto.addEventListener("submit", function(e){
+   
+
 
     let campoNombreProductoCreate = document.querySelector("input.nombre-producto-create");
     let campoCategoriaProductCreate= document.getElementById("categoria-create");
@@ -14,24 +13,25 @@ window.addEventListener("load", function(){
     let campoDescripcionProductCreate = document.getElementById("description");
     /*let campoDescuentoProductCreate = document.querySelector("input.descuento-product-create");*/
     let campoPrecioProductCreate= document.querySelector("input.precio-product-create");
-
-     console.log(campoDescripcionProductCreate)
+    let  ulerroresProductCreate= document.querySelector("div.errores-product-create ul")
+   
+    let erroresProductCreate = []
+    ulerroresProductCreate.innerHTML = ""
     if (campoNombreProductoCreate.value == "") {
-        console.log("hola")
-      erroresProductCreate.push("¡El producto debe tener un nombre!")
+      addErrorView("¡El producto debe tener un nombre!")
     }
 
     if(campoCategoriaProductCreate.value==0 ||
        campoCategoriaProductCreate.value == ""){
-        erroresProductCreate.push("¡Debe seleccionar una categoría!")
+      addErrorView("¡Debe seleccionar una categoría!")
     }
 
     if (campoImagenProductCreate.value == "") {
-      erroresProductCreate.push("¡Debe agregar una imagen!")
+       addErrorView("¡Debe agregar una imagen!")
     }
 
     if (campoDescripcionProductCreate.value == "") {
-      erroresProductCreate.push("¡Debe agragar una descripción!")
+      addErrorView("¡Debe agragar una descripción!")
     }
 
     /*if (campoDescuentoProductCreate.value == "") {
@@ -39,20 +39,18 @@ window.addEventListener("load", function(){
     }*/
 
     if (campoPrecioProductCreate.value == "") {
-      erroresProductCreate.push("¡El producto debe tener un precio!")
+       addErrorView("¡El producto debe tener un precio!")
     }
-
-    
-
     if (erroresProductCreate.length >0 ){
-      e.preventDefault();
-
-      let ulerroresProductCreate= document.querySelector("div.errores-product-create ul")
-      for (let i=0; i<erroresProductCreate.length; i++){
-        ulerroresProductCreate.innerHTML += "<li>" + erroresProductCreate[i] + "</li>"
-      }
+     e.preventDefault();
     }
 
+     function addErrorView(message){
+      if(!(erroresProductCreate.includes(message))){
+          erroresProductCreate.push(message)
+          ulerroresProductCreate.innerHTML += "<li>" + message + "</li>"
+      }
+   }
   })
 
   });

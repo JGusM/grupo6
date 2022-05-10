@@ -7,35 +7,35 @@
   window.addEventListener("load", function(){
 
   let formulario = document.querySelector("form.login-container")
-  
-  formulario.addEventListener ("submit", function(e){
- 
-    e.preventDefault();
-    
-    let errores = []
+  let campoEmail = document.querySelector("input.email");
+  let campoPassword = document.querySelector("input.password");
+  let ulErrores= document.querySelector("div.errores ul");
 
-    let campoEmail = document.querySelector("input.email");
-    let campoPassword = document.querySelector("input.password");
-    
+  formulario.addEventListener ("submit", function(e){
+     let errores = [] 
+    ulErrores.innerHTML = ""
     if (campoEmail.value == "") {
-      errores.push("¡El campo email debe estar completo!")
+      addErrorView("¡El campo email debe estar completo!")
     }
 
     if (campoPassword.value == "") {
-      errores.push("¡El campo password debe estar completo!")
+       addErrorView("¡El campo password debe estar completo!")
     }
-
-
-    if (errores.length >0 ){
+      if (errores.length > 0 ){
       e.preventDefault();
-
-      let ulErrores= document.querySelector("div.errores ul")
-      for (let i=0; i<errores.length; i++){
-        ulErrores.innerHTML += "<li>" + errores[i] + "</li>"
       }
-    }
 
+   function addErrorView(message){
+      if(!(errores.includes(message))){
+          errores.push(message)
+          ulErrores.innerHTML += "<li>" + message + "</li>"
+      }
+   }
   })
 
 
+
   });
+
+
+  // ||  errores.includes("¡El campo password debe estar completo!") ==false  
