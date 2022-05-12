@@ -15,7 +15,7 @@
   letter-spacing: 10px;
   margin: 30px;
 }
-.categories {
+.categories-all-products {
   /*display: inline-block;*/
   display: flex;
   flex-direction: column;
@@ -100,7 +100,7 @@
     display: flex;
   }
   
-  .categories {
+  .categories-all-products {
     /*display: inline-block;*/
     display: flex;
     flex-direction: column;

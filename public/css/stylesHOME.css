@@ -368,6 +368,9 @@
       height: 500px;
     }
   }
+  .imageProducts {
+    width: 103%;
+  }
   /* 
   media query 0 / 480
   media query 481 / 768
