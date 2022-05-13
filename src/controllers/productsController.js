@@ -14,6 +14,17 @@ const controlador = {
     })
    // res.render("products", { tituloPagina: "PRODUCTOS", products, toThousand });
   },
+  //agregado el método de filtrado por catégoria
+  allProductsFk: (req, res) => {
+  db.Product.findAll(
+    {
+      where:{
+        categoryld: {[db.Sequelize.Op.eq] : req.params.fk}
+      }
+   })
+  .then(products => {
+     res.render("products", { tituloPagina: "PRODUCTOS", products, toThousand })
+  })},
   detail: (req, res) => {
     // let id = req.params.id;
     // let product = products.find((product) => product.id == id);

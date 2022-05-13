@@ -50,6 +50,8 @@ router.get("/:id/edit", controller.getFormEdit);
 //Cambie el metodo para que pueda recibir la imagen nueva y actualizar
 router.patch("/:id/edit", upload.single("image"), controller.edit);
 
+//Ruta para filtrar por Clave foránea
+router.get("/:fk", controller.allProductsFk)
 // Ruta para ELIMINAR producto
 // /:id (DELETE)
 router.delete("/:id", controller.delete);
