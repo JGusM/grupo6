@@ -32,13 +32,18 @@
           <!-- let finalPrice = (product.price * ((100 - product.discount) / 100)).toFixed(0)--> %>
           <a href="products/detail/<%= product.id %>" class="all-products-a">
             <div class="all-products-card">
-                <figure>
-                  <img src="../images/products/<%= product.image %>" class="all-products-img" alt="imagen de producto">
-                </figure>
-                <article class="all-products-article">
-                  <h3 class="all-products-p"> <%= product.name %> </h3>
+              <figure>
+                <img src="../images/products/<%= product.image %>" class="all-products-img" alt="imagen de producto">
+              </figure>
+              <article class="all-products-article">
+                <h3 class="all-products-p"> <%= product.name %> </h3>
+                <div class="all-products-description">
                   <p>$ <%= product.price %> </p>
                   <span> <%= product.discount %> % OFF </span>
+                </div>
+                <div class="all-products-icon">
+                <i class="fa-solid fa-motorcycle"></i>
+                </div>
                 </article>
               </div>   
             </a>
