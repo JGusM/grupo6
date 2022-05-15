@@ -36,4 +36,5 @@ app.use("/products", rutasProducts);
 app.use("/users", rutasUsers);
 app.use("/admin", rutasAdmin);
 
+app.use((req, res, next) => { res.status(404).render("not-found", { tituloPagina: "NOT FOUND"}) } );
 module.exports = app;
