@@ -23,12 +23,20 @@
         <!--<div class="search">
           <a href="/" style="color: white;"><i class="fa-solid fa-magnifying-glass"></i></a>
         </div>-->
+        <% if (!user) { %>
         <div class="user">
           <a href="/users/login" style="color: white;"><i class="fa-solid fa-user">Logueate</i></a>
         </div>
         <div class="register">
           <a href="/users/register" style="color: white;"><i class="fa-solid fa-address-card">Registrate</i></a>
         </div>
+        <% } %>
+        <% if (user) { %>
+          <li><a class="menu-profile" href="/users/profile" style="color: white;">Perfil<i></i></a></li>
+          <li><form action="/users/logout" method="POST" class="logout">
+            <a class="logout"  style="color: white;" onclick="this.closest('form').submit();"> Cerrar Sesión </a>
+        </form></li>
+            <% } %>
         <div class="cart">
           <a href="/products/cart" style="color: white;"><i class="fas fa-cart-plus"></i></a>
         </div>

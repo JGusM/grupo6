@@ -123,19 +123,19 @@ const controlador = {
     res.render("profile", { tituloPagina: "PROFILE" });
   },
   logout: (req, res) => {
-    // Borramos el registro de la base de datos si existe
-    const token = usersLoginInfo.find(
-      (user) => (user.token = req.cookies.rememberToken)
-    );
-    if (token) {
-      let logerDeleter = usersLoginInfo.filter(
-        (user) => user.token != req.cookies.rememberToken
-      );
-      fs.writeFileSync(
-        userLoginInfoFilePath,
-        JSON.stringify(logerDeleter, null, " ")
-      );
-    }
+    // // Borramos el registro de la base de datos si existe
+    // const token = usersLoginInfo.find(
+    //   (user) => (user.token = req.cookies.rememberToken)
+    // );
+    // if (token) {
+    //   let logerDeleter = usersLoginInfo.filter(
+    //     (user) => user.token != req.cookies.rememberToken
+    //   );
+    //   fs.writeFileSync(
+    //     userLoginInfoFilePath,
+    //     JSON.stringify(logerDeleter, null, " ")
+    //   );
+    // }
     // Destruimos la sesión
     req.session.destroy();
 
