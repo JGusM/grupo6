@@ -157,6 +157,11 @@
     justify-content: space-between;
     margin: 0 5px 30px 5px;
     width: 33%;
+    text-align: center;
+  }
+  .img-mat-yoga {
+    align-items: center;
+    margin-top: 70px;
   }
 
 }
