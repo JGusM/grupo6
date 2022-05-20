@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 20-05-2022 a las 01:12:54
+-- Tiempo de generación: 20-05-2022 a las 05:05:35
 -- Versión del servidor: 10.4.22-MariaDB
 -- Versión de PHP: 8.1.2
 
@@ -114,7 +114,8 @@ INSERT INTO `user` (`id`, `firstName`, `lastName`, `email`, `password`, `userRol
 (14, 'Matias', 'Cejas', 'mati@cejas.com', '$2a$10$VB05RP.oxToGqocjLwHgeeFbVf6AFLifcTbmbpf0BUjs5R1lWnfC2', 'user', 'image-1651772771527.jpeg'),
 (15, 'Gustavo', 'Mai', 'jgm@gmail.com', '$2a$10$eExbUmXZa6OpYPaM25WqUunlTFksDcNi3773QQVvb8Y1os8skBZI.', 'user', 'image-1652055149595.jpg'),
 (16, 'Jorge', 'Meis', 'jorge@gmail.com', '$2a$10$VMUme6VUqn7Kg4wOyRObAubtejS3u5xUjRBGvjcJY6yEKuqzkeJXm', 'user', 'image-1652229872210.jpg'),
-(17, 'Guille', 'Qua', 'guille@gmail.com', '$2a$10$lm.CJYwsPJEiU3L653xfqezZcaZEyNwdlCor7E1SMW.fNxxfUx5ZO', 'user', 'image-1652911460326.jpg');
+(17, 'Guille', 'Qua', 'guille@gmail.com', '$2a$10$lm.CJYwsPJEiU3L653xfqezZcaZEyNwdlCor7E1SMW.fNxxfUx5ZO', 'user', 'image-1652911460326.jpg'),
+(18, 'ññaskdjfñlka', 'asdfasdfasdf', 'jgusmei@gmail.com', '$2a$10$P2eD9ZBwP.3nq/EEXslHleQKGPKBOTM4Z1ghg9hytBw7teRjmHthq', 'user', 'default-image.png');
 
 -- --------------------------------------------------------
 
@@ -129,7 +130,8 @@ CREATE TABLE `userlogin` (
   `email` varchar(255) NOT NULL,
   `password` varchar(255) NOT NULL,
   `userRole` varchar(255) NOT NULL,
-  `image` varchar(255) NOT NULL
+  `image` varchar(255) NOT NULL,
+  `token` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
@@ -181,7 +183,7 @@ ALTER TABLE `productcategory`
 -- AUTO_INCREMENT de la tabla `user`
 --
 ALTER TABLE `user`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
 
 --
 -- AUTO_INCREMENT de la tabla `userlogin`
