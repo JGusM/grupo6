@@ -133,6 +133,8 @@
   }
   .text-section {
     margin-bottom: 10px;
+    font-size: 3.5vw;
+    text-align: center;
   }
   .categories {
     position: relative;
@@ -143,6 +145,7 @@
     top: 25%;
     left: 15%;
     color: white;
+    font-size: 3.5vw;
   }
   .divButtonCategories {
     position: absolute;
@@ -150,7 +153,7 @@
     left: 15%;
   }
   .buttonCategories {
-    font-size: 2vw;
+    font-size: 3vw;
     background-color: orange;
     color: white;
     padding: 10px;
@@ -167,13 +170,19 @@
     left: 15%;
     color: white;
   }
+  .divTextAccessories h5 {
+    font-size: 3.5vw;
+  }
+  .divTextAccessories h2 {
+    font-size: 5.2vw;
+  }
   .divButtonAccessories {
     position: absolute;
     top: 70%;
     left: 10%;
   }
   .buttonAccessories {
-    font-size: 2vw;
+    font-size: 3.5vw;
     background-color: black;
     color: white;
     padding: 10px;
@@ -197,7 +206,7 @@
     left: 10%;
   }
   .buttonGroupFitness {
-    font-size: 2vw;
+    font-size: 3vw;
     background-color: white;
     color: black;
     padding: 10px;
@@ -221,7 +230,7 @@
     left: 10%;
   }
   .buttonFunctionalTraining {
-    font-size: 2vw;
+    font-size: 3vw;
     background-color: white;
     color: black;
     padding: 10px;
@@ -245,7 +254,7 @@
     left: 10%;
   }
   .buttonYogaPilates {
-    font-size: 2vw;
+    font-size: 3vw;
     background-color: white;
     color: black;
     padding: 10px;
