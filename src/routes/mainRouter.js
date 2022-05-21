@@ -1,8 +1,8 @@
-// Acá nos falta express y el router
+// Acá va express y el router
 const express = require('express');
 const router = express.Router(); 
 
-// Aća nos falta traer el controller
+// Aca va el controller
 const controller = require('../controllers/mainController');
 
 
