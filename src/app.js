@@ -11,6 +11,7 @@ const rutasMain = require("./routes/mainRouter");
 const rutasProducts = require("./routes/productsRouter");
 const rutasUsers = require("./routes/usersRouter");
 const rutasAdmin = require("./routes/adminRouter");
+const rutasApi = require("./routes/api/rutasApi");
 
 //Agregue configuracion del session
 app.use(
@@ -35,6 +36,7 @@ app.use("/", rutasMain);
 app.use("/products", rutasProducts);
 app.use("/users", rutasUsers);
 app.use("/admin", rutasAdmin);
+app.use("/api", rutasApi);
 
 app.use((req, res, next) => { res.status(404).render("not-found", { tituloPagina: "NOT FOUND"}) } );
 module.exports = app;
