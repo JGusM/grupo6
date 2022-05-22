@@ -51,6 +51,7 @@
     position: absolute;
     display: none;
     transition: all 2s;
+    
   }
   .submenuNav li a {
     display: block;
