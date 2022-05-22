@@ -30,7 +30,7 @@
      <section class="all-products-section">
         <% products.forEach(function(product){ 
           <!-- let finalPrice = (product.price * ((100 - product.discount) / 100)).toFixed(0)--> %>
-          <a href="products/detail/<%= product.id %>" class="all-products-a">
+          <a href="http://localhost:3001/products/detail/<%= product.id %>" class="all-products-a">
             <div class="all-products-card">
               <figure>
                 <img src="../images/products/<%= product.image %>" class="all-products-img" alt="imagen de producto">
