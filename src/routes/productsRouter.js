@@ -51,7 +51,7 @@ router.get("/:id/edit", controller.getFormEdit);
 router.patch("/:id/edit", upload.single("image"), controller.edit);
 
 //Ruta para filtrar por Clave foránea
-router.get("/:fk", controller.allProductsFk)
+// router.get("/:fk", controller.allProductsFk)
 // Ruta para ELIMINAR producto
 // /:id (DELETE)
 router.delete("/:id", controller.delete);

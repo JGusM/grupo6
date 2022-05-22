@@ -1,3 +1,4 @@
+/src/database/config
 # Compiled source #
 ###################
 *.com
@@ -44,4 +45,3 @@ Thumbs.db
 *.config
 node_modules/
 .vscode/
-src/database/config/

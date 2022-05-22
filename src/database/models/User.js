@@ -39,6 +39,12 @@ module.exports = (sequelize, dataTypes) => {
     deletedAt: false,
   };
   const User = sequelize.define(alias, cols, config); //"User" es una variable que creo que coincide con el nombre del archivo"
-
+ 
+  User.associate =  (models) => {
+  User.hasMany(models.Userlogin, {
+    as: "userlogin",
+    foreignKey: "userId"
+}) 
+  }
   return User;
 };
