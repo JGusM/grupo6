@@ -4,7 +4,7 @@ module.exports = {
     password: "",
     //hay que poner el nombre de nuesta bd la otra era movies_db
     database: "dh_fitness",
-    host: "127.0.0.1",
+    host: "192.168.64.2",
     dialect: "mysql",
   },
   test: {

@@ -14,7 +14,7 @@
      <section>
             <h4 class="dashboard-title">Panel de administración de productos</h4>
             <!-- ----BOTÓN "CREAR"----  -->
-            <a href="http://localhost:3000/products/create "><button type="submit" class="dashboard-btn-create btn-hover">CARGAR NUEVO PRODUCTO</button></a>
+            <a href="http://localhost:3001/products/create "><button type="submit" class="dashboard-btn-create btn-hover">CARGAR NUEVO PRODUCTO</button></a>
              
             <!-- ----TÍTULOS----  -->
             <div class="dashboard-titles-container">
@@ -70,15 +70,15 @@
           
           <div class="dashboard-btn-container">
             <!-- ----BOTÓN "DETALLE"----  -->
-            <a href="http://localhost:3000/products/detail/<%= product.id %>"><button type="submit"
+            <a href="http://localhost:3001/products/detail/<%= product.id %>"><button type="submit"
                 class="dashboard-btn-detalle btn-hover">DETALLE</button></a>
           
             <!-- ----BOTÓN "BORRAR"----  -->
-            <form action="http://localhost:3000/products/<%= product.id %>?_method=DELETE" method="POST">
+            <form action="http://localhost:3001/products/<%= product.id %>?_method=DELETE" method="POST">
               <button type="submit" class="dashboard-btn-borrar btn-hover">BORRAR</button>
             </form>
             <!-- ----BOTÓN "EDITAR"----  -->
-            <a href="http://localhost:3000/products/<%= product.id %>/edit"><button type="submit"
+            <a href="http://localhost:3001/products/<%= product.id %>/edit"><button type="submit"
                 class="dashboard-btn-edit btn-hover">EDITAR</button></a>
          </div>
       </div>

@@ -9,6 +9,7 @@ const auth = require("./middlewares/auth");
 
 const rutasMain = require("./routes/mainRouter");
 const rutasProducts = require("./routes/productsRouter");
+const rutasProductsCategory = require("./routes/productsCategoryRouter");
 const rutasUsers = require("./routes/usersRouter");
 const rutasAdmin = require("./routes/adminRouter");
 const rutasApi = require("./routes/api/rutasApi");
@@ -34,6 +35,7 @@ app.use(auth);
 
 app.use("/", rutasMain);
 app.use("/products", rutasProducts);
+app.use("/productsCategory", rutasProductsCategory);
 app.use("/users", rutasUsers);
 app.use("/admin", rutasAdmin);
 app.use("/api", rutasApi);
