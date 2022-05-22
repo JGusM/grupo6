@@ -323,7 +323,7 @@
   }
   /*------------------------------------FIN DEL MAIN------------------------------------------------*/
   /*------------------------------------INICIO DEL FOOTER-------------------------------------------*/
-  .about {
+  /* .about {
     background-color: black;
     padding: 20px 25px 60px;
   }
@@ -350,7 +350,116 @@
     color: black;
     text-align: center;
     font-size: 2em;
-  }
+  } */
+
+  *{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+footer{
+    width: 100%;
+    background: black;
+    color: #ffffff;
+    
+}
+
+.container-footer-all{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px;
+}
+
+.container-body{
+    display: flex;
+    justify-content: space-between;
+}
+
+.colunm1{
+    max-width: 400px;
+
+}
+
+.colunm1 h2{
+    font-size: 22px;
+}
+.colunm1 p{
+    font-size: 14px;
+    color: #ffff;
+    margin-top: 20px;
+    padding: 5;
+}
+
+.colunm2{
+    max-width: 400px;
+}
+.colunm2 h2{
+    font-size: 22px;
+}
+.filaredes{
+    margin-top: 20px;
+    display: flex;
+}
+
+.filaredes img{
+    width: 36px;
+    height: 36px;
+}
+.filaredes a{
+    margin-top: 10px;
+    margin-left: 10px;
+    color: #ffffff;
+}
+
+.colunm3 {
+    max-width: 400px;
+}
+.colunm3 h2{
+   font-size: 22px;
+}
+.filacontactos {
+    margin-top: 20px;
+}
+.filacontactos img{
+    width: 36px;
+    height: 36px;
+}
+.filacontactos label{
+    margin-top: 10px;
+    margin-left: 20px;
+    max-width: 140px;
+}
+.container-footer{
+    width: 100%;
+    background: #101010;
+   
+}
+.f1{
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+.copyright {
+    color: #c7c7c7;
+    
+}
+.copyright a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    
+}
+
+@media screen and (max-width: 1100px) {
+    .container-body{
+        flex-wrap: wrap;
+    }
+}
   /*------------------------------------FIN DEL FOOTER----------------------------------------------*/
   @media (min-width: 481px) {
     .contenedor,
