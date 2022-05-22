@@ -37,12 +37,16 @@ module.exports = (sequelize, dataTypes) => {
     let config = {
       tableName: "userlogin",
       timestamps: false,
-      createdAt: "created_at",
-      updatedAt: "updated_at",
-      deletedAt: false,
+
     };
     const Userlogin = sequelize.define(alias, cols, config); //"User" es una variable que creo que coincide con el nombre del archivo"
-  
+    
+    Userlogin.associate = (models)=> {
+      Userlogin.belongsTo(models.User, { 
+          as: "User", 
+          foreignKey: "userId"
+      })
+  }
     return Userlogin;
   };
   
