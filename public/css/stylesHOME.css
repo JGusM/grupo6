@@ -125,9 +125,22 @@ color: white;
     margin-right: 10px;
     font-size: small;
   }
-  .logout {
-    width: max-content;
+  .user-perfil-logout {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
+  .user-perfil-logout li {
+    display: flex;
+    justify-content: space-between;
+    width: max-content;
+    margin: 5px;
+    font-size: 1.8vw;
+  }
+  .user-perfil-logout li a {
+    text-decoration: none;
+  }
+
   /*------------------------------------FIN DEL HEADER----------------------------------------------*/
   /*------------------------------------INICIO DEL MAIN---------------------------------------------*/
   /*--------------TODAS LAS CATEGORIAS------------*/

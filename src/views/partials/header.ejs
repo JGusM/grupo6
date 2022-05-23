@@ -38,10 +38,12 @@
         </div>
         <% } %>
         <% if (user) { %>
-          <li style="height: 63px;"><a class="menu-profile" href="/users/profile" style="color: white; cursor: pointer; padding: 5px; text-decoration: none;">Perfil<i></i></a></li>
-          <li style="height: 63px;"><form action="/users/logout" method="POST" class="logout">
-            <a class="logout"  style="color: white; cursor: pointer; padding: 5px; margin: 10px" onclick="this.closest('form').submit();">Cerrar Sesión</a>
-        </form></li>
+          <div class="user-perfil-logout">
+            <li><a class="menu-profile" href="/users/profile" style="color: white;">Perfil<i></i></a></li>
+            <li><form action="/users/logout" method="POST" class="logout">
+            <a class="logout"  style="color: white;" onclick="this.closest('form').submit();"> Cerrar Sesión </a>
+            </form></li>
+          </div>
             <% } %>
         <div class="cart">
           <a href="/products/cart" style="color: white;"><i class="fas fa-cart-plus"></i></a>
