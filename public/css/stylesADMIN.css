@@ -151,7 +151,7 @@
   width: 15vw;
 }
 
-/* ------------------------Estilos del BOTONES DEL DASHBOARD---------------------------*/
+/* ------------------------Estilos de BOTONES DEL DASHBOARD---------------------------*/
 .dashboard-btn-container {
   display: flex;
 }
@@ -181,6 +181,7 @@
 }
 .btn-hover:hover {
   background-color: rgb(223, 66, 9);
+  box-shadow: 2px 2px 8px 2px #7d7c7c;
 }
 
 .dashboard-btn-detalle,
