@@ -125,6 +125,9 @@ color: white;
     margin-right: 10px;
     font-size: small;
   }
+  .logout {
+    width: max-content;
+  }
   /*------------------------------------FIN DEL HEADER----------------------------------------------*/
   /*------------------------------------INICIO DEL MAIN---------------------------------------------*/
   /*--------------TODAS LAS CATEGORIAS------------*/
@@ -149,7 +152,7 @@ color: white;
   }
   .entrenamiento-funcional-img {
     position: relative;
-    bottom: 20px;
+    bottom: -50px;
   }
   .yoga-pilates-img {
     width: 80%;
