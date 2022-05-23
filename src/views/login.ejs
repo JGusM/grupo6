@@ -28,12 +28,21 @@
             <div class="login-cajas-input">
                  <input type="email" name="email" class="email" placeholder="✉ Ingresá tu email" >
             </div>
-
+            <% if (locals.errors ) { %>
+                <ul class="errors errorsStyle">
+                    <li><%= errors.password%></li>
+                </ul>
+                <% } %>
             <!-- ----CONTRASEÑA----  -->
 
             <div class="login-cajas-input">
                  <input type="password" name="password" class="password" placeholder="🔓 Ingresá contraseña" >
             </div>
+            <% if (locals.errors ) { %>
+                <ul class="errors errorsStyle">
+                    <li><%= errors.password%></li>
+                </ul>
+                <% } %>
    
              <!-- ----RECORDARME----  -->
             <div class="login-recordarme-div">

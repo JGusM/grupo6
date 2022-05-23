@@ -1,0 +1,91 @@
+<!-- -------------- HEAD -----------------------  -->
+<%- include('./partials/head')%>
+ 
+ 
+ 
+<body>
+    <!-- -------------- HEADER -------------------  -->
+        <%- include('./partials/header')%>
+
+
+    
+    <!-- -------------- MAIN  --------------------------  -->
+    <main class="main-container-admin">
+     <section>
+            <h4 class="dashboard-title">Panel de administración de Usuarios</h4>
+            <!-- ----BOTÓN "CREAR"----  -->
+            <a href=" "><button type="submit" class="dashboard-btn-create btn-hover">CARGAR NUEVO PRODUCTO</button></a>
+             
+            <!-- ----TÍTULOS----  -->
+            <div class="dashboard-titles-container">
+               <p class="dashboard-titles  dashboard-small-column">id</p>
+               <p class="dashboard-titles  dashboard-large-column">Nombre</p>
+               <p class="dashboard-titles  dashboard-small-column">Apellido</p>
+               <p class="dashboard-titles  dashboard-medium-column">Email</p>
+               <p class="dashboard-titles  dashboard-small-column">User Role</p>
+            </div>
+          
+          <!-- ----PRODUCTOS----  -->
+<div class="dashboard-products-container">
+<% users.forEach(function(user){%>
+         <div class="dashboar-product-box">
+          <div>
+            <p class="dashboard-titles dashboard-small-column">
+              <%=user.id%>
+            </p>
+          </div>
+          <div>
+            <p class="dashboard-titles  dashboard-large-column">
+              <%=user.firstName%>
+            </p>
+          </div>
+          <div>
+            <p class="dashboard-titles  dashboard-small-column">
+              $ <%=user.lastName%>
+            </p>
+          </div>
+          <div>
+            <p class="dashboard-titles  dashboard-medium-column">
+              <%=user.email%>    
+              </p>
+          </div>
+          <div>
+            <p class="dashboard-titles  dashboard-small-column">
+              <%=user.userRole%> %
+            </p>
+          </div>
+          
+          <div class="dashboard-btn-container">
+            <!-- ----BOTÓN "DETALLE"----  -->
+            <a href=""><button type="submit"
+                class="dashboard-btn-detalle btn-hover">DETALLE</button></a>
+          
+            <!-- ----BOTÓN "BORRAR"----  -->
+            <form action= method="POST">
+              <button type="submit" class="dashboard-btn-borrar btn-hover">BORRAR</button>
+            </form>
+            <!-- ----BOTÓN "EDITAR"----  -->
+            <a href=><button type="submit"
+                class="dashboard-btn-edit btn-hover">EDITAR</button></a>
+         </div>
+      </div>
+<%})%>
+
+
+      
+		
+  </div>
+           
+          
+
+     
+     </section>   
+    </main>
+    
+    <!-- -------------- FOOTER ------------------  -->
+
+    <%- include('./partials/footer')%>
+    <!-- ----------------------------------------- -->
+
+</body>
+</html>

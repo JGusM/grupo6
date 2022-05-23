@@ -21,7 +21,17 @@ const controlador = {
       })
       .catch((error) => res.send(error));
   },
-};
+  adminUsers: (req, res) => {
+    db.User.findAll()
+      .then(function (users) {
+        res.render("adminUsers", {
+          tituloPagina: "LISTA DE USUARIOS", users
+          
+        });
+      })
+      .catch((error) => res.send(error));
+  },
+}
 
 module.exports = controlador;
 
