@@ -112,7 +112,7 @@ const controlador = {
         ...req.body,
         image: req.file 
         ? req.file.filename : "default-image.png",
-        userRole: "admin",
+        userRole: "user",
       };
   
       console.log(req.body);
