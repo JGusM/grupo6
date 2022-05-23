@@ -30,6 +30,7 @@ router.get("/user/:id", controllerU.userId);
 
 // Lista todos los productos:
 router.get("/products", controllerP.products);
+router.get("/productsCategory", controllerP.productsCategory);
 router.get("/product/:id", controllerP.detalleProduct);
 /*
 //Ruta para obtener 1 único producto

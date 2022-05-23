@@ -22,10 +22,6 @@
     color: white;
     margin-left: 30px;
   }
-
-
-
-
   div.hamburger {
   text-align: center;
   color: white;
@@ -81,7 +77,6 @@ color: white;
     position: absolute;
     display: none;
     transition: all 2s;
-    
   }
   .submenuNav li a {
     display: block;
@@ -130,6 +125,9 @@ color: white;
     margin-right: 10px;
     font-size: small;
   }
+  .logout {
+    width: max-content;
+  }
   /*------------------------------------FIN DEL HEADER----------------------------------------------*/
   /*------------------------------------INICIO DEL MAIN---------------------------------------------*/
   /*--------------TODAS LAS CATEGORIAS------------*/
@@ -154,7 +152,7 @@ color: white;
   }
   .entrenamiento-funcional-img {
     position: relative;
-    bottom: 20px;
+    bottom: -50px;
   }
   .yoga-pilates-img {
     width: 80%;

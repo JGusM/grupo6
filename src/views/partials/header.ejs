@@ -6,7 +6,7 @@
         <div class="dropdown-burger">
           <ul>
               <li><a href="/products" class="hamburger-products">NUESTROS PRODUCTOS</a></li>
-              <li ><a href="/productsCategory/2" class="hamburger-fitness">FITNESS GRUPOL</a></li>
+              <li ><a href="/productsCategory/2" class="hamburger-fitness">FITNESS GRUPAL</a></li>
               <li ><a href="/productsCategory/1" class="hamburger-funcional">ENTRENAMIENTO FUNCIONAL</a></li>
               <li><a href="/productsCategory/3"  class="hamburger-yoga">YOGA / PILATES</a></li>    
           </ul>
@@ -38,10 +38,17 @@
         </div>
         <% } %>
         <% if (user) { %>
+<<<<<<< HEAD
           <li><a class="register" href="/users/profile" style="color: white;">Perfil</a></li>
           <li><a class="register"  style="color: white; "  > <form action="/users/logout" method="POST" onclick="this.closest('form').submit();" >
             Cerrar Sesión 
         </form></a></li>
+=======
+          <li style="height: 63px;"><a class="menu-profile" href="/users/profile" style="color: white; cursor: pointer; padding: 5px; text-decoration: none;">Perfil<i></i></a></li>
+          <li style="height: 63px;"><form action="/users/logout" method="POST" class="logout">
+            <a class="logout"  style="color: white; cursor: pointer; padding: 5px; margin: 10px" onclick="this.closest('form').submit();">Cerrar Sesión</a>
+        </form></li>
+>>>>>>> 7ce4559f454719f1dc0391dcf33fde3127d5f672
             <% } %>
         <div class="cart">
           <a href="/products/cart" style="color: white;"><i class="fas fa-cart-plus"></i></a>
