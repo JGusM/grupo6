@@ -52,23 +52,21 @@
             </div>
 
             <!-- ----CONTRASEÑA----  -->
+
            <div class="register-cajas-input">
-            <% if (locals.errors && errors.password) { %>
-                <p class="validation-error" id="validation-error"> <%= errors.password.msg %> <i class="fa fa-arrow-down"></i></p>
-                    <style>#pass {border: red 2px solid}</style>
-                <% } %>
                 <label for="">Contraseña</label></br>
                  <input type="password" name="password" placeholder="🔓 Ingresá contraseña" minlength="8" class="contraseña-register">
             </div>
    
             <!-- ----CONFIRMACIÓN CONTRASEÑA----  -->
-            <% if (locals.errors && errors.rePassword) { %>
-                <p class="validation-error" id="validation-error"> <%= errors.rePassword.msg %> <i class="fa fa-arrow-up"></i> <i class="fa fa-arrow-down"></i></p>
-                    <style>#pass,#rePass {border: red 2px solid}</style>
+            <% if (locals.errors) { %>
+                <ul class="errores">
+                    <li><%= errors.password%></li>
+                </ul>
                 <% } %>
             <div class="register-cajas-input">
                 <label for="">Confirmación de contraseña</label></br>
-                 <input type="password" name="password" placeholder="🔒 Confirmá contraseña" class="confirmar-contraseña-register">
+                 <input type="password" name="rePassword" placeholder="🔒 Confirmá contraseña" class="confirmar-contraseña-register">
             </div>
    
             <!-- ----POLITICA----  -->

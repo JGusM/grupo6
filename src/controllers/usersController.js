@@ -18,7 +18,7 @@ const { validationResult } = require("express-validator");
 
 const controlador = {
   getLoginForm: async (req, res) => {
-    res.render("login", { tituloPagina: "LOGIN" });
+    res.render("login", { tituloPagina: "LOGIN", });
   },
   getRegisterForm: (req, res) => {
     res.render("register", { tituloPagina: "REGISTER" });
@@ -73,7 +73,7 @@ const controlador = {
   
           // Finalmente lo mandamos a la home
           if (req.session.user.userRole == "admin") {
-            return res.redirect("/admin/dashboard");
+            return res.redirect("/admin/index");
           } else {
             return res.redirect("/");
           }
@@ -115,7 +115,6 @@ const controlador = {
         userRole: "user",
       };
   
-      console.log(req.body);
       //encriptamos la contrasenia y borramos el password para q noo se guarde en nuestro json
       newUser.password = bcrypt.hashSync(req.body.password[0], 10);
        delete newUser.rePassword;
@@ -183,15 +182,15 @@ const controlador = {
     
     saveProfile: async (req, res) => {
       try {
-        const userToEdit = await db.User.findByPk(req.body.id);
+        const userToEdit = await db.User.findByPk(req.params.id);
         
         await db.User.update(
-          // {
-          //   ...req.body,
+           {
+            ...req.body,
           //   profilePicture: req.file ? req.file.filename : userToEdit.profilePicture,
-          // },
+           },
           {
-            where: { id: req.body.id },
+            where: { id: req.params.id },
           }
         );
         req.session.destroy();

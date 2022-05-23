@@ -13,5 +13,17 @@ router.get("/dashboard", adminRoute, controller.dashboard);
 
 router.get("/users", adminRoute, controller.adminUsers);
 
+router.get("/index", adminRoute, controller.adminIndex);
+
+router.get("/detail/:id",  controller.detail);
+
+// Ruta para obtener vista del formulario con datos del producto
+// /:id/edit (GET)
+router.get("/:id/edit", adminRoute, controller.getFormEdit);
+
+router.patch("/:id/edit", adminRoute, controller.edit);
+
+router.delete("/:id", adminRoute, controller.delete);
+
 // Acá exportamos el resultado
 module.exports = router; //Exportamos todo el contenido de la ruta para hacerlo visible
