@@ -19,15 +19,26 @@ const controlador = {
                  res.json(respuesta);
              })
 
-  },/*
-  detalleProduct: (req,res) => {
-    db.Product.findByPk(req.params.id)
-    .then(product => {
-        res.json( {
-          data: product, status:200
-        });
-    });
-  }*/
+  },
+  productsCategory: (req, res) => {
+    db.Category.findAll(
+      {
+        include: ['products'],
+      }
+      )
+     .then(products => {
+             let respuesta = {
+                 meta: {
+                     status : 200,
+                     total: products.length,
+                     url: '/api/productsCategory'
+                 },
+                 data: products
+             }
+                 res.json(respuesta);
+             })
+
+  },
   detalleProduct: (req, res) => {
     db.Product.findByPk(req.params.id)
         .then(product => {
