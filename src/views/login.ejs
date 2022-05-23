@@ -24,38 +24,35 @@
                 <ul></ul>
             </div>
 
+            <% if (locals.errors) { %>
+                <ul class="errores">
+                    <li><%= errors.password%></li>
+                </ul>
+                <% } %>
             <!-- ----EMAIL----  -->
             <div class="login-cajas-input">
                  <input type="email" name="email" class="email" placeholder="✉ Ingresá tu email" >
             </div>
-            <% if (locals.errors ) { %>
-                <ul class="errors errorsStyle">
-                    <li><%= errors.password%></li>
-                </ul>
-                <% } %>
+
             <!-- ----CONTRASEÑA----  -->
 
             <div class="login-cajas-input">
                  <input type="password" name="password" class="password" placeholder="🔓 Ingresá contraseña" >
             </div>
-            <% if (locals.errors ) { %>
-                <ul class="errors errorsStyle">
-                    <li><%= errors.password%></li>
-                </ul>
-                <% } %>
+
    
              <!-- ----RECORDARME----  -->
             <div class="login-recordarme-div">
-                <label> <input class="login-checkbox" type="checkbox" name="recordarme" value="recordarme">&nbsp&nbsp¿recordarme?</label>
+                <label> <input class="login-checkbox" type="checkbox" name="recordarme" value="recordarme">&nbsp&nbsp¿Recordarme?</label>
             </div>
 
             <!-- ----BOTÓN "REGISTRAR"----  -->
-            <button type="submit" class="login-button">ingresar</button>
+            <button type="submit" class="login-button">Ingresar</button>
 
             <!-- ----¿YA TENÉS UNA CUENTA?----  -->
             <div class="go-register-div">
-                <p class="already-an-account">¿nuevo usuario?</p>
-                <a href="http://localhost:3000/users/register"><p class="go-register"> &nbsp crear cuenta</p></a>
+                <p class="already-an-account">¿Nuevo Usuario?</p>
+                <a href="http://localhost:3001/users/register"><p class="go-register"> &nbsp Crear Cuenta</p></a>
             </div>
 
         </form>

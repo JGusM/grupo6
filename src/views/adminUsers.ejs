@@ -13,9 +13,7 @@
     <main class="main-container-admin">
      <section>
             <h4 class="dashboard-title">Panel de administración de Usuarios</h4>
-            <!-- ----BOTÓN "CREAR"----  -->
-            <a href=" "><button type="submit" class="dashboard-btn-create btn-hover">CARGAR NUEVO PRODUCTO</button></a>
-             
+                         
             <!-- ----TÍTULOS----  -->
             <div class="dashboard-titles-container">
                <p class="dashboard-titles  dashboard-small-column">id</p>
@@ -41,7 +39,7 @@
           </div>
           <div>
             <p class="dashboard-titles  dashboard-small-column">
-              $ <%=user.lastName%>
+               <%=user.lastName%>
             </p>
           </div>
           <div>
@@ -51,21 +49,21 @@
           </div>
           <div>
             <p class="dashboard-titles  dashboard-small-column">
-              <%=user.userRole%> %
+              <%=user.userRole%> 
             </p>
           </div>
           
           <div class="dashboard-btn-container">
             <!-- ----BOTÓN "DETALLE"----  -->
-            <a href=""><button type="submit"
+            <a href="http://localhost:3001/admin/detail/<%= user.id %>"><button type="submit"
                 class="dashboard-btn-detalle btn-hover">DETALLE</button></a>
           
             <!-- ----BOTÓN "BORRAR"----  -->
-            <form action= method="POST">
-              <button type="submit" class="dashboard-btn-borrar btn-hover">BORRAR</button>
+            <form action="?_method=DELETE" method="POST">
+              <button  value="<%= user.id %>" type="submit" class="dashboard-btn-borrar btn-hover">BORRAR</button>
             </form>
             <!-- ----BOTÓN "EDITAR"----  -->
-            <a href=><button type="submit"
+            <a href="http://localhost:3001/admin/<%= user.id %>/edit"><button type="submit"
                 class="dashboard-btn-edit btn-hover">EDITAR</button></a>
          </div>
       </div>

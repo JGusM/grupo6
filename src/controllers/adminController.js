@@ -31,6 +31,53 @@ const controlador = {
       })
       .catch((error) => res.send(error));
   },
+  adminIndex: (req, res) => {
+    res.render("adminIndex", { tituloPagina: "PAGINA ADMIN" });
+  },
+
+  detail: (req, res) => {
+    db.User.findByPk(req.params.id)
+    .then(user => {
+        res.render("profile", {tituloPagina: "DETALLE USUARIO", user,
+           });
+    });
+},
+getFormEdit:  function (req, res){
+  db.User.findByPk(req.params.id)
+  .then (function(user){
+  return res.render("userEdit", {tituloPagina:"EDITAR PRODUCTO", user: user})
+  })
+  .catch(error => res.send(error))
+}, 
+
+edit:  async (req, res) => {
+  try {
+  const userToEdit = await db.User.findByPk(req.params.id);
+
+   db.User.update({
+    firstName: req.body.firstName,
+    lastName: req.body.lastName,
+    email: req.body.email,
+      }, {
+     where: { id: req.params.id}
+   });
+ 
+    return res.redirect("/admin/users"); 
+  }
+  catch(error) { res.send(error)
+}}, 
+
+delete: function (req, res) {
+  db.User.destroy({
+    where: { id: req.params.id },
+    force: true,
+  })
+    .then(() => {
+      return res.redirect("/admin/users");
+    })
+    .catch((error) => res.send(error));
+},
+
 }
 
 module.exports = controlador;

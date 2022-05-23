@@ -13,13 +13,12 @@
                <main class="main-container-profile">
                     <section>
 
-                         <form class="profile-container" action="?_method=PUT" method="POST" enctype="multipart/form-data">
-
+                         <form class="profile-container" action="?_method=PATCH" method="POST" enctype="multipart/form-data">
+                              
 
                               <!-- ----TÍTULO----  -->
                               <div class="profile-title">
-                                   <h1 class="profile-h1"> <i class="fas fa-user"></i></i>&nbsp&nbsp ¡Hola, <%=
-                                             user.firstName %>! </h1>
+                                   <h1 class="profile-h1"> <i class="fas fa-user"></i></i>&nbsp&nbsp ¡Hola, <%=user.firstName %>! </h1>
                               </div>
 
                               <!-- ----IMAGEN----  -->
@@ -32,7 +31,7 @@
                               <!-- ----NOMBRE----  -->
                               <div class="profile-cajas-input">
                                    <label for="">Nombre</label></br>
-                                   <input value="<%= user.firstName %>" type="Text" name="name"
+                                   <input value="<%= user.firstName %>" type="Text" name="firstName"
                                         placeholder="Ingresá nombre del producto" required>
                                    <!-- <h3><%= user.firstName %></h3> -->
 
@@ -42,7 +41,7 @@
 
                               <div class="profile-cajas-input">
                                    <label for="">Apellido</label></br>
-                                   <input value="<%= user.lastName %>" type="Text" name="name"
+                                   <input value="<%= user.lastName %>" type="Text" name="lastName"
                                         placeholder="Ingresá nombre del producto" required>
                                    <!-- <h3><%= user.lastName %></h3> -->
                               </div>
@@ -51,7 +50,7 @@
                               <!-- ----EMAIL----  -->
                               <div class="profile-cajas-input">
                                    <label for="">E-mail</label></br>
-                                   <input value="<%= user.email %>" type="Text" name="name"
+                                   <input value="<%= user.email %>" type="Text" name="email"
                                         placeholder="Ingresá nombre del producto" required>
                                    <!-- <h3><%= user.email %></h3> -->
                               </div>
