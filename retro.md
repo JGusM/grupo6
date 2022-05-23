@@ -49,3 +49,26 @@ Sprint6: Retro
 - Para el Sprint 6 nos promonemos seguir cumpliendo con las fechas de entrega, sostener el nivel de encuentro y comunicación. Si bien trabajar todos juntos en video-conferencia fue útil en el sprint anterior, podríamos dividir un poco más las tareas así los encuentros son más cortos y menos cansadores.
 
 ---
+
+Sprint7: Retro
+
+- Durante el Sprint6 logramos seguir maneteniendo la frecuencia de encuentro de una vez por semana.
+- Logramos cumplir en tiempo y forma con la entrega del sprint (con algunos detalles mínimos por mejorar)
+- Pudimos mantener una comunicación fluida entre los miembros.
+- En el Sprint anterio habíamos codeado juntos varias parte del proyecto, lo cual fue desgastante. En el Sprint 6 nos dividimos las tareas para que cada uno trabaje más individualmente y optimizar tiempos. 
+
+
+---
+Sprint8: Retro
+
+- Durante el Sprint7 logramos seguir maneteniendo la frecuencia de encuentro de una vez por semana. El grupo se consolida día tras días y más allá del encuentro semanal nuestra comunicación es fluída durante toda la semana mediante nuestro grupo de Whatsapp. 
+- No logramos cumplir en tiempo y forma con los requisitos del sprint por cuestiones personales de algunos de los miembros. 
+- Hacia finales del Sprint 7 se unió un nuevo integrante al equipo, lo cual nos implicó cierta demora para socializar lo hecho e integrarlo al grupo, pero tenemos la expectativa de que su incorporación sea clave para la finalziación del proyecto. 
+
+---
+Finalización del proyecto: Retro
+- Durante el Sprint8 el grupo logró consolidarse aún más como grupo. 
+- Nuestras interacciones y aportes aumentaron ampliamente por la inminente finalización del proyecto. 
+- La incorporación del nuevo integrante fue clave para lograr el producto final, en poco tiempo pudo ponerse al día y cooperar para lograr lo que nos faltaba. 
+
+

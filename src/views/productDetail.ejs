@@ -2,16 +2,12 @@
  <!-- -------------- HEAD -----------------------  -->
  <%- include('./partials/head')%>
  
- 
- 
  <body>
      <!-- -------------- HEADER -------------------  -->
          <%- include('./partials/header')%>
 
- 
-     
 <!-- -------------- MAIN  --------------------------  -->
-    <main class="main-container-product">
+    <main  id="product-page" class="main-container-product">
      <section>
         <article class="product-container">
 
@@ -21,38 +17,34 @@
                
                 <div class="product-description-cantindad-container">
                     
-                    <h1 class="product-h1"><%=product.name%></h1>
-                    <h2 class="product-h2"><%=product.description%></h2>
-                  
-                    <div>
+                    <h1 id="productName" class="product-h1"><%=product.name%></h1>
+                    <h2  class="product-h2"><%=product.description%></h2>
+                    <div id="containerContadorDisplay" class="containerContador">
                         <p class="product-cantidad">Cantidad:
-                        <button class="plus-btn" type="button" name="button"><i class="fas fa-plus"></i></button>
-                        <input class="mas-menos-input" type="text" name="name" value="1">
-                        <button class="minus-btn" type="button" name="button"><i class="fas fa-minus"></i></button>
-                        </p>
-                   </div>
+                        <div class="product-container-buttons-total">
+                            <button id="-" class="minus-btn" type="button" name="button"><i class="fas fa-minus"></i></button>
+                            <p id="contador" class="mas-menos-input"> 1 </p>
+                            <button id="+" class="plus-btn" type="button" name="button"><i class="fas fa-plus"></i></button>
+                            </p>
+                        </div>
+                    </div>
 
-                    <p class="product-precio">$<%=product.price%> </p> 
+                    <p id="producPrecie"class="product-precio">$<%=product.price%> </p> 
                         
-                    <button class="product-button-agregar">Agregar al carrito 🛒</button>
+                    <button id="btnAddProduct" class="product-button-agregar">Agregar al carrito 🛒</button>
+                   
                 </div>
 
-            
             </div>
-
-            
         </article>
 
      </section>   
     </main>
-
-     
-
     <!-- -------------- FOOTER ------------------  -->
 
         <%- include('./partials/footer')%>
     <!-- ----------------------------------------- -->
-
+<script src="https://cdn.jsdelivr.net/npm/notyf@3/notyf.min.js"></script>
 </body>
 </html>
 

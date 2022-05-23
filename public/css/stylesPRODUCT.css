@@ -1,9 +1,3 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  font-family: "Bebas Neue", cursive;
-}
 
 .main-container-product {
   display: flex;
@@ -62,9 +56,7 @@
   border: none;
 }
 
-.plus-btn {
-  margin-left: 20px;
-}
+
 
 .plus-btn:hover,
 .minus-btn:hover {
@@ -103,6 +95,15 @@
 .product-button-agregar:hover {
   border: solid 2px orangered;
   color: orangered;
+}
+
+.containerContador{
+  display:  none;
+}
+
+.product-container-buttons-total{
+      align-items: center;
+        display: flex;
 }
 
 /*-----------media queries-------------------*/

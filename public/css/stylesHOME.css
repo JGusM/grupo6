@@ -352,18 +352,10 @@
     font-size: 2em;
   } */
 
-  *{
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-    font-family: sans-serif;
-}
-
 footer{
     width: 100%;
     background: black;
     color: #ffffff;
-    
 }
 
 .container-footer-all{
@@ -385,12 +377,14 @@ footer{
 
 .colunm1 h2{
     font-size: 22px;
+    letter-spacing: 3px;
 }
 .colunm1 p{
     font-size: 14px;
     color: #ffff;
     margin-top: 20px;
     padding: 5;
+    font-family: roboto !important;
 }
 
 .colunm2{
@@ -398,6 +392,7 @@ footer{
 }
 .colunm2 h2{
     font-size: 22px;
+    letter-spacing: 3px;
 }
 .filaredes{
     margin-top: 20px;
@@ -412,6 +407,8 @@ footer{
     margin-top: 10px;
     margin-left: 10px;
     color: #ffffff;
+    font-family: roboto !important;
+    text-decoration: none;
 }
 
 .colunm3 {
@@ -419,6 +416,7 @@ footer{
 }
 .colunm3 h2{
    font-size: 22px;
+  letter-spacing: 3px;
 }
 .filacontactos {
     margin-top: 20px;
@@ -431,6 +429,7 @@ footer{
     margin-top: 10px;
     margin-left: 20px;
     max-width: 140px;
+    font-family: roboto !important;
 }
 .container-footer{
     width: 100%;
@@ -452,6 +451,7 @@ footer{
     text-decoration: none;
     color: white;
     font-weight: bold;
+    font-family: roboto !important;
     
 }
 
