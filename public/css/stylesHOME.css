@@ -22,6 +22,39 @@
     color: white;
     margin-left: 30px;
   }
+
+
+
+
+  div.hamburger {
+  text-align: center;
+  color: white;
+  }
+div.hamburger i {
+color: white;
+}
+  .dropdown-burger {
+    position: absolute;
+    z-index: 1000;
+    display: none;
+    background-color: black;
+    border-radius: 10px;
+}
+.dropdown-burger ul {
+  display: block;
+}
+.dropdown-burger li{
+  border-bottom: white 1px solid;
+  padding: 10px;
+}
+
+
+
+
+
+
+
+  
   .logo {
     height: 8vh;
     align-self: stretch;
