@@ -25,7 +25,8 @@ const controllerU = require("../../controllers/api/users/apiControllerUser");
 // Acá definimos las rutas
 
 //ruta del USUARIOS
-//router.get("/users", controllerU.cart);
+router.get("/users", controllerU.users);
+router.get("/user/:id", controllerU.userId);
 
 // Lista todos los productos:
 router.get("/products", controllerP.products);
