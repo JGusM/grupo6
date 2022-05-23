@@ -39,22 +39,19 @@ color: white;
     display: none;
     background-color: black;
     border-radius: 10px;
-}
+  }
 .dropdown-burger ul {
   display: block;
+  margin-top: 100px;
 }
 .dropdown-burger li{
   border-bottom: white 1px solid;
   padding: 10px;
 }
-
-
-
-
-
-
-
-  
+.dropdown-burger li a {
+  text-decoration: none;
+  color: white;
+}
   .logo {
     height: 8vh;
     align-self: stretch;
