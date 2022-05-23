@@ -3,6 +3,8 @@ const express = require("express");
 const router = express.Router();
 const multer = require("multer");
 const path = require("path");
+const userRoute = require("../middlewares/userRoute");
+const adminRoute= require("../middlewares/adminRoute");
 
 // Almacenamiento de Multer
 var storage = multer.diskStorage({
@@ -31,30 +33,30 @@ router.get("/", controller.allProducts);
 
 //Ruta para obtener 1 único producto
 // /detail/:id (GET)
-router.get("/detail/:id", controller.detail);
+router.get("/detail/:id",  controller.detail);
 
 // Ruta obtener la vista del formulario donde se crea el producto
 // /create (GET)
-router.get("/create", controller.getformCreate);
+router.get("/create", adminRoute, controller.getformCreate);
 
 // Ruta donde se envía el formulario del producto a cargar
-router.post("/create", upload.single("image"), controller.create);
+router.post("/create", adminRoute, upload.single("image"), controller.create);
 
 // Ruta para obtener vista del formulario con datos del producto
 // /:id/edit (GET)
-router.get("/:id/edit", controller.getFormEdit);
+router.get("/:id/edit", adminRoute, controller.getFormEdit);
 
 // Ruta para EDITAR producto
 // /:id (PUT)
 //En las rutas faltaba escribir un edit
 //Cambie el metodo para que pueda recibir la imagen nueva y actualizar
-router.patch("/:id/edit", upload.single("image"), controller.edit);
+router.patch("/:id/edit", adminRoute, upload.single("image"), controller.edit);
 
 //Ruta para filtrar por Clave foránea
 // router.get("/:fk", controller.allProductsFk)
 // Ruta para ELIMINAR producto
 // /:id (DELETE)
-router.delete("/:id", controller.delete);
+router.delete("/:id", adminRoute, controller.delete);
 
 // Acá exportamos el resultado
 module.exports = router; //Exportamos todo el contenido de la ruta para hacerlo visible

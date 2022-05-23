@@ -32,7 +32,7 @@ module.exports = async (req, res, next) => {
         
         // y existe el token en nuestra base
         if (userToken) {       
-            let user = await db.User.findOne({ where: { id: userToken.userId } })
+            let user = await db.User.findOne({ where: { id: userToken.id } })
             
             // y existe el usuario en nuestra base
             if(user) {

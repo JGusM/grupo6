@@ -60,7 +60,7 @@ const controlador = {
             // );
   
             token: user.token,
-            userId: user.id,
+            id: user.id,
           };
   
           await db.Userlogin.create(userLoginInfo);
@@ -72,12 +72,15 @@ const controlador = {
           }
   
           // Finalmente lo mandamos a la home
-          return res.redirect("/");
-  
+          if (req.session.user.userRole == "admin") {
+            return res.redirect("/admin/dashboard");
+          } else {
+            return res.redirect("/");
+          }
         } else {
           // Si la contraseña esta mal
           return res.render("login", {
-            old: req.body,
+            oldData: req.body,
             errors: {
               password: "El email o la contraseña son inválidos",
             },
@@ -109,7 +112,7 @@ const controlador = {
         ...req.body,
         image: req.file 
         ? req.file.filename : "default-image.png",
-        userRole: "user",
+        userRole: "admin",
       };
   
       console.log(req.body);
@@ -167,6 +170,35 @@ const controlador = {
       } catch (error) {
         console.log(error);
       }
-    }
+    },
+    editProfile: async (req, res) => {
+      try {
+        res.render("userEdit", { tituloPagina: "EDITAR USUARIO"
+          
+        });
+      } catch (error) {
+        console.log(error);
+      }
+    },
+    
+    saveProfile: async (req, res) => {
+      try {
+        const userToEdit = await db.User.findByPk(req.body.id);
+        
+        await db.User.update(
+          // {
+          //   ...req.body,
+          //   profilePicture: req.file ? req.file.filename : userToEdit.profilePicture,
+          // },
+          {
+            where: { id: req.body.id },
+          }
+        );
+        req.session.destroy();
+      } catch (error) {
+        console.log(error);
+      }
+        },
+  
   }
   module.exports = controlador;
