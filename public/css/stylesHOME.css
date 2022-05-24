@@ -152,6 +152,7 @@ color: white;
   .contenedor-imagen {
     width: 70%;
     position: relative;
+    height: 243px;
   }
   .contenedor-imagen img {
     max-width: 100%;
@@ -329,7 +330,7 @@ color: white;
     box-shadow: 0 0 50px rgba(255, 165, 0, 1);
   }
   .imageProducts {
-    width: 103%;
+    width: 100%;
   }
   .imageAccessories {
     width: 100%;
@@ -526,6 +527,9 @@ footer{
     }
     .navbar {
       display: block;
+    }
+    .navbar ul{
+      width: 300px;
     }
     .hamburger {
       display: none;
