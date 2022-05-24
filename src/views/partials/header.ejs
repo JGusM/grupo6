@@ -39,6 +39,14 @@
         <% } %>
         <% if (user) { %>
 <<<<<<< HEAD
+          <div class="user-perfil-logout">
+            <li><a class="menu-profile" href="/users/profile" style="color: white;">Perfil<i></i></a></li>
+            <li><form action="/users/logout" method="POST" class="logout">
+            <a class="logout"  style="color: white;" onclick="this.closest('form').submit();"> Cerrar Sesión </a>
+            </form></li>
+          </div>
+=======
+<<<<<<< HEAD
           <li><a class="register" href="/users/profile" style="color: white;">Perfil</a></li>
           <li><a class="register"  style="color: white; "  > <form action="/users/logout" method="POST" onclick="this.closest('form').submit();" >
             Cerrar Sesión 
@@ -49,6 +57,7 @@
             <a class="logout"  style="color: white; cursor: pointer; padding: 5px; margin: 10px" onclick="this.closest('form').submit();">Cerrar Sesión</a>
         </form></li>
 >>>>>>> 7ce4559f454719f1dc0391dcf33fde3127d5f672
+>>>>>>> cc0796817e73d1eddb65fccc883e0ed643ce7a81
             <% } %>
         <div class="cart">
           <a href="/products/cart" style="color: white;"><i class="fas fa-cart-plus"></i></a>
