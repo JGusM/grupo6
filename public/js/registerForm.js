@@ -39,7 +39,7 @@ window.addEventListener("load", function(){
     }
 
     if( campoContraseñaRegistro.value != campoConfirmacionContraseñaRegistro.value) {
-      addErrorView("¡La contraseña coincidir!")
+      addErrorView("¡Las contraseñas deben coincidir!")
     }
 
     if(!campoAceptaPolitica){
