@@ -74,9 +74,7 @@
                 class="dashboard-btn-detalle btn-hover">DETALLE</button></a>
           
             <!-- ----BOTÓN "BORRAR"----  -->
-            <form>
-              <button value="<%= product.id %>" type="submit" class="dashboard-btn-borrar btn-hover" id="admin-btn-delete">BORRAR</button>
-            </form>
+              <button value="<%= product.id %>" type="submit" class="dashboard-btn-borrar btn-hover" id="<%=product.id %>">BORRAR</button>
             <!-- ----BOTÓN "EDITAR"----  -->
             <a href="http://localhost:3001/products/<%= product.id %>/edit"><button type="submit"
                 class="dashboard-btn-edit btn-hover">EDITAR</button></a>
