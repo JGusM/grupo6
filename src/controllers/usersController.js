@@ -116,7 +116,7 @@ const controlador = {
       };
   
       //encriptamos la contrasenia y borramos el password para q noo se guarde en nuestro json
-      newUser.password = bcrypt.hashSync(req.body.password[0], 10);
+      newUser.password = bcrypt.hashSync(req.body.password, 10);
        delete newUser.rePassword;
   
       //escribimos en nuestro archivo json
