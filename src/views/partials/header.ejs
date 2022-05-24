@@ -38,13 +38,13 @@
         </div>
         <% } %>
         <% if (user.userRole === "admin") { %>
-          <li><a class="menu-profile" href="http://localhost:3000/" style="color: white;">DashB<i></i></a></li>
-          <li><a class="menu-profile" href="/admin/index" style="color: white;">Panel<i></i></a></li>
+          <li><a class="menu-profile" href="http://localhost:3000/" style="color: white; text-decoration: none; padding: 0 5px; ">DashB<i></i></a></li>
+          <li><a class="menu-profile" href="/admin/index" style="color: white; text-decoration: none; padding: 0 5px; " >Panel<i></i></a></li>
         <% } %>
         <% if (user) { %>
-          <li><a class="menu-profile" href="/users/profile" style="color: white;">Perfil<i></i></a></li>
+          <li><a class="menu-profile" href="/users/profile" style="color: white; text-decoration: none; padding: 0 5px; ">Perfil<i></i></a></li>
           <li><form action="/users/logout" method="POST" class="logout">
-            <a class="logout"  style="color: white;" onclick="this.closest('form').submit();">Logout</a>
+            <a class="logout"  style="color: white; cursor: pointer; vertical-align: center;" onclick="this.closest('form').submit();">Logout</a>
         </form></li>
             <% } %>
         <div class="cart">
