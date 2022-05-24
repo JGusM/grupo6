@@ -5,6 +5,7 @@
   display: flex;
   justify-content: center;
   background-color: rgb(230, 220, 216);
+  background: url(../images/icons/imagenduojon.jpeg);
 }
 
 .login-container {
