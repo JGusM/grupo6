@@ -23,7 +23,7 @@ router.get("/:id/edit", adminRoute, controller.getFormEdit);
 
 router.patch("/:id/edit", adminRoute, controller.edit);
 
-router.delete("/:id", adminRoute, controller.delete);
+router.post("/delete/:id", adminRoute, controller.delete);
 
 // Acá exportamos el resultado
 module.exports = router; //Exportamos todo el contenido de la ruta para hacerlo visible

@@ -32,7 +32,7 @@ router.get("/login", guestRoute,  controller.getLoginForm);
 router.get("/register", guestRoute, controller.getRegisterForm);
 
 router.post("/login", guestRoute, controller.authenticate);
-router.post("/", upload.single("image"),  controller.storeUser);
+router.post("/", upload.single("image"), controller.storeUser);
 
 
 
@@ -43,6 +43,6 @@ router.post("/logout", userRoute, controller.logout);
 //profile
 router.get("/profile",  controller.profile);
 router.get("/edit",  controller.editProfile);
-router.patch("/:id",upload.single("profilePicture"),  controller.saveProfile);
+router.post("/edit/:id",upload.single("profilePicture"),  controller.saveProfile);
 // Acá exportamos el resultado
 module.exports = router; //Exportamos todo el contenido de la ruta para hacerlo visible

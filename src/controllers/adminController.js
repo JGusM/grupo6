@@ -62,12 +62,13 @@ edit:  async (req, res) => {
      where: { id: req.params.id}
    });
  
-    return res.redirect("/admin/users"); 
+     res.redirect("/admin/users"); 
   }
   catch(error) { res.send(error)
 }}, 
 
 delete: function (req, res) {
+  console.log("ENTRE")
   db.User.destroy({
     where: { id: req.params.id },
     force: true,

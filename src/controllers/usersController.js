@@ -182,7 +182,7 @@ const controlador = {
     
     saveProfile: async (req, res) => {
       try {
-        const userToEdit = await db.User.findByPk(req.params.id);
+        //const userToEdit = await db.User.findByPk(req.params.id);
         
         await db.User.update(
            {
@@ -193,7 +193,16 @@ const controlador = {
             where: { id: req.params.id },
           }
         );
-        req.session.destroy();
+      //  req.session.destroy();
+        let user= await db.User.findByPk(req.params.id);
+        //req.session.user=user
+        res.locals.user=user
+        if (req.session.user.userRole == "admin") {
+          return res.redirect("/admin/users");
+        } else {
+          return res.render("profile")
+        }
+        
       } catch (error) {
         console.log(error);
       }

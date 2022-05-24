@@ -38,6 +38,10 @@ window.addEventListener("load", function(){
         addErrorView("¡Debe confirmar su contraseña!")
     }
 
+    if( campoContraseñaRegistro.value != campoConfirmacionContraseñaRegistro.value) {
+      addErrorView("¡La contraseña coincidir!")
+    }
+
     if(!campoAceptaPolitica){
       addErrorView("¡Debe aceptar política de privacidad!")
     }

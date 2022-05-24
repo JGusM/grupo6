@@ -59,7 +59,7 @@
                 class="dashboard-btn-detalle btn-hover">DETALLE</button></a>
           
             <!-- ----BOTÓN "BORRAR"----  -->
-            <form action="?_method=DELETE" method="POST">
+            <form action="http://localhost:3001/admin/delete/<%= user.id %>" method="POST">
               <button  value="<%= user.id %>" type="submit" class="dashboard-btn-borrar btn-hover">BORRAR</button>
             </form>
             <!-- ----BOTÓN "EDITAR"----  -->
